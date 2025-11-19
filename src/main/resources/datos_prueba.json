@@ -1,0 +1,6101 @@
+{
+  "productos": [
+    {
+      "codigo": "P0001",
+      "nombre": "Mouse Ultra 1",
+      "precio": 51.5,
+      "stock": 7
+    },
+    {
+      "codigo": "P0002",
+      "nombre": "Teclado Plus 2",
+      "precio": 53.0,
+      "stock": 14
+    },
+    {
+      "codigo": "P0003",
+      "nombre": "Monitor Max 3",
+      "precio": 54.5,
+      "stock": 21
+    },
+    {
+      "codigo": "P0004",
+      "nombre": "Cable Standard 4",
+      "precio": 56.0,
+      "stock": 28
+    },
+    {
+      "codigo": "P0005",
+      "nombre": "Hub Basic 5",
+      "precio": 57.5,
+      "stock": 35
+    },
+    {
+      "codigo": "P0006",
+      "nombre": "Webcam Gaming 6",
+      "precio": 59.0,
+      "stock": 42
+    },
+    {
+      "codigo": "P0007",
+      "nombre": "Auriculares Office 7",
+      "precio": 60.5,
+      "stock": 49
+    },
+    {
+      "codigo": "P0008",
+      "nombre": "Impresora Business 8",
+      "precio": 62.0,
+      "stock": 56
+    },
+    {
+      "codigo": "P0009",
+      "nombre": "Scanner Professional 9",
+      "precio": 63.5,
+      "stock": 63
+    },
+    {
+      "codigo": "P0010",
+      "nombre": "Proyector Pro 10",
+      "precio": 65.0,
+      "stock": 70
+    },
+    {
+      "codigo": "P0011",
+      "nombre": "Pantalla Ultra 11",
+      "precio": 66.5,
+      "stock": 77
+    },
+    {
+      "codigo": "P0012",
+      "nombre": "Bateria Plus 12",
+      "precio": 68.0,
+      "stock": 84
+    },
+    {
+      "codigo": "P0013",
+      "nombre": "Cargador Max 13",
+      "precio": 69.5,
+      "stock": 91
+    },
+    {
+      "codigo": "P0014",
+      "nombre": "Router Standard 14",
+      "precio": 71.0,
+      "stock": 98
+    },
+    {
+      "codigo": "P0015",
+      "nombre": "Switch Basic 15",
+      "precio": 72.5,
+      "stock": 105
+    },
+    {
+      "codigo": "P0016",
+      "nombre": "Modem Gaming 16",
+      "precio": 74.0,
+      "stock": 112
+    },
+    {
+      "codigo": "P0017",
+      "nombre": "Adaptador Office 17",
+      "precio": 75.5,
+      "stock": 119
+    },
+    {
+      "codigo": "P0018",
+      "nombre": "Extensor Business 18",
+      "precio": 77.0,
+      "stock": 126
+    },
+    {
+      "codigo": "P0019",
+      "nombre": "Splitter Professional 19",
+      "precio": 78.5,
+      "stock": 133
+    },
+    {
+      "codigo": "P0020",
+      "nombre": "Laptop Pro 20",
+      "precio": 80.0,
+      "stock": 140
+    },
+    {
+      "codigo": "P0021",
+      "nombre": "Mouse Ultra 21",
+      "precio": 81.5,
+      "stock": 147
+    },
+    {
+      "codigo": "P0022",
+      "nombre": "Teclado Plus 22",
+      "precio": 83.0,
+      "stock": 154
+    },
+    {
+      "codigo": "P0023",
+      "nombre": "Monitor Max 23",
+      "precio": 84.5,
+      "stock": 161
+    },
+    {
+      "codigo": "P0024",
+      "nombre": "Cable Standard 24",
+      "precio": 86.0,
+      "stock": 168
+    },
+    {
+      "codigo": "P0025",
+      "nombre": "Hub Basic 25",
+      "precio": 87.5,
+      "stock": 175
+    },
+    {
+      "codigo": "P0026",
+      "nombre": "Webcam Gaming 26",
+      "precio": 89.0,
+      "stock": 182
+    },
+    {
+      "codigo": "P0027",
+      "nombre": "Auriculares Office 27",
+      "precio": 90.5,
+      "stock": 189
+    },
+    {
+      "codigo": "P0028",
+      "nombre": "Impresora Business 28",
+      "precio": 92.0,
+      "stock": 196
+    },
+    {
+      "codigo": "P0029",
+      "nombre": "Scanner Professional 29",
+      "precio": 93.5,
+      "stock": 203
+    },
+    {
+      "codigo": "P0030",
+      "nombre": "Proyector Pro 30",
+      "precio": 95.0,
+      "stock": 210
+    },
+    {
+      "codigo": "P0031",
+      "nombre": "Pantalla Ultra 31",
+      "precio": 96.5,
+      "stock": 217
+    },
+    {
+      "codigo": "P0032",
+      "nombre": "Bateria Plus 32",
+      "precio": 98.0,
+      "stock": 224
+    },
+    {
+      "codigo": "P0033",
+      "nombre": "Cargador Max 33",
+      "precio": 99.5,
+      "stock": 231
+    },
+    {
+      "codigo": "P0034",
+      "nombre": "Router Standard 34",
+      "precio": 101.0,
+      "stock": 238
+    },
+    {
+      "codigo": "P0035",
+      "nombre": "Switch Basic 35",
+      "precio": 102.5,
+      "stock": 245
+    },
+    {
+      "codigo": "P0036",
+      "nombre": "Modem Gaming 36",
+      "precio": 104.0,
+      "stock": 252
+    },
+    {
+      "codigo": "P0037",
+      "nombre": "Adaptador Office 37",
+      "precio": 105.5,
+      "stock": 259
+    },
+    {
+      "codigo": "P0038",
+      "nombre": "Extensor Business 38",
+      "precio": 107.0,
+      "stock": 266
+    },
+    {
+      "codigo": "P0039",
+      "nombre": "Splitter Professional 39",
+      "precio": 108.5,
+      "stock": 273
+    },
+    {
+      "codigo": "P0040",
+      "nombre": "Laptop Pro 40",
+      "precio": 110.0,
+      "stock": 280
+    },
+    {
+      "codigo": "P0041",
+      "nombre": "Mouse Ultra 41",
+      "precio": 111.5,
+      "stock": 287
+    },
+    {
+      "codigo": "P0042",
+      "nombre": "Teclado Plus 42",
+      "precio": 113.0,
+      "stock": 294
+    },
+    {
+      "codigo": "P0043",
+      "nombre": "Monitor Max 43",
+      "precio": 114.5,
+      "stock": 301
+    },
+    {
+      "codigo": "P0044",
+      "nombre": "Cable Standard 44",
+      "precio": 116.0,
+      "stock": 308
+    },
+    {
+      "codigo": "P0045",
+      "nombre": "Hub Basic 45",
+      "precio": 117.5,
+      "stock": 315
+    },
+    {
+      "codigo": "P0046",
+      "nombre": "Webcam Gaming 46",
+      "precio": 119.0,
+      "stock": 322
+    },
+    {
+      "codigo": "P0047",
+      "nombre": "Auriculares Office 47",
+      "precio": 120.5,
+      "stock": 329
+    },
+    {
+      "codigo": "P0048",
+      "nombre": "Impresora Business 48",
+      "precio": 122.0,
+      "stock": 336
+    },
+    {
+      "codigo": "P0049",
+      "nombre": "Scanner Professional 49",
+      "precio": 123.5,
+      "stock": 343
+    },
+    {
+      "codigo": "P0050",
+      "nombre": "Proyector Pro 50",
+      "precio": 125.0,
+      "stock": 350
+    },
+    {
+      "codigo": "P0051",
+      "nombre": "Pantalla Ultra 51",
+      "precio": 126.5,
+      "stock": 357
+    },
+    {
+      "codigo": "P0052",
+      "nombre": "Bateria Plus 52",
+      "precio": 128.0,
+      "stock": 364
+    },
+    {
+      "codigo": "P0053",
+      "nombre": "Cargador Max 53",
+      "precio": 129.5,
+      "stock": 371
+    },
+    {
+      "codigo": "P0054",
+      "nombre": "Router Standard 54",
+      "precio": 131.0,
+      "stock": 378
+    },
+    {
+      "codigo": "P0055",
+      "nombre": "Switch Basic 55",
+      "precio": 132.5,
+      "stock": 385
+    },
+    {
+      "codigo": "P0056",
+      "nombre": "Modem Gaming 56",
+      "precio": 134.0,
+      "stock": 392
+    },
+    {
+      "codigo": "P0057",
+      "nombre": "Adaptador Office 57",
+      "precio": 135.5,
+      "stock": 399
+    },
+    {
+      "codigo": "P0058",
+      "nombre": "Extensor Business 58",
+      "precio": 137.0,
+      "stock": 406
+    },
+    {
+      "codigo": "P0059",
+      "nombre": "Splitter Professional 59",
+      "precio": 138.5,
+      "stock": 413
+    },
+    {
+      "codigo": "P0060",
+      "nombre": "Laptop Pro 60",
+      "precio": 140.0,
+      "stock": 420
+    },
+    {
+      "codigo": "P0061",
+      "nombre": "Mouse Ultra 61",
+      "precio": 141.5,
+      "stock": 427
+    },
+    {
+      "codigo": "P0062",
+      "nombre": "Teclado Plus 62",
+      "precio": 143.0,
+      "stock": 434
+    },
+    {
+      "codigo": "P0063",
+      "nombre": "Monitor Max 63",
+      "precio": 144.5,
+      "stock": 441
+    },
+    {
+      "codigo": "P0064",
+      "nombre": "Cable Standard 64",
+      "precio": 146.0,
+      "stock": 448
+    },
+    {
+      "codigo": "P0065",
+      "nombre": "Hub Basic 65",
+      "precio": 147.5,
+      "stock": 455
+    },
+    {
+      "codigo": "P0066",
+      "nombre": "Webcam Gaming 66",
+      "precio": 149.0,
+      "stock": 462
+    },
+    {
+      "codigo": "P0067",
+      "nombre": "Auriculares Office 67",
+      "precio": 150.5,
+      "stock": 469
+    },
+    {
+      "codigo": "P0068",
+      "nombre": "Impresora Business 68",
+      "precio": 152.0,
+      "stock": 476
+    },
+    {
+      "codigo": "P0069",
+      "nombre": "Scanner Professional 69",
+      "precio": 153.5,
+      "stock": 483
+    },
+    {
+      "codigo": "P0070",
+      "nombre": "Proyector Pro 70",
+      "precio": 155.0,
+      "stock": 490
+    },
+    {
+      "codigo": "P0071",
+      "nombre": "Pantalla Ultra 71",
+      "precio": 156.5,
+      "stock": 497
+    },
+    {
+      "codigo": "P0072",
+      "nombre": "Bateria Plus 72",
+      "precio": 158.0,
+      "stock": 4
+    },
+    {
+      "codigo": "P0073",
+      "nombre": "Cargador Max 73",
+      "precio": 159.5,
+      "stock": 11
+    },
+    {
+      "codigo": "P0074",
+      "nombre": "Router Standard 74",
+      "precio": 161.0,
+      "stock": 18
+    },
+    {
+      "codigo": "P0075",
+      "nombre": "Switch Basic 75",
+      "precio": 162.5,
+      "stock": 25
+    },
+    {
+      "codigo": "P0076",
+      "nombre": "Modem Gaming 76",
+      "precio": 164.0,
+      "stock": 32
+    },
+    {
+      "codigo": "P0077",
+      "nombre": "Adaptador Office 77",
+      "precio": 165.5,
+      "stock": 39
+    },
+    {
+      "codigo": "P0078",
+      "nombre": "Extensor Business 78",
+      "precio": 167.0,
+      "stock": 46
+    },
+    {
+      "codigo": "P0079",
+      "nombre": "Splitter Professional 79",
+      "precio": 168.5,
+      "stock": 53
+    },
+    {
+      "codigo": "P0080",
+      "nombre": "Laptop Pro 80",
+      "precio": 170.0,
+      "stock": 60
+    },
+    {
+      "codigo": "P0081",
+      "nombre": "Mouse Ultra 81",
+      "precio": 171.5,
+      "stock": 67
+    },
+    {
+      "codigo": "P0082",
+      "nombre": "Teclado Plus 82",
+      "precio": 173.0,
+      "stock": 74
+    },
+    {
+      "codigo": "P0083",
+      "nombre": "Monitor Max 83",
+      "precio": 174.5,
+      "stock": 81
+    },
+    {
+      "codigo": "P0084",
+      "nombre": "Cable Standard 84",
+      "precio": 176.0,
+      "stock": 88
+    },
+    {
+      "codigo": "P0085",
+      "nombre": "Hub Basic 85",
+      "precio": 177.5,
+      "stock": 95
+    },
+    {
+      "codigo": "P0086",
+      "nombre": "Webcam Gaming 86",
+      "precio": 179.0,
+      "stock": 102
+    },
+    {
+      "codigo": "P0087",
+      "nombre": "Auriculares Office 87",
+      "precio": 180.5,
+      "stock": 109
+    },
+    {
+      "codigo": "P0088",
+      "nombre": "Impresora Business 88",
+      "precio": 182.0,
+      "stock": 116
+    },
+    {
+      "codigo": "P0089",
+      "nombre": "Scanner Professional 89",
+      "precio": 183.5,
+      "stock": 123
+    },
+    {
+      "codigo": "P0090",
+      "nombre": "Proyector Pro 90",
+      "precio": 185.0,
+      "stock": 130
+    },
+    {
+      "codigo": "P0091",
+      "nombre": "Pantalla Ultra 91",
+      "precio": 186.5,
+      "stock": 137
+    },
+    {
+      "codigo": "P0092",
+      "nombre": "Bateria Plus 92",
+      "precio": 188.0,
+      "stock": 144
+    },
+    {
+      "codigo": "P0093",
+      "nombre": "Cargador Max 93",
+      "precio": 189.5,
+      "stock": 151
+    },
+    {
+      "codigo": "P0094",
+      "nombre": "Router Standard 94",
+      "precio": 191.0,
+      "stock": 158
+    },
+    {
+      "codigo": "P0095",
+      "nombre": "Switch Basic 95",
+      "precio": 192.5,
+      "stock": 165
+    },
+    {
+      "codigo": "P0096",
+      "nombre": "Modem Gaming 96",
+      "precio": 194.0,
+      "stock": 172
+    },
+    {
+      "codigo": "P0097",
+      "nombre": "Adaptador Office 97",
+      "precio": 195.5,
+      "stock": 179
+    },
+    {
+      "codigo": "P0098",
+      "nombre": "Extensor Business 98",
+      "precio": 197.0,
+      "stock": 186
+    },
+    {
+      "codigo": "P0099",
+      "nombre": "Splitter Professional 99",
+      "precio": 198.5,
+      "stock": 193
+    },
+    {
+      "codigo": "P0100",
+      "nombre": "Laptop Pro 100",
+      "precio": 200.0,
+      "stock": 200
+    },
+    {
+      "codigo": "P0101",
+      "nombre": "Mouse Ultra 101",
+      "precio": 201.5,
+      "stock": 207
+    },
+    {
+      "codigo": "P0102",
+      "nombre": "Teclado Plus 102",
+      "precio": 203.0,
+      "stock": 214
+    },
+    {
+      "codigo": "P0103",
+      "nombre": "Monitor Max 103",
+      "precio": 204.5,
+      "stock": 221
+    },
+    {
+      "codigo": "P0104",
+      "nombre": "Cable Standard 104",
+      "precio": 206.0,
+      "stock": 228
+    },
+    {
+      "codigo": "P0105",
+      "nombre": "Hub Basic 105",
+      "precio": 207.5,
+      "stock": 235
+    },
+    {
+      "codigo": "P0106",
+      "nombre": "Webcam Gaming 106",
+      "precio": 209.0,
+      "stock": 242
+    },
+    {
+      "codigo": "P0107",
+      "nombre": "Auriculares Office 107",
+      "precio": 210.5,
+      "stock": 249
+    },
+    {
+      "codigo": "P0108",
+      "nombre": "Impresora Business 108",
+      "precio": 212.0,
+      "stock": 256
+    },
+    {
+      "codigo": "P0109",
+      "nombre": "Scanner Professional 109",
+      "precio": 213.5,
+      "stock": 263
+    },
+    {
+      "codigo": "P0110",
+      "nombre": "Proyector Pro 110",
+      "precio": 215.0,
+      "stock": 270
+    },
+    {
+      "codigo": "P0111",
+      "nombre": "Pantalla Ultra 111",
+      "precio": 216.5,
+      "stock": 277
+    },
+    {
+      "codigo": "P0112",
+      "nombre": "Bateria Plus 112",
+      "precio": 218.0,
+      "stock": 284
+    },
+    {
+      "codigo": "P0113",
+      "nombre": "Cargador Max 113",
+      "precio": 219.5,
+      "stock": 291
+    },
+    {
+      "codigo": "P0114",
+      "nombre": "Router Standard 114",
+      "precio": 221.0,
+      "stock": 298
+    },
+    {
+      "codigo": "P0115",
+      "nombre": "Switch Basic 115",
+      "precio": 222.5,
+      "stock": 305
+    },
+    {
+      "codigo": "P0116",
+      "nombre": "Modem Gaming 116",
+      "precio": 224.0,
+      "stock": 312
+    },
+    {
+      "codigo": "P0117",
+      "nombre": "Adaptador Office 117",
+      "precio": 225.5,
+      "stock": 319
+    },
+    {
+      "codigo": "P0118",
+      "nombre": "Extensor Business 118",
+      "precio": 227.0,
+      "stock": 326
+    },
+    {
+      "codigo": "P0119",
+      "nombre": "Splitter Professional 119",
+      "precio": 228.5,
+      "stock": 333
+    },
+    {
+      "codigo": "P0120",
+      "nombre": "Laptop Pro 120",
+      "precio": 230.0,
+      "stock": 340
+    },
+    {
+      "codigo": "P0121",
+      "nombre": "Mouse Ultra 121",
+      "precio": 231.5,
+      "stock": 347
+    },
+    {
+      "codigo": "P0122",
+      "nombre": "Teclado Plus 122",
+      "precio": 233.0,
+      "stock": 354
+    },
+    {
+      "codigo": "P0123",
+      "nombre": "Monitor Max 123",
+      "precio": 234.5,
+      "stock": 361
+    },
+    {
+      "codigo": "P0124",
+      "nombre": "Cable Standard 124",
+      "precio": 236.0,
+      "stock": 368
+    },
+    {
+      "codigo": "P0125",
+      "nombre": "Hub Basic 125",
+      "precio": 237.5,
+      "stock": 375
+    },
+    {
+      "codigo": "P0126",
+      "nombre": "Webcam Gaming 126",
+      "precio": 239.0,
+      "stock": 382
+    },
+    {
+      "codigo": "P0127",
+      "nombre": "Auriculares Office 127",
+      "precio": 240.5,
+      "stock": 389
+    },
+    {
+      "codigo": "P0128",
+      "nombre": "Impresora Business 128",
+      "precio": 242.0,
+      "stock": 396
+    },
+    {
+      "codigo": "P0129",
+      "nombre": "Scanner Professional 129",
+      "precio": 243.5,
+      "stock": 403
+    },
+    {
+      "codigo": "P0130",
+      "nombre": "Proyector Pro 130",
+      "precio": 245.0,
+      "stock": 410
+    },
+    {
+      "codigo": "P0131",
+      "nombre": "Pantalla Ultra 131",
+      "precio": 246.5,
+      "stock": 417
+    },
+    {
+      "codigo": "P0132",
+      "nombre": "Bateria Plus 132",
+      "precio": 248.0,
+      "stock": 424
+    },
+    {
+      "codigo": "P0133",
+      "nombre": "Cargador Max 133",
+      "precio": 249.5,
+      "stock": 431
+    },
+    {
+      "codigo": "P0134",
+      "nombre": "Router Standard 134",
+      "precio": 251.0,
+      "stock": 438
+    },
+    {
+      "codigo": "P0135",
+      "nombre": "Switch Basic 135",
+      "precio": 252.5,
+      "stock": 445
+    },
+    {
+      "codigo": "P0136",
+      "nombre": "Modem Gaming 136",
+      "precio": 254.0,
+      "stock": 452
+    },
+    {
+      "codigo": "P0137",
+      "nombre": "Adaptador Office 137",
+      "precio": 255.5,
+      "stock": 459
+    },
+    {
+      "codigo": "P0138",
+      "nombre": "Extensor Business 138",
+      "precio": 257.0,
+      "stock": 466
+    },
+    {
+      "codigo": "P0139",
+      "nombre": "Splitter Professional 139",
+      "precio": 258.5,
+      "stock": 473
+    },
+    {
+      "codigo": "P0140",
+      "nombre": "Laptop Pro 140",
+      "precio": 260.0,
+      "stock": 480
+    },
+    {
+      "codigo": "P0141",
+      "nombre": "Mouse Ultra 141",
+      "precio": 261.5,
+      "stock": 487
+    },
+    {
+      "codigo": "P0142",
+      "nombre": "Teclado Plus 142",
+      "precio": 263.0,
+      "stock": 494
+    },
+    {
+      "codigo": "P0143",
+      "nombre": "Monitor Max 143",
+      "precio": 264.5,
+      "stock": 1
+    },
+    {
+      "codigo": "P0144",
+      "nombre": "Cable Standard 144",
+      "precio": 266.0,
+      "stock": 8
+    },
+    {
+      "codigo": "P0145",
+      "nombre": "Hub Basic 145",
+      "precio": 267.5,
+      "stock": 15
+    },
+    {
+      "codigo": "P0146",
+      "nombre": "Webcam Gaming 146",
+      "precio": 269.0,
+      "stock": 22
+    },
+    {
+      "codigo": "P0147",
+      "nombre": "Auriculares Office 147",
+      "precio": 270.5,
+      "stock": 29
+    },
+    {
+      "codigo": "P0148",
+      "nombre": "Impresora Business 148",
+      "precio": 272.0,
+      "stock": 36
+    },
+    {
+      "codigo": "P0149",
+      "nombre": "Scanner Professional 149",
+      "precio": 273.5,
+      "stock": 43
+    },
+    {
+      "codigo": "P0150",
+      "nombre": "Proyector Pro 150",
+      "precio": 275.0,
+      "stock": 50
+    },
+    {
+      "codigo": "P0151",
+      "nombre": "Pantalla Ultra 151",
+      "precio": 276.5,
+      "stock": 57
+    },
+    {
+      "codigo": "P0152",
+      "nombre": "Bateria Plus 152",
+      "precio": 278.0,
+      "stock": 64
+    },
+    {
+      "codigo": "P0153",
+      "nombre": "Cargador Max 153",
+      "precio": 279.5,
+      "stock": 71
+    },
+    {
+      "codigo": "P0154",
+      "nombre": "Router Standard 154",
+      "precio": 281.0,
+      "stock": 78
+    },
+    {
+      "codigo": "P0155",
+      "nombre": "Switch Basic 155",
+      "precio": 282.5,
+      "stock": 85
+    },
+    {
+      "codigo": "P0156",
+      "nombre": "Modem Gaming 156",
+      "precio": 284.0,
+      "stock": 92
+    },
+    {
+      "codigo": "P0157",
+      "nombre": "Adaptador Office 157",
+      "precio": 285.5,
+      "stock": 99
+    },
+    {
+      "codigo": "P0158",
+      "nombre": "Extensor Business 158",
+      "precio": 287.0,
+      "stock": 106
+    },
+    {
+      "codigo": "P0159",
+      "nombre": "Splitter Professional 159",
+      "precio": 288.5,
+      "stock": 113
+    },
+    {
+      "codigo": "P0160",
+      "nombre": "Laptop Pro 160",
+      "precio": 290.0,
+      "stock": 120
+    },
+    {
+      "codigo": "P0161",
+      "nombre": "Mouse Ultra 161",
+      "precio": 291.5,
+      "stock": 127
+    },
+    {
+      "codigo": "P0162",
+      "nombre": "Teclado Plus 162",
+      "precio": 293.0,
+      "stock": 134
+    },
+    {
+      "codigo": "P0163",
+      "nombre": "Monitor Max 163",
+      "precio": 294.5,
+      "stock": 141
+    },
+    {
+      "codigo": "P0164",
+      "nombre": "Cable Standard 164",
+      "precio": 296.0,
+      "stock": 148
+    },
+    {
+      "codigo": "P0165",
+      "nombre": "Hub Basic 165",
+      "precio": 297.5,
+      "stock": 155
+    },
+    {
+      "codigo": "P0166",
+      "nombre": "Webcam Gaming 166",
+      "precio": 299.0,
+      "stock": 162
+    },
+    {
+      "codigo": "P0167",
+      "nombre": "Auriculares Office 167",
+      "precio": 300.5,
+      "stock": 169
+    },
+    {
+      "codigo": "P0168",
+      "nombre": "Impresora Business 168",
+      "precio": 302.0,
+      "stock": 176
+    },
+    {
+      "codigo": "P0169",
+      "nombre": "Scanner Professional 169",
+      "precio": 303.5,
+      "stock": 183
+    },
+    {
+      "codigo": "P0170",
+      "nombre": "Proyector Pro 170",
+      "precio": 305.0,
+      "stock": 190
+    },
+    {
+      "codigo": "P0171",
+      "nombre": "Pantalla Ultra 171",
+      "precio": 306.5,
+      "stock": 197
+    },
+    {
+      "codigo": "P0172",
+      "nombre": "Bateria Plus 172",
+      "precio": 308.0,
+      "stock": 204
+    },
+    {
+      "codigo": "P0173",
+      "nombre": "Cargador Max 173",
+      "precio": 309.5,
+      "stock": 211
+    },
+    {
+      "codigo": "P0174",
+      "nombre": "Router Standard 174",
+      "precio": 311.0,
+      "stock": 218
+    },
+    {
+      "codigo": "P0175",
+      "nombre": "Switch Basic 175",
+      "precio": 312.5,
+      "stock": 225
+    },
+    {
+      "codigo": "P0176",
+      "nombre": "Modem Gaming 176",
+      "precio": 314.0,
+      "stock": 232
+    },
+    {
+      "codigo": "P0177",
+      "nombre": "Adaptador Office 177",
+      "precio": 315.5,
+      "stock": 239
+    },
+    {
+      "codigo": "P0178",
+      "nombre": "Extensor Business 178",
+      "precio": 317.0,
+      "stock": 246
+    },
+    {
+      "codigo": "P0179",
+      "nombre": "Splitter Professional 179",
+      "precio": 318.5,
+      "stock": 253
+    },
+    {
+      "codigo": "P0180",
+      "nombre": "Laptop Pro 180",
+      "precio": 320.0,
+      "stock": 260
+    },
+    {
+      "codigo": "P0181",
+      "nombre": "Mouse Ultra 181",
+      "precio": 321.5,
+      "stock": 267
+    },
+    {
+      "codigo": "P0182",
+      "nombre": "Teclado Plus 182",
+      "precio": 323.0,
+      "stock": 274
+    },
+    {
+      "codigo": "P0183",
+      "nombre": "Monitor Max 183",
+      "precio": 324.5,
+      "stock": 281
+    },
+    {
+      "codigo": "P0184",
+      "nombre": "Cable Standard 184",
+      "precio": 326.0,
+      "stock": 288
+    },
+    {
+      "codigo": "P0185",
+      "nombre": "Hub Basic 185",
+      "precio": 327.5,
+      "stock": 295
+    },
+    {
+      "codigo": "P0186",
+      "nombre": "Webcam Gaming 186",
+      "precio": 329.0,
+      "stock": 302
+    },
+    {
+      "codigo": "P0187",
+      "nombre": "Auriculares Office 187",
+      "precio": 330.5,
+      "stock": 309
+    },
+    {
+      "codigo": "P0188",
+      "nombre": "Impresora Business 188",
+      "precio": 332.0,
+      "stock": 316
+    },
+    {
+      "codigo": "P0189",
+      "nombre": "Scanner Professional 189",
+      "precio": 333.5,
+      "stock": 323
+    },
+    {
+      "codigo": "P0190",
+      "nombre": "Proyector Pro 190",
+      "precio": 335.0,
+      "stock": 330
+    },
+    {
+      "codigo": "P0191",
+      "nombre": "Pantalla Ultra 191",
+      "precio": 336.5,
+      "stock": 337
+    },
+    {
+      "codigo": "P0192",
+      "nombre": "Bateria Plus 192",
+      "precio": 338.0,
+      "stock": 344
+    },
+    {
+      "codigo": "P0193",
+      "nombre": "Cargador Max 193",
+      "precio": 339.5,
+      "stock": 351
+    },
+    {
+      "codigo": "P0194",
+      "nombre": "Router Standard 194",
+      "precio": 341.0,
+      "stock": 358
+    },
+    {
+      "codigo": "P0195",
+      "nombre": "Switch Basic 195",
+      "precio": 342.5,
+      "stock": 365
+    },
+    {
+      "codigo": "P0196",
+      "nombre": "Modem Gaming 196",
+      "precio": 344.0,
+      "stock": 372
+    },
+    {
+      "codigo": "P0197",
+      "nombre": "Adaptador Office 197",
+      "precio": 345.5,
+      "stock": 379
+    },
+    {
+      "codigo": "P0198",
+      "nombre": "Extensor Business 198",
+      "precio": 347.0,
+      "stock": 386
+    },
+    {
+      "codigo": "P0199",
+      "nombre": "Splitter Professional 199",
+      "precio": 348.5,
+      "stock": 393
+    },
+    {
+      "codigo": "P0200",
+      "nombre": "Laptop Pro 200",
+      "precio": 350.0,
+      "stock": 400
+    },
+    {
+      "codigo": "P0201",
+      "nombre": "Mouse Ultra 201",
+      "precio": 351.5,
+      "stock": 407
+    },
+    {
+      "codigo": "P0202",
+      "nombre": "Teclado Plus 202",
+      "precio": 353.0,
+      "stock": 414
+    },
+    {
+      "codigo": "P0203",
+      "nombre": "Monitor Max 203",
+      "precio": 354.5,
+      "stock": 421
+    },
+    {
+      "codigo": "P0204",
+      "nombre": "Cable Standard 204",
+      "precio": 356.0,
+      "stock": 428
+    },
+    {
+      "codigo": "P0205",
+      "nombre": "Hub Basic 205",
+      "precio": 357.5,
+      "stock": 435
+    },
+    {
+      "codigo": "P0206",
+      "nombre": "Webcam Gaming 206",
+      "precio": 359.0,
+      "stock": 442
+    },
+    {
+      "codigo": "P0207",
+      "nombre": "Auriculares Office 207",
+      "precio": 360.5,
+      "stock": 449
+    },
+    {
+      "codigo": "P0208",
+      "nombre": "Impresora Business 208",
+      "precio": 362.0,
+      "stock": 456
+    },
+    {
+      "codigo": "P0209",
+      "nombre": "Scanner Professional 209",
+      "precio": 363.5,
+      "stock": 463
+    },
+    {
+      "codigo": "P0210",
+      "nombre": "Proyector Pro 210",
+      "precio": 365.0,
+      "stock": 470
+    },
+    {
+      "codigo": "P0211",
+      "nombre": "Pantalla Ultra 211",
+      "precio": 366.5,
+      "stock": 477
+    },
+    {
+      "codigo": "P0212",
+      "nombre": "Bateria Plus 212",
+      "precio": 368.0,
+      "stock": 484
+    },
+    {
+      "codigo": "P0213",
+      "nombre": "Cargador Max 213",
+      "precio": 369.5,
+      "stock": 491
+    },
+    {
+      "codigo": "P0214",
+      "nombre": "Router Standard 214",
+      "precio": 371.0,
+      "stock": 498
+    },
+    {
+      "codigo": "P0215",
+      "nombre": "Switch Basic 215",
+      "precio": 372.5,
+      "stock": 5
+    },
+    {
+      "codigo": "P0216",
+      "nombre": "Modem Gaming 216",
+      "precio": 374.0,
+      "stock": 12
+    },
+    {
+      "codigo": "P0217",
+      "nombre": "Adaptador Office 217",
+      "precio": 375.5,
+      "stock": 19
+    },
+    {
+      "codigo": "P0218",
+      "nombre": "Extensor Business 218",
+      "precio": 377.0,
+      "stock": 26
+    },
+    {
+      "codigo": "P0219",
+      "nombre": "Splitter Professional 219",
+      "precio": 378.5,
+      "stock": 33
+    },
+    {
+      "codigo": "P0220",
+      "nombre": "Laptop Pro 220",
+      "precio": 380.0,
+      "stock": 40
+    },
+    {
+      "codigo": "P0221",
+      "nombre": "Mouse Ultra 221",
+      "precio": 381.5,
+      "stock": 47
+    },
+    {
+      "codigo": "P0222",
+      "nombre": "Teclado Plus 222",
+      "precio": 383.0,
+      "stock": 54
+    },
+    {
+      "codigo": "P0223",
+      "nombre": "Monitor Max 223",
+      "precio": 384.5,
+      "stock": 61
+    },
+    {
+      "codigo": "P0224",
+      "nombre": "Cable Standard 224",
+      "precio": 386.0,
+      "stock": 68
+    },
+    {
+      "codigo": "P0225",
+      "nombre": "Hub Basic 225",
+      "precio": 387.5,
+      "stock": 75
+    },
+    {
+      "codigo": "P0226",
+      "nombre": "Webcam Gaming 226",
+      "precio": 389.0,
+      "stock": 82
+    },
+    {
+      "codigo": "P0227",
+      "nombre": "Auriculares Office 227",
+      "precio": 390.5,
+      "stock": 89
+    },
+    {
+      "codigo": "P0228",
+      "nombre": "Impresora Business 228",
+      "precio": 392.0,
+      "stock": 96
+    },
+    {
+      "codigo": "P0229",
+      "nombre": "Scanner Professional 229",
+      "precio": 393.5,
+      "stock": 103
+    },
+    {
+      "codigo": "P0230",
+      "nombre": "Proyector Pro 230",
+      "precio": 395.0,
+      "stock": 110
+    },
+    {
+      "codigo": "P0231",
+      "nombre": "Pantalla Ultra 231",
+      "precio": 396.5,
+      "stock": 117
+    },
+    {
+      "codigo": "P0232",
+      "nombre": "Bateria Plus 232",
+      "precio": 398.0,
+      "stock": 124
+    },
+    {
+      "codigo": "P0233",
+      "nombre": "Cargador Max 233",
+      "precio": 399.5,
+      "stock": 131
+    },
+    {
+      "codigo": "P0234",
+      "nombre": "Router Standard 234",
+      "precio": 401.0,
+      "stock": 138
+    },
+    {
+      "codigo": "P0235",
+      "nombre": "Switch Basic 235",
+      "precio": 402.5,
+      "stock": 145
+    },
+    {
+      "codigo": "P0236",
+      "nombre": "Modem Gaming 236",
+      "precio": 404.0,
+      "stock": 152
+    },
+    {
+      "codigo": "P0237",
+      "nombre": "Adaptador Office 237",
+      "precio": 405.5,
+      "stock": 159
+    },
+    {
+      "codigo": "P0238",
+      "nombre": "Extensor Business 238",
+      "precio": 407.0,
+      "stock": 166
+    },
+    {
+      "codigo": "P0239",
+      "nombre": "Splitter Professional 239",
+      "precio": 408.5,
+      "stock": 173
+    },
+    {
+      "codigo": "P0240",
+      "nombre": "Laptop Pro 240",
+      "precio": 410.0,
+      "stock": 180
+    },
+    {
+      "codigo": "P0241",
+      "nombre": "Mouse Ultra 241",
+      "precio": 411.5,
+      "stock": 187
+    },
+    {
+      "codigo": "P0242",
+      "nombre": "Teclado Plus 242",
+      "precio": 413.0,
+      "stock": 194
+    },
+    {
+      "codigo": "P0243",
+      "nombre": "Monitor Max 243",
+      "precio": 414.5,
+      "stock": 201
+    },
+    {
+      "codigo": "P0244",
+      "nombre": "Cable Standard 244",
+      "precio": 416.0,
+      "stock": 208
+    },
+    {
+      "codigo": "P0245",
+      "nombre": "Hub Basic 245",
+      "precio": 417.5,
+      "stock": 215
+    },
+    {
+      "codigo": "P0246",
+      "nombre": "Webcam Gaming 246",
+      "precio": 419.0,
+      "stock": 222
+    },
+    {
+      "codigo": "P0247",
+      "nombre": "Auriculares Office 247",
+      "precio": 420.5,
+      "stock": 229
+    },
+    {
+      "codigo": "P0248",
+      "nombre": "Impresora Business 248",
+      "precio": 422.0,
+      "stock": 236
+    },
+    {
+      "codigo": "P0249",
+      "nombre": "Scanner Professional 249",
+      "precio": 423.5,
+      "stock": 243
+    },
+    {
+      "codigo": "P0250",
+      "nombre": "Proyector Pro 250",
+      "precio": 425.0,
+      "stock": 250
+    },
+    {
+      "codigo": "P0251",
+      "nombre": "Pantalla Ultra 251",
+      "precio": 426.5,
+      "stock": 257
+    },
+    {
+      "codigo": "P0252",
+      "nombre": "Bateria Plus 252",
+      "precio": 428.0,
+      "stock": 264
+    },
+    {
+      "codigo": "P0253",
+      "nombre": "Cargador Max 253",
+      "precio": 429.5,
+      "stock": 271
+    },
+    {
+      "codigo": "P0254",
+      "nombre": "Router Standard 254",
+      "precio": 431.0,
+      "stock": 278
+    },
+    {
+      "codigo": "P0255",
+      "nombre": "Switch Basic 255",
+      "precio": 432.5,
+      "stock": 285
+    },
+    {
+      "codigo": "P0256",
+      "nombre": "Modem Gaming 256",
+      "precio": 434.0,
+      "stock": 292
+    },
+    {
+      "codigo": "P0257",
+      "nombre": "Adaptador Office 257",
+      "precio": 435.5,
+      "stock": 299
+    },
+    {
+      "codigo": "P0258",
+      "nombre": "Extensor Business 258",
+      "precio": 437.0,
+      "stock": 306
+    },
+    {
+      "codigo": "P0259",
+      "nombre": "Splitter Professional 259",
+      "precio": 438.5,
+      "stock": 313
+    },
+    {
+      "codigo": "P0260",
+      "nombre": "Laptop Pro 260",
+      "precio": 440.0,
+      "stock": 320
+    },
+    {
+      "codigo": "P0261",
+      "nombre": "Mouse Ultra 261",
+      "precio": 441.5,
+      "stock": 327
+    },
+    {
+      "codigo": "P0262",
+      "nombre": "Teclado Plus 262",
+      "precio": 443.0,
+      "stock": 334
+    },
+    {
+      "codigo": "P0263",
+      "nombre": "Monitor Max 263",
+      "precio": 444.5,
+      "stock": 341
+    },
+    {
+      "codigo": "P0264",
+      "nombre": "Cable Standard 264",
+      "precio": 446.0,
+      "stock": 348
+    },
+    {
+      "codigo": "P0265",
+      "nombre": "Hub Basic 265",
+      "precio": 447.5,
+      "stock": 355
+    },
+    {
+      "codigo": "P0266",
+      "nombre": "Webcam Gaming 266",
+      "precio": 449.0,
+      "stock": 362
+    },
+    {
+      "codigo": "P0267",
+      "nombre": "Auriculares Office 267",
+      "precio": 450.5,
+      "stock": 369
+    },
+    {
+      "codigo": "P0268",
+      "nombre": "Impresora Business 268",
+      "precio": 452.0,
+      "stock": 376
+    },
+    {
+      "codigo": "P0269",
+      "nombre": "Scanner Professional 269",
+      "precio": 453.5,
+      "stock": 383
+    },
+    {
+      "codigo": "P0270",
+      "nombre": "Proyector Pro 270",
+      "precio": 455.0,
+      "stock": 390
+    },
+    {
+      "codigo": "P0271",
+      "nombre": "Pantalla Ultra 271",
+      "precio": 456.5,
+      "stock": 397
+    },
+    {
+      "codigo": "P0272",
+      "nombre": "Bateria Plus 272",
+      "precio": 458.0,
+      "stock": 404
+    },
+    {
+      "codigo": "P0273",
+      "nombre": "Cargador Max 273",
+      "precio": 459.5,
+      "stock": 411
+    },
+    {
+      "codigo": "P0274",
+      "nombre": "Router Standard 274",
+      "precio": 461.0,
+      "stock": 418
+    },
+    {
+      "codigo": "P0275",
+      "nombre": "Switch Basic 275",
+      "precio": 462.5,
+      "stock": 425
+    },
+    {
+      "codigo": "P0276",
+      "nombre": "Modem Gaming 276",
+      "precio": 464.0,
+      "stock": 432
+    },
+    {
+      "codigo": "P0277",
+      "nombre": "Adaptador Office 277",
+      "precio": 465.5,
+      "stock": 439
+    },
+    {
+      "codigo": "P0278",
+      "nombre": "Extensor Business 278",
+      "precio": 467.0,
+      "stock": 446
+    },
+    {
+      "codigo": "P0279",
+      "nombre": "Splitter Professional 279",
+      "precio": 468.5,
+      "stock": 453
+    },
+    {
+      "codigo": "P0280",
+      "nombre": "Laptop Pro 280",
+      "precio": 470.0,
+      "stock": 460
+    },
+    {
+      "codigo": "P0281",
+      "nombre": "Mouse Ultra 281",
+      "precio": 471.5,
+      "stock": 467
+    },
+    {
+      "codigo": "P0282",
+      "nombre": "Teclado Plus 282",
+      "precio": 473.0,
+      "stock": 474
+    },
+    {
+      "codigo": "P0283",
+      "nombre": "Monitor Max 283",
+      "precio": 474.5,
+      "stock": 481
+    },
+    {
+      "codigo": "P0284",
+      "nombre": "Cable Standard 284",
+      "precio": 476.0,
+      "stock": 488
+    },
+    {
+      "codigo": "P0285",
+      "nombre": "Hub Basic 285",
+      "precio": 477.5,
+      "stock": 495
+    },
+    {
+      "codigo": "P0286",
+      "nombre": "Webcam Gaming 286",
+      "precio": 479.0,
+      "stock": 2
+    },
+    {
+      "codigo": "P0287",
+      "nombre": "Auriculares Office 287",
+      "precio": 480.5,
+      "stock": 9
+    },
+    {
+      "codigo": "P0288",
+      "nombre": "Impresora Business 288",
+      "precio": 482.0,
+      "stock": 16
+    },
+    {
+      "codigo": "P0289",
+      "nombre": "Scanner Professional 289",
+      "precio": 483.5,
+      "stock": 23
+    },
+    {
+      "codigo": "P0290",
+      "nombre": "Proyector Pro 290",
+      "precio": 485.0,
+      "stock": 30
+    },
+    {
+      "codigo": "P0291",
+      "nombre": "Pantalla Ultra 291",
+      "precio": 486.5,
+      "stock": 37
+    },
+    {
+      "codigo": "P0292",
+      "nombre": "Bateria Plus 292",
+      "precio": 488.0,
+      "stock": 44
+    },
+    {
+      "codigo": "P0293",
+      "nombre": "Cargador Max 293",
+      "precio": 489.5,
+      "stock": 51
+    },
+    {
+      "codigo": "P0294",
+      "nombre": "Router Standard 294",
+      "precio": 491.0,
+      "stock": 58
+    },
+    {
+      "codigo": "P0295",
+      "nombre": "Switch Basic 295",
+      "precio": 492.5,
+      "stock": 65
+    },
+    {
+      "codigo": "P0296",
+      "nombre": "Modem Gaming 296",
+      "precio": 494.0,
+      "stock": 72
+    },
+    {
+      "codigo": "P0297",
+      "nombre": "Adaptador Office 297",
+      "precio": 495.5,
+      "stock": 79
+    },
+    {
+      "codigo": "P0298",
+      "nombre": "Extensor Business 298",
+      "precio": 497.0,
+      "stock": 86
+    },
+    {
+      "codigo": "P0299",
+      "nombre": "Splitter Professional 299",
+      "precio": 498.5,
+      "stock": 93
+    },
+    {
+      "codigo": "P0300",
+      "nombre": "Laptop Pro 300",
+      "precio": 500.0,
+      "stock": 100
+    },
+    {
+      "codigo": "P0301",
+      "nombre": "Mouse Ultra 301",
+      "precio": 501.5,
+      "stock": 107
+    },
+    {
+      "codigo": "P0302",
+      "nombre": "Teclado Plus 302",
+      "precio": 503.0,
+      "stock": 114
+    },
+    {
+      "codigo": "P0303",
+      "nombre": "Monitor Max 303",
+      "precio": 504.5,
+      "stock": 121
+    },
+    {
+      "codigo": "P0304",
+      "nombre": "Cable Standard 304",
+      "precio": 506.0,
+      "stock": 128
+    },
+    {
+      "codigo": "P0305",
+      "nombre": "Hub Basic 305",
+      "precio": 507.5,
+      "stock": 135
+    },
+    {
+      "codigo": "P0306",
+      "nombre": "Webcam Gaming 306",
+      "precio": 509.0,
+      "stock": 142
+    },
+    {
+      "codigo": "P0307",
+      "nombre": "Auriculares Office 307",
+      "precio": 510.5,
+      "stock": 149
+    },
+    {
+      "codigo": "P0308",
+      "nombre": "Impresora Business 308",
+      "precio": 512.0,
+      "stock": 156
+    },
+    {
+      "codigo": "P0309",
+      "nombre": "Scanner Professional 309",
+      "precio": 513.5,
+      "stock": 163
+    },
+    {
+      "codigo": "P0310",
+      "nombre": "Proyector Pro 310",
+      "precio": 515.0,
+      "stock": 170
+    },
+    {
+      "codigo": "P0311",
+      "nombre": "Pantalla Ultra 311",
+      "precio": 516.5,
+      "stock": 177
+    },
+    {
+      "codigo": "P0312",
+      "nombre": "Bateria Plus 312",
+      "precio": 518.0,
+      "stock": 184
+    },
+    {
+      "codigo": "P0313",
+      "nombre": "Cargador Max 313",
+      "precio": 519.5,
+      "stock": 191
+    },
+    {
+      "codigo": "P0314",
+      "nombre": "Router Standard 314",
+      "precio": 521.0,
+      "stock": 198
+    },
+    {
+      "codigo": "P0315",
+      "nombre": "Switch Basic 315",
+      "precio": 522.5,
+      "stock": 205
+    },
+    {
+      "codigo": "P0316",
+      "nombre": "Modem Gaming 316",
+      "precio": 524.0,
+      "stock": 212
+    },
+    {
+      "codigo": "P0317",
+      "nombre": "Adaptador Office 317",
+      "precio": 525.5,
+      "stock": 219
+    },
+    {
+      "codigo": "P0318",
+      "nombre": "Extensor Business 318",
+      "precio": 527.0,
+      "stock": 226
+    },
+    {
+      "codigo": "P0319",
+      "nombre": "Splitter Professional 319",
+      "precio": 528.5,
+      "stock": 233
+    },
+    {
+      "codigo": "P0320",
+      "nombre": "Laptop Pro 320",
+      "precio": 530.0,
+      "stock": 240
+    },
+    {
+      "codigo": "P0321",
+      "nombre": "Mouse Ultra 321",
+      "precio": 531.5,
+      "stock": 247
+    },
+    {
+      "codigo": "P0322",
+      "nombre": "Teclado Plus 322",
+      "precio": 533.0,
+      "stock": 254
+    },
+    {
+      "codigo": "P0323",
+      "nombre": "Monitor Max 323",
+      "precio": 534.5,
+      "stock": 261
+    },
+    {
+      "codigo": "P0324",
+      "nombre": "Cable Standard 324",
+      "precio": 536.0,
+      "stock": 268
+    },
+    {
+      "codigo": "P0325",
+      "nombre": "Hub Basic 325",
+      "precio": 537.5,
+      "stock": 275
+    },
+    {
+      "codigo": "P0326",
+      "nombre": "Webcam Gaming 326",
+      "precio": 539.0,
+      "stock": 282
+    },
+    {
+      "codigo": "P0327",
+      "nombre": "Auriculares Office 327",
+      "precio": 540.5,
+      "stock": 289
+    },
+    {
+      "codigo": "P0328",
+      "nombre": "Impresora Business 328",
+      "precio": 542.0,
+      "stock": 296
+    },
+    {
+      "codigo": "P0329",
+      "nombre": "Scanner Professional 329",
+      "precio": 543.5,
+      "stock": 303
+    },
+    {
+      "codigo": "P0330",
+      "nombre": "Proyector Pro 330",
+      "precio": 545.0,
+      "stock": 310
+    },
+    {
+      "codigo": "P0331",
+      "nombre": "Pantalla Ultra 331",
+      "precio": 546.5,
+      "stock": 317
+    },
+    {
+      "codigo": "P0332",
+      "nombre": "Bateria Plus 332",
+      "precio": 548.0,
+      "stock": 324
+    },
+    {
+      "codigo": "P0333",
+      "nombre": "Cargador Max 333",
+      "precio": 549.5,
+      "stock": 331
+    },
+    {
+      "codigo": "P0334",
+      "nombre": "Router Standard 334",
+      "precio": 551.0,
+      "stock": 338
+    },
+    {
+      "codigo": "P0335",
+      "nombre": "Switch Basic 335",
+      "precio": 552.5,
+      "stock": 345
+    },
+    {
+      "codigo": "P0336",
+      "nombre": "Modem Gaming 336",
+      "precio": 554.0,
+      "stock": 352
+    },
+    {
+      "codigo": "P0337",
+      "nombre": "Adaptador Office 337",
+      "precio": 555.5,
+      "stock": 359
+    },
+    {
+      "codigo": "P0338",
+      "nombre": "Extensor Business 338",
+      "precio": 557.0,
+      "stock": 366
+    },
+    {
+      "codigo": "P0339",
+      "nombre": "Splitter Professional 339",
+      "precio": 558.5,
+      "stock": 373
+    },
+    {
+      "codigo": "P0340",
+      "nombre": "Laptop Pro 340",
+      "precio": 560.0,
+      "stock": 380
+    },
+    {
+      "codigo": "P0341",
+      "nombre": "Mouse Ultra 341",
+      "precio": 561.5,
+      "stock": 387
+    },
+    {
+      "codigo": "P0342",
+      "nombre": "Teclado Plus 342",
+      "precio": 563.0,
+      "stock": 394
+    },
+    {
+      "codigo": "P0343",
+      "nombre": "Monitor Max 343",
+      "precio": 564.5,
+      "stock": 401
+    },
+    {
+      "codigo": "P0344",
+      "nombre": "Cable Standard 344",
+      "precio": 566.0,
+      "stock": 408
+    },
+    {
+      "codigo": "P0345",
+      "nombre": "Hub Basic 345",
+      "precio": 567.5,
+      "stock": 415
+    },
+    {
+      "codigo": "P0346",
+      "nombre": "Webcam Gaming 346",
+      "precio": 569.0,
+      "stock": 422
+    },
+    {
+      "codigo": "P0347",
+      "nombre": "Auriculares Office 347",
+      "precio": 570.5,
+      "stock": 429
+    },
+    {
+      "codigo": "P0348",
+      "nombre": "Impresora Business 348",
+      "precio": 572.0,
+      "stock": 436
+    },
+    {
+      "codigo": "P0349",
+      "nombre": "Scanner Professional 349",
+      "precio": 573.5,
+      "stock": 443
+    },
+    {
+      "codigo": "P0350",
+      "nombre": "Proyector Pro 350",
+      "precio": 575.0,
+      "stock": 450
+    },
+    {
+      "codigo": "P0351",
+      "nombre": "Pantalla Ultra 351",
+      "precio": 576.5,
+      "stock": 457
+    },
+    {
+      "codigo": "P0352",
+      "nombre": "Bateria Plus 352",
+      "precio": 578.0,
+      "stock": 464
+    },
+    {
+      "codigo": "P0353",
+      "nombre": "Cargador Max 353",
+      "precio": 579.5,
+      "stock": 471
+    },
+    {
+      "codigo": "P0354",
+      "nombre": "Router Standard 354",
+      "precio": 581.0,
+      "stock": 478
+    },
+    {
+      "codigo": "P0355",
+      "nombre": "Switch Basic 355",
+      "precio": 582.5,
+      "stock": 485
+    },
+    {
+      "codigo": "P0356",
+      "nombre": "Modem Gaming 356",
+      "precio": 584.0,
+      "stock": 492
+    },
+    {
+      "codigo": "P0357",
+      "nombre": "Adaptador Office 357",
+      "precio": 585.5,
+      "stock": 499
+    },
+    {
+      "codigo": "P0358",
+      "nombre": "Extensor Business 358",
+      "precio": 587.0,
+      "stock": 6
+    },
+    {
+      "codigo": "P0359",
+      "nombre": "Splitter Professional 359",
+      "precio": 588.5,
+      "stock": 13
+    },
+    {
+      "codigo": "P0360",
+      "nombre": "Laptop Pro 360",
+      "precio": 590.0,
+      "stock": 20
+    },
+    {
+      "codigo": "P0361",
+      "nombre": "Mouse Ultra 361",
+      "precio": 591.5,
+      "stock": 27
+    },
+    {
+      "codigo": "P0362",
+      "nombre": "Teclado Plus 362",
+      "precio": 593.0,
+      "stock": 34
+    },
+    {
+      "codigo": "P0363",
+      "nombre": "Monitor Max 363",
+      "precio": 594.5,
+      "stock": 41
+    },
+    {
+      "codigo": "P0364",
+      "nombre": "Cable Standard 364",
+      "precio": 596.0,
+      "stock": 48
+    },
+    {
+      "codigo": "P0365",
+      "nombre": "Hub Basic 365",
+      "precio": 597.5,
+      "stock": 55
+    },
+    {
+      "codigo": "P0366",
+      "nombre": "Webcam Gaming 366",
+      "precio": 599.0,
+      "stock": 62
+    },
+    {
+      "codigo": "P0367",
+      "nombre": "Auriculares Office 367",
+      "precio": 600.5,
+      "stock": 69
+    },
+    {
+      "codigo": "P0368",
+      "nombre": "Impresora Business 368",
+      "precio": 602.0,
+      "stock": 76
+    },
+    {
+      "codigo": "P0369",
+      "nombre": "Scanner Professional 369",
+      "precio": 603.5,
+      "stock": 83
+    },
+    {
+      "codigo": "P0370",
+      "nombre": "Proyector Pro 370",
+      "precio": 605.0,
+      "stock": 90
+    },
+    {
+      "codigo": "P0371",
+      "nombre": "Pantalla Ultra 371",
+      "precio": 606.5,
+      "stock": 97
+    },
+    {
+      "codigo": "P0372",
+      "nombre": "Bateria Plus 372",
+      "precio": 608.0,
+      "stock": 104
+    },
+    {
+      "codigo": "P0373",
+      "nombre": "Cargador Max 373",
+      "precio": 609.5,
+      "stock": 111
+    },
+    {
+      "codigo": "P0374",
+      "nombre": "Router Standard 374",
+      "precio": 611.0,
+      "stock": 118
+    },
+    {
+      "codigo": "P0375",
+      "nombre": "Switch Basic 375",
+      "precio": 612.5,
+      "stock": 125
+    },
+    {
+      "codigo": "P0376",
+      "nombre": "Modem Gaming 376",
+      "precio": 614.0,
+      "stock": 132
+    },
+    {
+      "codigo": "P0377",
+      "nombre": "Adaptador Office 377",
+      "precio": 615.5,
+      "stock": 139
+    },
+    {
+      "codigo": "P0378",
+      "nombre": "Extensor Business 378",
+      "precio": 617.0,
+      "stock": 146
+    },
+    {
+      "codigo": "P0379",
+      "nombre": "Splitter Professional 379",
+      "precio": 618.5,
+      "stock": 153
+    },
+    {
+      "codigo": "P0380",
+      "nombre": "Laptop Pro 380",
+      "precio": 620.0,
+      "stock": 160
+    },
+    {
+      "codigo": "P0381",
+      "nombre": "Mouse Ultra 381",
+      "precio": 621.5,
+      "stock": 167
+    },
+    {
+      "codigo": "P0382",
+      "nombre": "Teclado Plus 382",
+      "precio": 623.0,
+      "stock": 174
+    },
+    {
+      "codigo": "P0383",
+      "nombre": "Monitor Max 383",
+      "precio": 624.5,
+      "stock": 181
+    },
+    {
+      "codigo": "P0384",
+      "nombre": "Cable Standard 384",
+      "precio": 626.0,
+      "stock": 188
+    },
+    {
+      "codigo": "P0385",
+      "nombre": "Hub Basic 385",
+      "precio": 627.5,
+      "stock": 195
+    },
+    {
+      "codigo": "P0386",
+      "nombre": "Webcam Gaming 386",
+      "precio": 629.0,
+      "stock": 202
+    },
+    {
+      "codigo": "P0387",
+      "nombre": "Auriculares Office 387",
+      "precio": 630.5,
+      "stock": 209
+    },
+    {
+      "codigo": "P0388",
+      "nombre": "Impresora Business 388",
+      "precio": 632.0,
+      "stock": 216
+    },
+    {
+      "codigo": "P0389",
+      "nombre": "Scanner Professional 389",
+      "precio": 633.5,
+      "stock": 223
+    },
+    {
+      "codigo": "P0390",
+      "nombre": "Proyector Pro 390",
+      "precio": 635.0,
+      "stock": 230
+    },
+    {
+      "codigo": "P0391",
+      "nombre": "Pantalla Ultra 391",
+      "precio": 636.5,
+      "stock": 237
+    },
+    {
+      "codigo": "P0392",
+      "nombre": "Bateria Plus 392",
+      "precio": 638.0,
+      "stock": 244
+    },
+    {
+      "codigo": "P0393",
+      "nombre": "Cargador Max 393",
+      "precio": 639.5,
+      "stock": 251
+    },
+    {
+      "codigo": "P0394",
+      "nombre": "Router Standard 394",
+      "precio": 641.0,
+      "stock": 258
+    },
+    {
+      "codigo": "P0395",
+      "nombre": "Switch Basic 395",
+      "precio": 642.5,
+      "stock": 265
+    },
+    {
+      "codigo": "P0396",
+      "nombre": "Modem Gaming 396",
+      "precio": 644.0,
+      "stock": 272
+    },
+    {
+      "codigo": "P0397",
+      "nombre": "Adaptador Office 397",
+      "precio": 645.5,
+      "stock": 279
+    },
+    {
+      "codigo": "P0398",
+      "nombre": "Extensor Business 398",
+      "precio": 647.0,
+      "stock": 286
+    },
+    {
+      "codigo": "P0399",
+      "nombre": "Splitter Professional 399",
+      "precio": 648.5,
+      "stock": 293
+    },
+    {
+      "codigo": "P0400",
+      "nombre": "Laptop Pro 400",
+      "precio": 650.0,
+      "stock": 300
+    },
+    {
+      "codigo": "P0401",
+      "nombre": "Mouse Ultra 401",
+      "precio": 651.5,
+      "stock": 307
+    },
+    {
+      "codigo": "P0402",
+      "nombre": "Teclado Plus 402",
+      "precio": 653.0,
+      "stock": 314
+    },
+    {
+      "codigo": "P0403",
+      "nombre": "Monitor Max 403",
+      "precio": 654.5,
+      "stock": 321
+    },
+    {
+      "codigo": "P0404",
+      "nombre": "Cable Standard 404",
+      "precio": 656.0,
+      "stock": 328
+    },
+    {
+      "codigo": "P0405",
+      "nombre": "Hub Basic 405",
+      "precio": 657.5,
+      "stock": 335
+    },
+    {
+      "codigo": "P0406",
+      "nombre": "Webcam Gaming 406",
+      "precio": 659.0,
+      "stock": 342
+    },
+    {
+      "codigo": "P0407",
+      "nombre": "Auriculares Office 407",
+      "precio": 660.5,
+      "stock": 349
+    },
+    {
+      "codigo": "P0408",
+      "nombre": "Impresora Business 408",
+      "precio": 662.0,
+      "stock": 356
+    },
+    {
+      "codigo": "P0409",
+      "nombre": "Scanner Professional 409",
+      "precio": 663.5,
+      "stock": 363
+    },
+    {
+      "codigo": "P0410",
+      "nombre": "Proyector Pro 410",
+      "precio": 665.0,
+      "stock": 370
+    },
+    {
+      "codigo": "P0411",
+      "nombre": "Pantalla Ultra 411",
+      "precio": 666.5,
+      "stock": 377
+    },
+    {
+      "codigo": "P0412",
+      "nombre": "Bateria Plus 412",
+      "precio": 668.0,
+      "stock": 384
+    },
+    {
+      "codigo": "P0413",
+      "nombre": "Cargador Max 413",
+      "precio": 669.5,
+      "stock": 391
+    },
+    {
+      "codigo": "P0414",
+      "nombre": "Router Standard 414",
+      "precio": 671.0,
+      "stock": 398
+    },
+    {
+      "codigo": "P0415",
+      "nombre": "Switch Basic 415",
+      "precio": 672.5,
+      "stock": 405
+    },
+    {
+      "codigo": "P0416",
+      "nombre": "Modem Gaming 416",
+      "precio": 674.0,
+      "stock": 412
+    },
+    {
+      "codigo": "P0417",
+      "nombre": "Adaptador Office 417",
+      "precio": 675.5,
+      "stock": 419
+    },
+    {
+      "codigo": "P0418",
+      "nombre": "Extensor Business 418",
+      "precio": 677.0,
+      "stock": 426
+    },
+    {
+      "codigo": "P0419",
+      "nombre": "Splitter Professional 419",
+      "precio": 678.5,
+      "stock": 433
+    },
+    {
+      "codigo": "P0420",
+      "nombre": "Laptop Pro 420",
+      "precio": 680.0,
+      "stock": 440
+    },
+    {
+      "codigo": "P0421",
+      "nombre": "Mouse Ultra 421",
+      "precio": 681.5,
+      "stock": 447
+    },
+    {
+      "codigo": "P0422",
+      "nombre": "Teclado Plus 422",
+      "precio": 683.0,
+      "stock": 454
+    },
+    {
+      "codigo": "P0423",
+      "nombre": "Monitor Max 423",
+      "precio": 684.5,
+      "stock": 461
+    },
+    {
+      "codigo": "P0424",
+      "nombre": "Cable Standard 424",
+      "precio": 686.0,
+      "stock": 468
+    },
+    {
+      "codigo": "P0425",
+      "nombre": "Hub Basic 425",
+      "precio": 687.5,
+      "stock": 475
+    },
+    {
+      "codigo": "P0426",
+      "nombre": "Webcam Gaming 426",
+      "precio": 689.0,
+      "stock": 482
+    },
+    {
+      "codigo": "P0427",
+      "nombre": "Auriculares Office 427",
+      "precio": 690.5,
+      "stock": 489
+    },
+    {
+      "codigo": "P0428",
+      "nombre": "Impresora Business 428",
+      "precio": 692.0,
+      "stock": 496
+    },
+    {
+      "codigo": "P0429",
+      "nombre": "Scanner Professional 429",
+      "precio": 693.5,
+      "stock": 3
+    },
+    {
+      "codigo": "P0430",
+      "nombre": "Proyector Pro 430",
+      "precio": 695.0,
+      "stock": 10
+    },
+    {
+      "codigo": "P0431",
+      "nombre": "Pantalla Ultra 431",
+      "precio": 696.5,
+      "stock": 17
+    },
+    {
+      "codigo": "P0432",
+      "nombre": "Bateria Plus 432",
+      "precio": 698.0,
+      "stock": 24
+    },
+    {
+      "codigo": "P0433",
+      "nombre": "Cargador Max 433",
+      "precio": 699.5,
+      "stock": 31
+    },
+    {
+      "codigo": "P0434",
+      "nombre": "Router Standard 434",
+      "precio": 701.0,
+      "stock": 38
+    },
+    {
+      "codigo": "P0435",
+      "nombre": "Switch Basic 435",
+      "precio": 702.5,
+      "stock": 45
+    },
+    {
+      "codigo": "P0436",
+      "nombre": "Modem Gaming 436",
+      "precio": 704.0,
+      "stock": 52
+    },
+    {
+      "codigo": "P0437",
+      "nombre": "Adaptador Office 437",
+      "precio": 705.5,
+      "stock": 59
+    },
+    {
+      "codigo": "P0438",
+      "nombre": "Extensor Business 438",
+      "precio": 707.0,
+      "stock": 66
+    },
+    {
+      "codigo": "P0439",
+      "nombre": "Splitter Professional 439",
+      "precio": 708.5,
+      "stock": 73
+    },
+    {
+      "codigo": "P0440",
+      "nombre": "Laptop Pro 440",
+      "precio": 710.0,
+      "stock": 80
+    },
+    {
+      "codigo": "P0441",
+      "nombre": "Mouse Ultra 441",
+      "precio": 711.5,
+      "stock": 87
+    },
+    {
+      "codigo": "P0442",
+      "nombre": "Teclado Plus 442",
+      "precio": 713.0,
+      "stock": 94
+    },
+    {
+      "codigo": "P0443",
+      "nombre": "Monitor Max 443",
+      "precio": 714.5,
+      "stock": 101
+    },
+    {
+      "codigo": "P0444",
+      "nombre": "Cable Standard 444",
+      "precio": 716.0,
+      "stock": 108
+    },
+    {
+      "codigo": "P0445",
+      "nombre": "Hub Basic 445",
+      "precio": 717.5,
+      "stock": 115
+    },
+    {
+      "codigo": "P0446",
+      "nombre": "Webcam Gaming 446",
+      "precio": 719.0,
+      "stock": 122
+    },
+    {
+      "codigo": "P0447",
+      "nombre": "Auriculares Office 447",
+      "precio": 720.5,
+      "stock": 129
+    },
+    {
+      "codigo": "P0448",
+      "nombre": "Impresora Business 448",
+      "precio": 722.0,
+      "stock": 136
+    },
+    {
+      "codigo": "P0449",
+      "nombre": "Scanner Professional 449",
+      "precio": 723.5,
+      "stock": 143
+    },
+    {
+      "codigo": "P0450",
+      "nombre": "Proyector Pro 450",
+      "precio": 725.0,
+      "stock": 150
+    },
+    {
+      "codigo": "P0451",
+      "nombre": "Pantalla Ultra 451",
+      "precio": 726.5,
+      "stock": 157
+    },
+    {
+      "codigo": "P0452",
+      "nombre": "Bateria Plus 452",
+      "precio": 728.0,
+      "stock": 164
+    },
+    {
+      "codigo": "P0453",
+      "nombre": "Cargador Max 453",
+      "precio": 729.5,
+      "stock": 171
+    },
+    {
+      "codigo": "P0454",
+      "nombre": "Router Standard 454",
+      "precio": 731.0,
+      "stock": 178
+    },
+    {
+      "codigo": "P0455",
+      "nombre": "Switch Basic 455",
+      "precio": 732.5,
+      "stock": 185
+    },
+    {
+      "codigo": "P0456",
+      "nombre": "Modem Gaming 456",
+      "precio": 734.0,
+      "stock": 192
+    },
+    {
+      "codigo": "P0457",
+      "nombre": "Adaptador Office 457",
+      "precio": 735.5,
+      "stock": 199
+    },
+    {
+      "codigo": "P0458",
+      "nombre": "Extensor Business 458",
+      "precio": 737.0,
+      "stock": 206
+    },
+    {
+      "codigo": "P0459",
+      "nombre": "Splitter Professional 459",
+      "precio": 738.5,
+      "stock": 213
+    },
+    {
+      "codigo": "P0460",
+      "nombre": "Laptop Pro 460",
+      "precio": 740.0,
+      "stock": 220
+    },
+    {
+      "codigo": "P0461",
+      "nombre": "Mouse Ultra 461",
+      "precio": 741.5,
+      "stock": 227
+    },
+    {
+      "codigo": "P0462",
+      "nombre": "Teclado Plus 462",
+      "precio": 743.0,
+      "stock": 234
+    },
+    {
+      "codigo": "P0463",
+      "nombre": "Monitor Max 463",
+      "precio": 744.5,
+      "stock": 241
+    },
+    {
+      "codigo": "P0464",
+      "nombre": "Cable Standard 464",
+      "precio": 746.0,
+      "stock": 248
+    },
+    {
+      "codigo": "P0465",
+      "nombre": "Hub Basic 465",
+      "precio": 747.5,
+      "stock": 255
+    },
+    {
+      "codigo": "P0466",
+      "nombre": "Webcam Gaming 466",
+      "precio": 749.0,
+      "stock": 262
+    },
+    {
+      "codigo": "P0467",
+      "nombre": "Auriculares Office 467",
+      "precio": 750.5,
+      "stock": 269
+    },
+    {
+      "codigo": "P0468",
+      "nombre": "Impresora Business 468",
+      "precio": 752.0,
+      "stock": 276
+    },
+    {
+      "codigo": "P0469",
+      "nombre": "Scanner Professional 469",
+      "precio": 753.5,
+      "stock": 283
+    },
+    {
+      "codigo": "P0470",
+      "nombre": "Proyector Pro 470",
+      "precio": 755.0,
+      "stock": 290
+    },
+    {
+      "codigo": "P0471",
+      "nombre": "Pantalla Ultra 471",
+      "precio": 756.5,
+      "stock": 297
+    },
+    {
+      "codigo": "P0472",
+      "nombre": "Bateria Plus 472",
+      "precio": 758.0,
+      "stock": 304
+    },
+    {
+      "codigo": "P0473",
+      "nombre": "Cargador Max 473",
+      "precio": 759.5,
+      "stock": 311
+    },
+    {
+      "codigo": "P0474",
+      "nombre": "Router Standard 474",
+      "precio": 761.0,
+      "stock": 318
+    },
+    {
+      "codigo": "P0475",
+      "nombre": "Switch Basic 475",
+      "precio": 762.5,
+      "stock": 325
+    },
+    {
+      "codigo": "P0476",
+      "nombre": "Modem Gaming 476",
+      "precio": 764.0,
+      "stock": 332
+    },
+    {
+      "codigo": "P0477",
+      "nombre": "Adaptador Office 477",
+      "precio": 765.5,
+      "stock": 339
+    },
+    {
+      "codigo": "P0478",
+      "nombre": "Extensor Business 478",
+      "precio": 767.0,
+      "stock": 346
+    },
+    {
+      "codigo": "P0479",
+      "nombre": "Splitter Professional 479",
+      "precio": 768.5,
+      "stock": 353
+    },
+    {
+      "codigo": "P0480",
+      "nombre": "Laptop Pro 480",
+      "precio": 770.0,
+      "stock": 360
+    },
+    {
+      "codigo": "P0481",
+      "nombre": "Mouse Ultra 481",
+      "precio": 771.5,
+      "stock": 367
+    },
+    {
+      "codigo": "P0482",
+      "nombre": "Teclado Plus 482",
+      "precio": 773.0,
+      "stock": 374
+    },
+    {
+      "codigo": "P0483",
+      "nombre": "Monitor Max 483",
+      "precio": 774.5,
+      "stock": 381
+    },
+    {
+      "codigo": "P0484",
+      "nombre": "Cable Standard 484",
+      "precio": 776.0,
+      "stock": 388
+    },
+    {
+      "codigo": "P0485",
+      "nombre": "Hub Basic 485",
+      "precio": 777.5,
+      "stock": 395
+    },
+    {
+      "codigo": "P0486",
+      "nombre": "Webcam Gaming 486",
+      "precio": 779.0,
+      "stock": 402
+    },
+    {
+      "codigo": "P0487",
+      "nombre": "Auriculares Office 487",
+      "precio": 780.5,
+      "stock": 409
+    },
+    {
+      "codigo": "P0488",
+      "nombre": "Impresora Business 488",
+      "precio": 782.0,
+      "stock": 416
+    },
+    {
+      "codigo": "P0489",
+      "nombre": "Scanner Professional 489",
+      "precio": 783.5,
+      "stock": 423
+    },
+    {
+      "codigo": "P0490",
+      "nombre": "Proyector Pro 490",
+      "precio": 785.0,
+      "stock": 430
+    },
+    {
+      "codigo": "P0491",
+      "nombre": "Pantalla Ultra 491",
+      "precio": 786.5,
+      "stock": 437
+    },
+    {
+      "codigo": "P0492",
+      "nombre": "Bateria Plus 492",
+      "precio": 788.0,
+      "stock": 444
+    },
+    {
+      "codigo": "P0493",
+      "nombre": "Cargador Max 493",
+      "precio": 789.5,
+      "stock": 451
+    },
+    {
+      "codigo": "P0494",
+      "nombre": "Router Standard 494",
+      "precio": 791.0,
+      "stock": 458
+    },
+    {
+      "codigo": "P0495",
+      "nombre": "Switch Basic 495",
+      "precio": 792.5,
+      "stock": 465
+    },
+    {
+      "codigo": "P0496",
+      "nombre": "Modem Gaming 496",
+      "precio": 794.0,
+      "stock": 472
+    },
+    {
+      "codigo": "P0497",
+      "nombre": "Adaptador Office 497",
+      "precio": 795.5,
+      "stock": 479
+    },
+    {
+      "codigo": "P0498",
+      "nombre": "Extensor Business 498",
+      "precio": 797.0,
+      "stock": 486
+    },
+    {
+      "codigo": "P0499",
+      "nombre": "Splitter Professional 499",
+      "precio": 798.5,
+      "stock": 493
+    },
+    {
+      "codigo": "P0500",
+      "nombre": "Laptop Pro 500",
+      "precio": 800.0,
+      "stock": 0
+    },
+    {
+      "codigo": "P0501",
+      "nombre": "Mouse Ultra 501",
+      "precio": 801.5,
+      "stock": 7
+    },
+    {
+      "codigo": "P0502",
+      "nombre": "Teclado Plus 502",
+      "precio": 803.0,
+      "stock": 14
+    },
+    {
+      "codigo": "P0503",
+      "nombre": "Monitor Max 503",
+      "precio": 804.5,
+      "stock": 21
+    },
+    {
+      "codigo": "P0504",
+      "nombre": "Cable Standard 504",
+      "precio": 806.0,
+      "stock": 28
+    },
+    {
+      "codigo": "P0505",
+      "nombre": "Hub Basic 505",
+      "precio": 807.5,
+      "stock": 35
+    },
+    {
+      "codigo": "P0506",
+      "nombre": "Webcam Gaming 506",
+      "precio": 809.0,
+      "stock": 42
+    },
+    {
+      "codigo": "P0507",
+      "nombre": "Auriculares Office 507",
+      "precio": 810.5,
+      "stock": 49
+    },
+    {
+      "codigo": "P0508",
+      "nombre": "Impresora Business 508",
+      "precio": 812.0,
+      "stock": 56
+    },
+    {
+      "codigo": "P0509",
+      "nombre": "Scanner Professional 509",
+      "precio": 813.5,
+      "stock": 63
+    },
+    {
+      "codigo": "P0510",
+      "nombre": "Proyector Pro 510",
+      "precio": 815.0,
+      "stock": 70
+    },
+    {
+      "codigo": "P0511",
+      "nombre": "Pantalla Ultra 511",
+      "precio": 816.5,
+      "stock": 77
+    },
+    {
+      "codigo": "P0512",
+      "nombre": "Bateria Plus 512",
+      "precio": 818.0,
+      "stock": 84
+    },
+    {
+      "codigo": "P0513",
+      "nombre": "Cargador Max 513",
+      "precio": 819.5,
+      "stock": 91
+    },
+    {
+      "codigo": "P0514",
+      "nombre": "Router Standard 514",
+      "precio": 821.0,
+      "stock": 98
+    },
+    {
+      "codigo": "P0515",
+      "nombre": "Switch Basic 515",
+      "precio": 822.5,
+      "stock": 105
+    },
+    {
+      "codigo": "P0516",
+      "nombre": "Modem Gaming 516",
+      "precio": 824.0,
+      "stock": 112
+    },
+    {
+      "codigo": "P0517",
+      "nombre": "Adaptador Office 517",
+      "precio": 825.5,
+      "stock": 119
+    },
+    {
+      "codigo": "P0518",
+      "nombre": "Extensor Business 518",
+      "precio": 827.0,
+      "stock": 126
+    },
+    {
+      "codigo": "P0519",
+      "nombre": "Splitter Professional 519",
+      "precio": 828.5,
+      "stock": 133
+    },
+    {
+      "codigo": "P0520",
+      "nombre": "Laptop Pro 520",
+      "precio": 830.0,
+      "stock": 140
+    },
+    {
+      "codigo": "P0521",
+      "nombre": "Mouse Ultra 521",
+      "precio": 831.5,
+      "stock": 147
+    },
+    {
+      "codigo": "P0522",
+      "nombre": "Teclado Plus 522",
+      "precio": 833.0,
+      "stock": 154
+    },
+    {
+      "codigo": "P0523",
+      "nombre": "Monitor Max 523",
+      "precio": 834.5,
+      "stock": 161
+    },
+    {
+      "codigo": "P0524",
+      "nombre": "Cable Standard 524",
+      "precio": 836.0,
+      "stock": 168
+    },
+    {
+      "codigo": "P0525",
+      "nombre": "Hub Basic 525",
+      "precio": 837.5,
+      "stock": 175
+    },
+    {
+      "codigo": "P0526",
+      "nombre": "Webcam Gaming 526",
+      "precio": 839.0,
+      "stock": 182
+    },
+    {
+      "codigo": "P0527",
+      "nombre": "Auriculares Office 527",
+      "precio": 840.5,
+      "stock": 189
+    },
+    {
+      "codigo": "P0528",
+      "nombre": "Impresora Business 528",
+      "precio": 842.0,
+      "stock": 196
+    },
+    {
+      "codigo": "P0529",
+      "nombre": "Scanner Professional 529",
+      "precio": 843.5,
+      "stock": 203
+    },
+    {
+      "codigo": "P0530",
+      "nombre": "Proyector Pro 530",
+      "precio": 845.0,
+      "stock": 210
+    },
+    {
+      "codigo": "P0531",
+      "nombre": "Pantalla Ultra 531",
+      "precio": 846.5,
+      "stock": 217
+    },
+    {
+      "codigo": "P0532",
+      "nombre": "Bateria Plus 532",
+      "precio": 848.0,
+      "stock": 224
+    },
+    {
+      "codigo": "P0533",
+      "nombre": "Cargador Max 533",
+      "precio": 849.5,
+      "stock": 231
+    },
+    {
+      "codigo": "P0534",
+      "nombre": "Router Standard 534",
+      "precio": 851.0,
+      "stock": 238
+    },
+    {
+      "codigo": "P0535",
+      "nombre": "Switch Basic 535",
+      "precio": 852.5,
+      "stock": 245
+    },
+    {
+      "codigo": "P0536",
+      "nombre": "Modem Gaming 536",
+      "precio": 854.0,
+      "stock": 252
+    },
+    {
+      "codigo": "P0537",
+      "nombre": "Adaptador Office 537",
+      "precio": 855.5,
+      "stock": 259
+    },
+    {
+      "codigo": "P0538",
+      "nombre": "Extensor Business 538",
+      "precio": 857.0,
+      "stock": 266
+    },
+    {
+      "codigo": "P0539",
+      "nombre": "Splitter Professional 539",
+      "precio": 858.5,
+      "stock": 273
+    },
+    {
+      "codigo": "P0540",
+      "nombre": "Laptop Pro 540",
+      "precio": 860.0,
+      "stock": 280
+    },
+    {
+      "codigo": "P0541",
+      "nombre": "Mouse Ultra 541",
+      "precio": 861.5,
+      "stock": 287
+    },
+    {
+      "codigo": "P0542",
+      "nombre": "Teclado Plus 542",
+      "precio": 863.0,
+      "stock": 294
+    },
+    {
+      "codigo": "P0543",
+      "nombre": "Monitor Max 543",
+      "precio": 864.5,
+      "stock": 301
+    },
+    {
+      "codigo": "P0544",
+      "nombre": "Cable Standard 544",
+      "precio": 866.0,
+      "stock": 308
+    },
+    {
+      "codigo": "P0545",
+      "nombre": "Hub Basic 545",
+      "precio": 867.5,
+      "stock": 315
+    },
+    {
+      "codigo": "P0546",
+      "nombre": "Webcam Gaming 546",
+      "precio": 869.0,
+      "stock": 322
+    },
+    {
+      "codigo": "P0547",
+      "nombre": "Auriculares Office 547",
+      "precio": 870.5,
+      "stock": 329
+    },
+    {
+      "codigo": "P0548",
+      "nombre": "Impresora Business 548",
+      "precio": 872.0,
+      "stock": 336
+    },
+    {
+      "codigo": "P0549",
+      "nombre": "Scanner Professional 549",
+      "precio": 873.5,
+      "stock": 343
+    },
+    {
+      "codigo": "P0550",
+      "nombre": "Proyector Pro 550",
+      "precio": 875.0,
+      "stock": 350
+    },
+    {
+      "codigo": "P0551",
+      "nombre": "Pantalla Ultra 551",
+      "precio": 876.5,
+      "stock": 357
+    },
+    {
+      "codigo": "P0552",
+      "nombre": "Bateria Plus 552",
+      "precio": 878.0,
+      "stock": 364
+    },
+    {
+      "codigo": "P0553",
+      "nombre": "Cargador Max 553",
+      "precio": 879.5,
+      "stock": 371
+    },
+    {
+      "codigo": "P0554",
+      "nombre": "Router Standard 554",
+      "precio": 881.0,
+      "stock": 378
+    },
+    {
+      "codigo": "P0555",
+      "nombre": "Switch Basic 555",
+      "precio": 882.5,
+      "stock": 385
+    },
+    {
+      "codigo": "P0556",
+      "nombre": "Modem Gaming 556",
+      "precio": 884.0,
+      "stock": 392
+    },
+    {
+      "codigo": "P0557",
+      "nombre": "Adaptador Office 557",
+      "precio": 885.5,
+      "stock": 399
+    },
+    {
+      "codigo": "P0558",
+      "nombre": "Extensor Business 558",
+      "precio": 887.0,
+      "stock": 406
+    },
+    {
+      "codigo": "P0559",
+      "nombre": "Splitter Professional 559",
+      "precio": 888.5,
+      "stock": 413
+    },
+    {
+      "codigo": "P0560",
+      "nombre": "Laptop Pro 560",
+      "precio": 890.0,
+      "stock": 420
+    },
+    {
+      "codigo": "P0561",
+      "nombre": "Mouse Ultra 561",
+      "precio": 891.5,
+      "stock": 427
+    },
+    {
+      "codigo": "P0562",
+      "nombre": "Teclado Plus 562",
+      "precio": 893.0,
+      "stock": 434
+    },
+    {
+      "codigo": "P0563",
+      "nombre": "Monitor Max 563",
+      "precio": 894.5,
+      "stock": 441
+    },
+    {
+      "codigo": "P0564",
+      "nombre": "Cable Standard 564",
+      "precio": 896.0,
+      "stock": 448
+    },
+    {
+      "codigo": "P0565",
+      "nombre": "Hub Basic 565",
+      "precio": 897.5,
+      "stock": 455
+    },
+    {
+      "codigo": "P0566",
+      "nombre": "Webcam Gaming 566",
+      "precio": 899.0,
+      "stock": 462
+    },
+    {
+      "codigo": "P0567",
+      "nombre": "Auriculares Office 567",
+      "precio": 900.5,
+      "stock": 469
+    },
+    {
+      "codigo": "P0568",
+      "nombre": "Impresora Business 568",
+      "precio": 902.0,
+      "stock": 476
+    },
+    {
+      "codigo": "P0569",
+      "nombre": "Scanner Professional 569",
+      "precio": 903.5,
+      "stock": 483
+    },
+    {
+      "codigo": "P0570",
+      "nombre": "Proyector Pro 570",
+      "precio": 905.0,
+      "stock": 490
+    },
+    {
+      "codigo": "P0571",
+      "nombre": "Pantalla Ultra 571",
+      "precio": 906.5,
+      "stock": 497
+    },
+    {
+      "codigo": "P0572",
+      "nombre": "Bateria Plus 572",
+      "precio": 908.0,
+      "stock": 4
+    },
+    {
+      "codigo": "P0573",
+      "nombre": "Cargador Max 573",
+      "precio": 909.5,
+      "stock": 11
+    },
+    {
+      "codigo": "P0574",
+      "nombre": "Router Standard 574",
+      "precio": 911.0,
+      "stock": 18
+    },
+    {
+      "codigo": "P0575",
+      "nombre": "Switch Basic 575",
+      "precio": 912.5,
+      "stock": 25
+    },
+    {
+      "codigo": "P0576",
+      "nombre": "Modem Gaming 576",
+      "precio": 914.0,
+      "stock": 32
+    },
+    {
+      "codigo": "P0577",
+      "nombre": "Adaptador Office 577",
+      "precio": 915.5,
+      "stock": 39
+    },
+    {
+      "codigo": "P0578",
+      "nombre": "Extensor Business 578",
+      "precio": 917.0,
+      "stock": 46
+    },
+    {
+      "codigo": "P0579",
+      "nombre": "Splitter Professional 579",
+      "precio": 918.5,
+      "stock": 53
+    },
+    {
+      "codigo": "P0580",
+      "nombre": "Laptop Pro 580",
+      "precio": 920.0,
+      "stock": 60
+    },
+    {
+      "codigo": "P0581",
+      "nombre": "Mouse Ultra 581",
+      "precio": 921.5,
+      "stock": 67
+    },
+    {
+      "codigo": "P0582",
+      "nombre": "Teclado Plus 582",
+      "precio": 923.0,
+      "stock": 74
+    },
+    {
+      "codigo": "P0583",
+      "nombre": "Monitor Max 583",
+      "precio": 924.5,
+      "stock": 81
+    },
+    {
+      "codigo": "P0584",
+      "nombre": "Cable Standard 584",
+      "precio": 926.0,
+      "stock": 88
+    },
+    {
+      "codigo": "P0585",
+      "nombre": "Hub Basic 585",
+      "precio": 927.5,
+      "stock": 95
+    },
+    {
+      "codigo": "P0586",
+      "nombre": "Webcam Gaming 586",
+      "precio": 929.0,
+      "stock": 102
+    },
+    {
+      "codigo": "P0587",
+      "nombre": "Auriculares Office 587",
+      "precio": 930.5,
+      "stock": 109
+    },
+    {
+      "codigo": "P0588",
+      "nombre": "Impresora Business 588",
+      "precio": 932.0,
+      "stock": 116
+    },
+    {
+      "codigo": "P0589",
+      "nombre": "Scanner Professional 589",
+      "precio": 933.5,
+      "stock": 123
+    },
+    {
+      "codigo": "P0590",
+      "nombre": "Proyector Pro 590",
+      "precio": 935.0,
+      "stock": 130
+    },
+    {
+      "codigo": "P0591",
+      "nombre": "Pantalla Ultra 591",
+      "precio": 936.5,
+      "stock": 137
+    },
+    {
+      "codigo": "P0592",
+      "nombre": "Bateria Plus 592",
+      "precio": 938.0,
+      "stock": 144
+    },
+    {
+      "codigo": "P0593",
+      "nombre": "Cargador Max 593",
+      "precio": 939.5,
+      "stock": 151
+    },
+    {
+      "codigo": "P0594",
+      "nombre": "Router Standard 594",
+      "precio": 941.0,
+      "stock": 158
+    },
+    {
+      "codigo": "P0595",
+      "nombre": "Switch Basic 595",
+      "precio": 942.5,
+      "stock": 165
+    },
+    {
+      "codigo": "P0596",
+      "nombre": "Modem Gaming 596",
+      "precio": 944.0,
+      "stock": 172
+    },
+    {
+      "codigo": "P0597",
+      "nombre": "Adaptador Office 597",
+      "precio": 945.5,
+      "stock": 179
+    },
+    {
+      "codigo": "P0598",
+      "nombre": "Extensor Business 598",
+      "precio": 947.0,
+      "stock": 186
+    },
+    {
+      "codigo": "P0599",
+      "nombre": "Splitter Professional 599",
+      "precio": 948.5,
+      "stock": 193
+    },
+    {
+      "codigo": "P0600",
+      "nombre": "Laptop Pro 600",
+      "precio": 950.0,
+      "stock": 200
+    },
+    {
+      "codigo": "P0601",
+      "nombre": "Mouse Ultra 601",
+      "precio": 951.5,
+      "stock": 207
+    },
+    {
+      "codigo": "P0602",
+      "nombre": "Teclado Plus 602",
+      "precio": 953.0,
+      "stock": 214
+    },
+    {
+      "codigo": "P0603",
+      "nombre": "Monitor Max 603",
+      "precio": 954.5,
+      "stock": 221
+    },
+    {
+      "codigo": "P0604",
+      "nombre": "Cable Standard 604",
+      "precio": 956.0,
+      "stock": 228
+    },
+    {
+      "codigo": "P0605",
+      "nombre": "Hub Basic 605",
+      "precio": 957.5,
+      "stock": 235
+    },
+    {
+      "codigo": "P0606",
+      "nombre": "Webcam Gaming 606",
+      "precio": 959.0,
+      "stock": 242
+    },
+    {
+      "codigo": "P0607",
+      "nombre": "Auriculares Office 607",
+      "precio": 960.5,
+      "stock": 249
+    },
+    {
+      "codigo": "P0608",
+      "nombre": "Impresora Business 608",
+      "precio": 962.0,
+      "stock": 256
+    },
+    {
+      "codigo": "P0609",
+      "nombre": "Scanner Professional 609",
+      "precio": 963.5,
+      "stock": 263
+    },
+    {
+      "codigo": "P0610",
+      "nombre": "Proyector Pro 610",
+      "precio": 965.0,
+      "stock": 270
+    },
+    {
+      "codigo": "P0611",
+      "nombre": "Pantalla Ultra 611",
+      "precio": 966.5,
+      "stock": 277
+    },
+    {
+      "codigo": "P0612",
+      "nombre": "Bateria Plus 612",
+      "precio": 968.0,
+      "stock": 284
+    },
+    {
+      "codigo": "P0613",
+      "nombre": "Cargador Max 613",
+      "precio": 969.5,
+      "stock": 291
+    },
+    {
+      "codigo": "P0614",
+      "nombre": "Router Standard 614",
+      "precio": 971.0,
+      "stock": 298
+    },
+    {
+      "codigo": "P0615",
+      "nombre": "Switch Basic 615",
+      "precio": 972.5,
+      "stock": 305
+    },
+    {
+      "codigo": "P0616",
+      "nombre": "Modem Gaming 616",
+      "precio": 974.0,
+      "stock": 312
+    },
+    {
+      "codigo": "P0617",
+      "nombre": "Adaptador Office 617",
+      "precio": 975.5,
+      "stock": 319
+    },
+    {
+      "codigo": "P0618",
+      "nombre": "Extensor Business 618",
+      "precio": 977.0,
+      "stock": 326
+    },
+    {
+      "codigo": "P0619",
+      "nombre": "Splitter Professional 619",
+      "precio": 978.5,
+      "stock": 333
+    },
+    {
+      "codigo": "P0620",
+      "nombre": "Laptop Pro 620",
+      "precio": 980.0,
+      "stock": 340
+    },
+    {
+      "codigo": "P0621",
+      "nombre": "Mouse Ultra 621",
+      "precio": 981.5,
+      "stock": 347
+    },
+    {
+      "codigo": "P0622",
+      "nombre": "Teclado Plus 622",
+      "precio": 983.0,
+      "stock": 354
+    },
+    {
+      "codigo": "P0623",
+      "nombre": "Monitor Max 623",
+      "precio": 984.5,
+      "stock": 361
+    },
+    {
+      "codigo": "P0624",
+      "nombre": "Cable Standard 624",
+      "precio": 986.0,
+      "stock": 368
+    },
+    {
+      "codigo": "P0625",
+      "nombre": "Hub Basic 625",
+      "precio": 987.5,
+      "stock": 375
+    },
+    {
+      "codigo": "P0626",
+      "nombre": "Webcam Gaming 626",
+      "precio": 989.0,
+      "stock": 382
+    },
+    {
+      "codigo": "P0627",
+      "nombre": "Auriculares Office 627",
+      "precio": 990.5,
+      "stock": 389
+    },
+    {
+      "codigo": "P0628",
+      "nombre": "Impresora Business 628",
+      "precio": 992.0,
+      "stock": 396
+    },
+    {
+      "codigo": "P0629",
+      "nombre": "Scanner Professional 629",
+      "precio": 993.5,
+      "stock": 403
+    },
+    {
+      "codigo": "P0630",
+      "nombre": "Proyector Pro 630",
+      "precio": 995.0,
+      "stock": 410
+    },
+    {
+      "codigo": "P0631",
+      "nombre": "Pantalla Ultra 631",
+      "precio": 996.5,
+      "stock": 417
+    },
+    {
+      "codigo": "P0632",
+      "nombre": "Bateria Plus 632",
+      "precio": 998.0,
+      "stock": 424
+    },
+    {
+      "codigo": "P0633",
+      "nombre": "Cargador Max 633",
+      "precio": 999.5,
+      "stock": 431
+    },
+    {
+      "codigo": "P0634",
+      "nombre": "Router Standard 634",
+      "precio": 1001.0,
+      "stock": 438
+    },
+    {
+      "codigo": "P0635",
+      "nombre": "Switch Basic 635",
+      "precio": 1002.5,
+      "stock": 445
+    },
+    {
+      "codigo": "P0636",
+      "nombre": "Modem Gaming 636",
+      "precio": 1004.0,
+      "stock": 452
+    },
+    {
+      "codigo": "P0637",
+      "nombre": "Adaptador Office 637",
+      "precio": 1005.5,
+      "stock": 459
+    },
+    {
+      "codigo": "P0638",
+      "nombre": "Extensor Business 638",
+      "precio": 1007.0,
+      "stock": 466
+    },
+    {
+      "codigo": "P0639",
+      "nombre": "Splitter Professional 639",
+      "precio": 1008.5,
+      "stock": 473
+    },
+    {
+      "codigo": "P0640",
+      "nombre": "Laptop Pro 640",
+      "precio": 1010.0,
+      "stock": 480
+    },
+    {
+      "codigo": "P0641",
+      "nombre": "Mouse Ultra 641",
+      "precio": 1011.5,
+      "stock": 487
+    },
+    {
+      "codigo": "P0642",
+      "nombre": "Teclado Plus 642",
+      "precio": 1013.0,
+      "stock": 494
+    },
+    {
+      "codigo": "P0643",
+      "nombre": "Monitor Max 643",
+      "precio": 1014.5,
+      "stock": 1
+    },
+    {
+      "codigo": "P0644",
+      "nombre": "Cable Standard 644",
+      "precio": 1016.0,
+      "stock": 8
+    },
+    {
+      "codigo": "P0645",
+      "nombre": "Hub Basic 645",
+      "precio": 1017.5,
+      "stock": 15
+    },
+    {
+      "codigo": "P0646",
+      "nombre": "Webcam Gaming 646",
+      "precio": 1019.0,
+      "stock": 22
+    },
+    {
+      "codigo": "P0647",
+      "nombre": "Auriculares Office 647",
+      "precio": 1020.5,
+      "stock": 29
+    },
+    {
+      "codigo": "P0648",
+      "nombre": "Impresora Business 648",
+      "precio": 1022.0,
+      "stock": 36
+    },
+    {
+      "codigo": "P0649",
+      "nombre": "Scanner Professional 649",
+      "precio": 1023.5,
+      "stock": 43
+    },
+    {
+      "codigo": "P0650",
+      "nombre": "Proyector Pro 650",
+      "precio": 1025.0,
+      "stock": 50
+    },
+    {
+      "codigo": "P0651",
+      "nombre": "Pantalla Ultra 651",
+      "precio": 1026.5,
+      "stock": 57
+    },
+    {
+      "codigo": "P0652",
+      "nombre": "Bateria Plus 652",
+      "precio": 1028.0,
+      "stock": 64
+    },
+    {
+      "codigo": "P0653",
+      "nombre": "Cargador Max 653",
+      "precio": 1029.5,
+      "stock": 71
+    },
+    {
+      "codigo": "P0654",
+      "nombre": "Router Standard 654",
+      "precio": 1031.0,
+      "stock": 78
+    },
+    {
+      "codigo": "P0655",
+      "nombre": "Switch Basic 655",
+      "precio": 1032.5,
+      "stock": 85
+    },
+    {
+      "codigo": "P0656",
+      "nombre": "Modem Gaming 656",
+      "precio": 1034.0,
+      "stock": 92
+    },
+    {
+      "codigo": "P0657",
+      "nombre": "Adaptador Office 657",
+      "precio": 1035.5,
+      "stock": 99
+    },
+    {
+      "codigo": "P0658",
+      "nombre": "Extensor Business 658",
+      "precio": 1037.0,
+      "stock": 106
+    },
+    {
+      "codigo": "P0659",
+      "nombre": "Splitter Professional 659",
+      "precio": 1038.5,
+      "stock": 113
+    },
+    {
+      "codigo": "P0660",
+      "nombre": "Laptop Pro 660",
+      "precio": 1040.0,
+      "stock": 120
+    },
+    {
+      "codigo": "P0661",
+      "nombre": "Mouse Ultra 661",
+      "precio": 1041.5,
+      "stock": 127
+    },
+    {
+      "codigo": "P0662",
+      "nombre": "Teclado Plus 662",
+      "precio": 1043.0,
+      "stock": 134
+    },
+    {
+      "codigo": "P0663",
+      "nombre": "Monitor Max 663",
+      "precio": 1044.5,
+      "stock": 141
+    },
+    {
+      "codigo": "P0664",
+      "nombre": "Cable Standard 664",
+      "precio": 1046.0,
+      "stock": 148
+    },
+    {
+      "codigo": "P0665",
+      "nombre": "Hub Basic 665",
+      "precio": 1047.5,
+      "stock": 155
+    },
+    {
+      "codigo": "P0666",
+      "nombre": "Webcam Gaming 666",
+      "precio": 1049.0,
+      "stock": 162
+    },
+    {
+      "codigo": "P0667",
+      "nombre": "Auriculares Office 667",
+      "precio": 1050.5,
+      "stock": 169
+    },
+    {
+      "codigo": "P0668",
+      "nombre": "Impresora Business 668",
+      "precio": 1052.0,
+      "stock": 176
+    },
+    {
+      "codigo": "P0669",
+      "nombre": "Scanner Professional 669",
+      "precio": 1053.5,
+      "stock": 183
+    },
+    {
+      "codigo": "P0670",
+      "nombre": "Proyector Pro 670",
+      "precio": 1055.0,
+      "stock": 190
+    },
+    {
+      "codigo": "P0671",
+      "nombre": "Pantalla Ultra 671",
+      "precio": 1056.5,
+      "stock": 197
+    },
+    {
+      "codigo": "P0672",
+      "nombre": "Bateria Plus 672",
+      "precio": 1058.0,
+      "stock": 204
+    },
+    {
+      "codigo": "P0673",
+      "nombre": "Cargador Max 673",
+      "precio": 1059.5,
+      "stock": 211
+    },
+    {
+      "codigo": "P0674",
+      "nombre": "Router Standard 674",
+      "precio": 1061.0,
+      "stock": 218
+    },
+    {
+      "codigo": "P0675",
+      "nombre": "Switch Basic 675",
+      "precio": 1062.5,
+      "stock": 225
+    },
+    {
+      "codigo": "P0676",
+      "nombre": "Modem Gaming 676",
+      "precio": 1064.0,
+      "stock": 232
+    },
+    {
+      "codigo": "P0677",
+      "nombre": "Adaptador Office 677",
+      "precio": 1065.5,
+      "stock": 239
+    },
+    {
+      "codigo": "P0678",
+      "nombre": "Extensor Business 678",
+      "precio": 1067.0,
+      "stock": 246
+    },
+    {
+      "codigo": "P0679",
+      "nombre": "Splitter Professional 679",
+      "precio": 1068.5,
+      "stock": 253
+    },
+    {
+      "codigo": "P0680",
+      "nombre": "Laptop Pro 680",
+      "precio": 1070.0,
+      "stock": 260
+    },
+    {
+      "codigo": "P0681",
+      "nombre": "Mouse Ultra 681",
+      "precio": 1071.5,
+      "stock": 267
+    },
+    {
+      "codigo": "P0682",
+      "nombre": "Teclado Plus 682",
+      "precio": 1073.0,
+      "stock": 274
+    },
+    {
+      "codigo": "P0683",
+      "nombre": "Monitor Max 683",
+      "precio": 1074.5,
+      "stock": 281
+    },
+    {
+      "codigo": "P0684",
+      "nombre": "Cable Standard 684",
+      "precio": 1076.0,
+      "stock": 288
+    },
+    {
+      "codigo": "P0685",
+      "nombre": "Hub Basic 685",
+      "precio": 1077.5,
+      "stock": 295
+    },
+    {
+      "codigo": "P0686",
+      "nombre": "Webcam Gaming 686",
+      "precio": 1079.0,
+      "stock": 302
+    },
+    {
+      "codigo": "P0687",
+      "nombre": "Auriculares Office 687",
+      "precio": 1080.5,
+      "stock": 309
+    },
+    {
+      "codigo": "P0688",
+      "nombre": "Impresora Business 688",
+      "precio": 1082.0,
+      "stock": 316
+    },
+    {
+      "codigo": "P0689",
+      "nombre": "Scanner Professional 689",
+      "precio": 1083.5,
+      "stock": 323
+    },
+    {
+      "codigo": "P0690",
+      "nombre": "Proyector Pro 690",
+      "precio": 1085.0,
+      "stock": 330
+    },
+    {
+      "codigo": "P0691",
+      "nombre": "Pantalla Ultra 691",
+      "precio": 1086.5,
+      "stock": 337
+    },
+    {
+      "codigo": "P0692",
+      "nombre": "Bateria Plus 692",
+      "precio": 1088.0,
+      "stock": 344
+    },
+    {
+      "codigo": "P0693",
+      "nombre": "Cargador Max 693",
+      "precio": 1089.5,
+      "stock": 351
+    },
+    {
+      "codigo": "P0694",
+      "nombre": "Router Standard 694",
+      "precio": 1091.0,
+      "stock": 358
+    },
+    {
+      "codigo": "P0695",
+      "nombre": "Switch Basic 695",
+      "precio": 1092.5,
+      "stock": 365
+    },
+    {
+      "codigo": "P0696",
+      "nombre": "Modem Gaming 696",
+      "precio": 1094.0,
+      "stock": 372
+    },
+    {
+      "codigo": "P0697",
+      "nombre": "Adaptador Office 697",
+      "precio": 1095.5,
+      "stock": 379
+    },
+    {
+      "codigo": "P0698",
+      "nombre": "Extensor Business 698",
+      "precio": 1097.0,
+      "stock": 386
+    },
+    {
+      "codigo": "P0699",
+      "nombre": "Splitter Professional 699",
+      "precio": 1098.5,
+      "stock": 393
+    },
+    {
+      "codigo": "P0700",
+      "nombre": "Laptop Pro 700",
+      "precio": 1100.0,
+      "stock": 400
+    },
+    {
+      "codigo": "P0701",
+      "nombre": "Mouse Ultra 701",
+      "precio": 1101.5,
+      "stock": 407
+    },
+    {
+      "codigo": "P0702",
+      "nombre": "Teclado Plus 702",
+      "precio": 1103.0,
+      "stock": 414
+    },
+    {
+      "codigo": "P0703",
+      "nombre": "Monitor Max 703",
+      "precio": 1104.5,
+      "stock": 421
+    },
+    {
+      "codigo": "P0704",
+      "nombre": "Cable Standard 704",
+      "precio": 1106.0,
+      "stock": 428
+    },
+    {
+      "codigo": "P0705",
+      "nombre": "Hub Basic 705",
+      "precio": 1107.5,
+      "stock": 435
+    },
+    {
+      "codigo": "P0706",
+      "nombre": "Webcam Gaming 706",
+      "precio": 1109.0,
+      "stock": 442
+    },
+    {
+      "codigo": "P0707",
+      "nombre": "Auriculares Office 707",
+      "precio": 1110.5,
+      "stock": 449
+    },
+    {
+      "codigo": "P0708",
+      "nombre": "Impresora Business 708",
+      "precio": 1112.0,
+      "stock": 456
+    },
+    {
+      "codigo": "P0709",
+      "nombre": "Scanner Professional 709",
+      "precio": 1113.5,
+      "stock": 463
+    },
+    {
+      "codigo": "P0710",
+      "nombre": "Proyector Pro 710",
+      "precio": 1115.0,
+      "stock": 470
+    },
+    {
+      "codigo": "P0711",
+      "nombre": "Pantalla Ultra 711",
+      "precio": 1116.5,
+      "stock": 477
+    },
+    {
+      "codigo": "P0712",
+      "nombre": "Bateria Plus 712",
+      "precio": 1118.0,
+      "stock": 484
+    },
+    {
+      "codigo": "P0713",
+      "nombre": "Cargador Max 713",
+      "precio": 1119.5,
+      "stock": 491
+    },
+    {
+      "codigo": "P0714",
+      "nombre": "Router Standard 714",
+      "precio": 1121.0,
+      "stock": 498
+    },
+    {
+      "codigo": "P0715",
+      "nombre": "Switch Basic 715",
+      "precio": 1122.5,
+      "stock": 5
+    },
+    {
+      "codigo": "P0716",
+      "nombre": "Modem Gaming 716",
+      "precio": 1124.0,
+      "stock": 12
+    },
+    {
+      "codigo": "P0717",
+      "nombre": "Adaptador Office 717",
+      "precio": 1125.5,
+      "stock": 19
+    },
+    {
+      "codigo": "P0718",
+      "nombre": "Extensor Business 718",
+      "precio": 1127.0,
+      "stock": 26
+    },
+    {
+      "codigo": "P0719",
+      "nombre": "Splitter Professional 719",
+      "precio": 1128.5,
+      "stock": 33
+    },
+    {
+      "codigo": "P0720",
+      "nombre": "Laptop Pro 720",
+      "precio": 1130.0,
+      "stock": 40
+    },
+    {
+      "codigo": "P0721",
+      "nombre": "Mouse Ultra 721",
+      "precio": 1131.5,
+      "stock": 47
+    },
+    {
+      "codigo": "P0722",
+      "nombre": "Teclado Plus 722",
+      "precio": 1133.0,
+      "stock": 54
+    },
+    {
+      "codigo": "P0723",
+      "nombre": "Monitor Max 723",
+      "precio": 1134.5,
+      "stock": 61
+    },
+    {
+      "codigo": "P0724",
+      "nombre": "Cable Standard 724",
+      "precio": 1136.0,
+      "stock": 68
+    },
+    {
+      "codigo": "P0725",
+      "nombre": "Hub Basic 725",
+      "precio": 1137.5,
+      "stock": 75
+    },
+    {
+      "codigo": "P0726",
+      "nombre": "Webcam Gaming 726",
+      "precio": 1139.0,
+      "stock": 82
+    },
+    {
+      "codigo": "P0727",
+      "nombre": "Auriculares Office 727",
+      "precio": 1140.5,
+      "stock": 89
+    },
+    {
+      "codigo": "P0728",
+      "nombre": "Impresora Business 728",
+      "precio": 1142.0,
+      "stock": 96
+    },
+    {
+      "codigo": "P0729",
+      "nombre": "Scanner Professional 729",
+      "precio": 1143.5,
+      "stock": 103
+    },
+    {
+      "codigo": "P0730",
+      "nombre": "Proyector Pro 730",
+      "precio": 1145.0,
+      "stock": 110
+    },
+    {
+      "codigo": "P0731",
+      "nombre": "Pantalla Ultra 731",
+      "precio": 1146.5,
+      "stock": 117
+    },
+    {
+      "codigo": "P0732",
+      "nombre": "Bateria Plus 732",
+      "precio": 1148.0,
+      "stock": 124
+    },
+    {
+      "codigo": "P0733",
+      "nombre": "Cargador Max 733",
+      "precio": 1149.5,
+      "stock": 131
+    },
+    {
+      "codigo": "P0734",
+      "nombre": "Router Standard 734",
+      "precio": 1151.0,
+      "stock": 138
+    },
+    {
+      "codigo": "P0735",
+      "nombre": "Switch Basic 735",
+      "precio": 1152.5,
+      "stock": 145
+    },
+    {
+      "codigo": "P0736",
+      "nombre": "Modem Gaming 736",
+      "precio": 1154.0,
+      "stock": 152
+    },
+    {
+      "codigo": "P0737",
+      "nombre": "Adaptador Office 737",
+      "precio": 1155.5,
+      "stock": 159
+    },
+    {
+      "codigo": "P0738",
+      "nombre": "Extensor Business 738",
+      "precio": 1157.0,
+      "stock": 166
+    },
+    {
+      "codigo": "P0739",
+      "nombre": "Splitter Professional 739",
+      "precio": 1158.5,
+      "stock": 173
+    },
+    {
+      "codigo": "P0740",
+      "nombre": "Laptop Pro 740",
+      "precio": 1160.0,
+      "stock": 180
+    },
+    {
+      "codigo": "P0741",
+      "nombre": "Mouse Ultra 741",
+      "precio": 1161.5,
+      "stock": 187
+    },
+    {
+      "codigo": "P0742",
+      "nombre": "Teclado Plus 742",
+      "precio": 1163.0,
+      "stock": 194
+    },
+    {
+      "codigo": "P0743",
+      "nombre": "Monitor Max 743",
+      "precio": 1164.5,
+      "stock": 201
+    },
+    {
+      "codigo": "P0744",
+      "nombre": "Cable Standard 744",
+      "precio": 1166.0,
+      "stock": 208
+    },
+    {
+      "codigo": "P0745",
+      "nombre": "Hub Basic 745",
+      "precio": 1167.5,
+      "stock": 215
+    },
+    {
+      "codigo": "P0746",
+      "nombre": "Webcam Gaming 746",
+      "precio": 1169.0,
+      "stock": 222
+    },
+    {
+      "codigo": "P0747",
+      "nombre": "Auriculares Office 747",
+      "precio": 1170.5,
+      "stock": 229
+    },
+    {
+      "codigo": "P0748",
+      "nombre": "Impresora Business 748",
+      "precio": 1172.0,
+      "stock": 236
+    },
+    {
+      "codigo": "P0749",
+      "nombre": "Scanner Professional 749",
+      "precio": 1173.5,
+      "stock": 243
+    },
+    {
+      "codigo": "P0750",
+      "nombre": "Proyector Pro 750",
+      "precio": 1175.0,
+      "stock": 250
+    },
+    {
+      "codigo": "P0751",
+      "nombre": "Pantalla Ultra 751",
+      "precio": 1176.5,
+      "stock": 257
+    },
+    {
+      "codigo": "P0752",
+      "nombre": "Bateria Plus 752",
+      "precio": 1178.0,
+      "stock": 264
+    },
+    {
+      "codigo": "P0753",
+      "nombre": "Cargador Max 753",
+      "precio": 1179.5,
+      "stock": 271
+    },
+    {
+      "codigo": "P0754",
+      "nombre": "Router Standard 754",
+      "precio": 1181.0,
+      "stock": 278
+    },
+    {
+      "codigo": "P0755",
+      "nombre": "Switch Basic 755",
+      "precio": 1182.5,
+      "stock": 285
+    },
+    {
+      "codigo": "P0756",
+      "nombre": "Modem Gaming 756",
+      "precio": 1184.0,
+      "stock": 292
+    },
+    {
+      "codigo": "P0757",
+      "nombre": "Adaptador Office 757",
+      "precio": 1185.5,
+      "stock": 299
+    },
+    {
+      "codigo": "P0758",
+      "nombre": "Extensor Business 758",
+      "precio": 1187.0,
+      "stock": 306
+    },
+    {
+      "codigo": "P0759",
+      "nombre": "Splitter Professional 759",
+      "precio": 1188.5,
+      "stock": 313
+    },
+    {
+      "codigo": "P0760",
+      "nombre": "Laptop Pro 760",
+      "precio": 1190.0,
+      "stock": 320
+    },
+    {
+      "codigo": "P0761",
+      "nombre": "Mouse Ultra 761",
+      "precio": 1191.5,
+      "stock": 327
+    },
+    {
+      "codigo": "P0762",
+      "nombre": "Teclado Plus 762",
+      "precio": 1193.0,
+      "stock": 334
+    },
+    {
+      "codigo": "P0763",
+      "nombre": "Monitor Max 763",
+      "precio": 1194.5,
+      "stock": 341
+    },
+    {
+      "codigo": "P0764",
+      "nombre": "Cable Standard 764",
+      "precio": 1196.0,
+      "stock": 348
+    },
+    {
+      "codigo": "P0765",
+      "nombre": "Hub Basic 765",
+      "precio": 1197.5,
+      "stock": 355
+    },
+    {
+      "codigo": "P0766",
+      "nombre": "Webcam Gaming 766",
+      "precio": 1199.0,
+      "stock": 362
+    },
+    {
+      "codigo": "P0767",
+      "nombre": "Auriculares Office 767",
+      "precio": 1200.5,
+      "stock": 369
+    },
+    {
+      "codigo": "P0768",
+      "nombre": "Impresora Business 768",
+      "precio": 1202.0,
+      "stock": 376
+    },
+    {
+      "codigo": "P0769",
+      "nombre": "Scanner Professional 769",
+      "precio": 1203.5,
+      "stock": 383
+    },
+    {
+      "codigo": "P0770",
+      "nombre": "Proyector Pro 770",
+      "precio": 1205.0,
+      "stock": 390
+    },
+    {
+      "codigo": "P0771",
+      "nombre": "Pantalla Ultra 771",
+      "precio": 1206.5,
+      "stock": 397
+    },
+    {
+      "codigo": "P0772",
+      "nombre": "Bateria Plus 772",
+      "precio": 1208.0,
+      "stock": 404
+    },
+    {
+      "codigo": "P0773",
+      "nombre": "Cargador Max 773",
+      "precio": 1209.5,
+      "stock": 411
+    },
+    {
+      "codigo": "P0774",
+      "nombre": "Router Standard 774",
+      "precio": 1211.0,
+      "stock": 418
+    },
+    {
+      "codigo": "P0775",
+      "nombre": "Switch Basic 775",
+      "precio": 1212.5,
+      "stock": 425
+    },
+    {
+      "codigo": "P0776",
+      "nombre": "Modem Gaming 776",
+      "precio": 1214.0,
+      "stock": 432
+    },
+    {
+      "codigo": "P0777",
+      "nombre": "Adaptador Office 777",
+      "precio": 1215.5,
+      "stock": 439
+    },
+    {
+      "codigo": "P0778",
+      "nombre": "Extensor Business 778",
+      "precio": 1217.0,
+      "stock": 446
+    },
+    {
+      "codigo": "P0779",
+      "nombre": "Splitter Professional 779",
+      "precio": 1218.5,
+      "stock": 453
+    },
+    {
+      "codigo": "P0780",
+      "nombre": "Laptop Pro 780",
+      "precio": 1220.0,
+      "stock": 460
+    },
+    {
+      "codigo": "P0781",
+      "nombre": "Mouse Ultra 781",
+      "precio": 1221.5,
+      "stock": 467
+    },
+    {
+      "codigo": "P0782",
+      "nombre": "Teclado Plus 782",
+      "precio": 1223.0,
+      "stock": 474
+    },
+    {
+      "codigo": "P0783",
+      "nombre": "Monitor Max 783",
+      "precio": 1224.5,
+      "stock": 481
+    },
+    {
+      "codigo": "P0784",
+      "nombre": "Cable Standard 784",
+      "precio": 1226.0,
+      "stock": 488
+    },
+    {
+      "codigo": "P0785",
+      "nombre": "Hub Basic 785",
+      "precio": 1227.5,
+      "stock": 495
+    },
+    {
+      "codigo": "P0786",
+      "nombre": "Webcam Gaming 786",
+      "precio": 1229.0,
+      "stock": 2
+    },
+    {
+      "codigo": "P0787",
+      "nombre": "Auriculares Office 787",
+      "precio": 1230.5,
+      "stock": 9
+    },
+    {
+      "codigo": "P0788",
+      "nombre": "Impresora Business 788",
+      "precio": 1232.0,
+      "stock": 16
+    },
+    {
+      "codigo": "P0789",
+      "nombre": "Scanner Professional 789",
+      "precio": 1233.5,
+      "stock": 23
+    },
+    {
+      "codigo": "P0790",
+      "nombre": "Proyector Pro 790",
+      "precio": 1235.0,
+      "stock": 30
+    },
+    {
+      "codigo": "P0791",
+      "nombre": "Pantalla Ultra 791",
+      "precio": 1236.5,
+      "stock": 37
+    },
+    {
+      "codigo": "P0792",
+      "nombre": "Bateria Plus 792",
+      "precio": 1238.0,
+      "stock": 44
+    },
+    {
+      "codigo": "P0793",
+      "nombre": "Cargador Max 793",
+      "precio": 1239.5,
+      "stock": 51
+    },
+    {
+      "codigo": "P0794",
+      "nombre": "Router Standard 794",
+      "precio": 1241.0,
+      "stock": 58
+    },
+    {
+      "codigo": "P0795",
+      "nombre": "Switch Basic 795",
+      "precio": 1242.5,
+      "stock": 65
+    },
+    {
+      "codigo": "P0796",
+      "nombre": "Modem Gaming 796",
+      "precio": 1244.0,
+      "stock": 72
+    },
+    {
+      "codigo": "P0797",
+      "nombre": "Adaptador Office 797",
+      "precio": 1245.5,
+      "stock": 79
+    },
+    {
+      "codigo": "P0798",
+      "nombre": "Extensor Business 798",
+      "precio": 1247.0,
+      "stock": 86
+    },
+    {
+      "codigo": "P0799",
+      "nombre": "Splitter Professional 799",
+      "precio": 1248.5,
+      "stock": 93
+    },
+    {
+      "codigo": "P0800",
+      "nombre": "Laptop Pro 800",
+      "precio": 1250.0,
+      "stock": 100
+    },
+    {
+      "codigo": "P0801",
+      "nombre": "Mouse Ultra 801",
+      "precio": 1251.5,
+      "stock": 107
+    },
+    {
+      "codigo": "P0802",
+      "nombre": "Teclado Plus 802",
+      "precio": 1253.0,
+      "stock": 114
+    },
+    {
+      "codigo": "P0803",
+      "nombre": "Monitor Max 803",
+      "precio": 1254.5,
+      "stock": 121
+    },
+    {
+      "codigo": "P0804",
+      "nombre": "Cable Standard 804",
+      "precio": 1256.0,
+      "stock": 128
+    },
+    {
+      "codigo": "P0805",
+      "nombre": "Hub Basic 805",
+      "precio": 1257.5,
+      "stock": 135
+    },
+    {
+      "codigo": "P0806",
+      "nombre": "Webcam Gaming 806",
+      "precio": 1259.0,
+      "stock": 142
+    },
+    {
+      "codigo": "P0807",
+      "nombre": "Auriculares Office 807",
+      "precio": 1260.5,
+      "stock": 149
+    },
+    {
+      "codigo": "P0808",
+      "nombre": "Impresora Business 808",
+      "precio": 1262.0,
+      "stock": 156
+    },
+    {
+      "codigo": "P0809",
+      "nombre": "Scanner Professional 809",
+      "precio": 1263.5,
+      "stock": 163
+    },
+    {
+      "codigo": "P0810",
+      "nombre": "Proyector Pro 810",
+      "precio": 1265.0,
+      "stock": 170
+    },
+    {
+      "codigo": "P0811",
+      "nombre": "Pantalla Ultra 811",
+      "precio": 1266.5,
+      "stock": 177
+    },
+    {
+      "codigo": "P0812",
+      "nombre": "Bateria Plus 812",
+      "precio": 1268.0,
+      "stock": 184
+    },
+    {
+      "codigo": "P0813",
+      "nombre": "Cargador Max 813",
+      "precio": 1269.5,
+      "stock": 191
+    },
+    {
+      "codigo": "P0814",
+      "nombre": "Router Standard 814",
+      "precio": 1271.0,
+      "stock": 198
+    },
+    {
+      "codigo": "P0815",
+      "nombre": "Switch Basic 815",
+      "precio": 1272.5,
+      "stock": 205
+    },
+    {
+      "codigo": "P0816",
+      "nombre": "Modem Gaming 816",
+      "precio": 1274.0,
+      "stock": 212
+    },
+    {
+      "codigo": "P0817",
+      "nombre": "Adaptador Office 817",
+      "precio": 1275.5,
+      "stock": 219
+    },
+    {
+      "codigo": "P0818",
+      "nombre": "Extensor Business 818",
+      "precio": 1277.0,
+      "stock": 226
+    },
+    {
+      "codigo": "P0819",
+      "nombre": "Splitter Professional 819",
+      "precio": 1278.5,
+      "stock": 233
+    },
+    {
+      "codigo": "P0820",
+      "nombre": "Laptop Pro 820",
+      "precio": 1280.0,
+      "stock": 240
+    },
+    {
+      "codigo": "P0821",
+      "nombre": "Mouse Ultra 821",
+      "precio": 1281.5,
+      "stock": 247
+    },
+    {
+      "codigo": "P0822",
+      "nombre": "Teclado Plus 822",
+      "precio": 1283.0,
+      "stock": 254
+    },
+    {
+      "codigo": "P0823",
+      "nombre": "Monitor Max 823",
+      "precio": 1284.5,
+      "stock": 261
+    },
+    {
+      "codigo": "P0824",
+      "nombre": "Cable Standard 824",
+      "precio": 1286.0,
+      "stock": 268
+    },
+    {
+      "codigo": "P0825",
+      "nombre": "Hub Basic 825",
+      "precio": 1287.5,
+      "stock": 275
+    },
+    {
+      "codigo": "P0826",
+      "nombre": "Webcam Gaming 826",
+      "precio": 1289.0,
+      "stock": 282
+    },
+    {
+      "codigo": "P0827",
+      "nombre": "Auriculares Office 827",
+      "precio": 1290.5,
+      "stock": 289
+    },
+    {
+      "codigo": "P0828",
+      "nombre": "Impresora Business 828",
+      "precio": 1292.0,
+      "stock": 296
+    },
+    {
+      "codigo": "P0829",
+      "nombre": "Scanner Professional 829",
+      "precio": 1293.5,
+      "stock": 303
+    },
+    {
+      "codigo": "P0830",
+      "nombre": "Proyector Pro 830",
+      "precio": 1295.0,
+      "stock": 310
+    },
+    {
+      "codigo": "P0831",
+      "nombre": "Pantalla Ultra 831",
+      "precio": 1296.5,
+      "stock": 317
+    },
+    {
+      "codigo": "P0832",
+      "nombre": "Bateria Plus 832",
+      "precio": 1298.0,
+      "stock": 324
+    },
+    {
+      "codigo": "P0833",
+      "nombre": "Cargador Max 833",
+      "precio": 1299.5,
+      "stock": 331
+    },
+    {
+      "codigo": "P0834",
+      "nombre": "Router Standard 834",
+      "precio": 1301.0,
+      "stock": 338
+    },
+    {
+      "codigo": "P0835",
+      "nombre": "Switch Basic 835",
+      "precio": 1302.5,
+      "stock": 345
+    },
+    {
+      "codigo": "P0836",
+      "nombre": "Modem Gaming 836",
+      "precio": 1304.0,
+      "stock": 352
+    },
+    {
+      "codigo": "P0837",
+      "nombre": "Adaptador Office 837",
+      "precio": 1305.5,
+      "stock": 359
+    },
+    {
+      "codigo": "P0838",
+      "nombre": "Extensor Business 838",
+      "precio": 1307.0,
+      "stock": 366
+    },
+    {
+      "codigo": "P0839",
+      "nombre": "Splitter Professional 839",
+      "precio": 1308.5,
+      "stock": 373
+    },
+    {
+      "codigo": "P0840",
+      "nombre": "Laptop Pro 840",
+      "precio": 1310.0,
+      "stock": 380
+    },
+    {
+      "codigo": "P0841",
+      "nombre": "Mouse Ultra 841",
+      "precio": 1311.5,
+      "stock": 387
+    },
+    {
+      "codigo": "P0842",
+      "nombre": "Teclado Plus 842",
+      "precio": 1313.0,
+      "stock": 394
+    },
+    {
+      "codigo": "P0843",
+      "nombre": "Monitor Max 843",
+      "precio": 1314.5,
+      "stock": 401
+    },
+    {
+      "codigo": "P0844",
+      "nombre": "Cable Standard 844",
+      "precio": 1316.0,
+      "stock": 408
+    },
+    {
+      "codigo": "P0845",
+      "nombre": "Hub Basic 845",
+      "precio": 1317.5,
+      "stock": 415
+    },
+    {
+      "codigo": "P0846",
+      "nombre": "Webcam Gaming 846",
+      "precio": 1319.0,
+      "stock": 422
+    },
+    {
+      "codigo": "P0847",
+      "nombre": "Auriculares Office 847",
+      "precio": 1320.5,
+      "stock": 429
+    },
+    {
+      "codigo": "P0848",
+      "nombre": "Impresora Business 848",
+      "precio": 1322.0,
+      "stock": 436
+    },
+    {
+      "codigo": "P0849",
+      "nombre": "Scanner Professional 849",
+      "precio": 1323.5,
+      "stock": 443
+    },
+    {
+      "codigo": "P0850",
+      "nombre": "Proyector Pro 850",
+      "precio": 1325.0,
+      "stock": 450
+    },
+    {
+      "codigo": "P0851",
+      "nombre": "Pantalla Ultra 851",
+      "precio": 1326.5,
+      "stock": 457
+    },
+    {
+      "codigo": "P0852",
+      "nombre": "Bateria Plus 852",
+      "precio": 1328.0,
+      "stock": 464
+    },
+    {
+      "codigo": "P0853",
+      "nombre": "Cargador Max 853",
+      "precio": 1329.5,
+      "stock": 471
+    },
+    {
+      "codigo": "P0854",
+      "nombre": "Router Standard 854",
+      "precio": 1331.0,
+      "stock": 478
+    },
+    {
+      "codigo": "P0855",
+      "nombre": "Switch Basic 855",
+      "precio": 1332.5,
+      "stock": 485
+    },
+    {
+      "codigo": "P0856",
+      "nombre": "Modem Gaming 856",
+      "precio": 1334.0,
+      "stock": 492
+    },
+    {
+      "codigo": "P0857",
+      "nombre": "Adaptador Office 857",
+      "precio": 1335.5,
+      "stock": 499
+    },
+    {
+      "codigo": "P0858",
+      "nombre": "Extensor Business 858",
+      "precio": 1337.0,
+      "stock": 6
+    },
+    {
+      "codigo": "P0859",
+      "nombre": "Splitter Professional 859",
+      "precio": 1338.5,
+      "stock": 13
+    },
+    {
+      "codigo": "P0860",
+      "nombre": "Laptop Pro 860",
+      "precio": 1340.0,
+      "stock": 20
+    },
+    {
+      "codigo": "P0861",
+      "nombre": "Mouse Ultra 861",
+      "precio": 1341.5,
+      "stock": 27
+    },
+    {
+      "codigo": "P0862",
+      "nombre": "Teclado Plus 862",
+      "precio": 1343.0,
+      "stock": 34
+    },
+    {
+      "codigo": "P0863",
+      "nombre": "Monitor Max 863",
+      "precio": 1344.5,
+      "stock": 41
+    },
+    {
+      "codigo": "P0864",
+      "nombre": "Cable Standard 864",
+      "precio": 1346.0,
+      "stock": 48
+    },
+    {
+      "codigo": "P0865",
+      "nombre": "Hub Basic 865",
+      "precio": 1347.5,
+      "stock": 55
+    },
+    {
+      "codigo": "P0866",
+      "nombre": "Webcam Gaming 866",
+      "precio": 1349.0,
+      "stock": 62
+    },
+    {
+      "codigo": "P0867",
+      "nombre": "Auriculares Office 867",
+      "precio": 1350.5,
+      "stock": 69
+    },
+    {
+      "codigo": "P0868",
+      "nombre": "Impresora Business 868",
+      "precio": 1352.0,
+      "stock": 76
+    },
+    {
+      "codigo": "P0869",
+      "nombre": "Scanner Professional 869",
+      "precio": 1353.5,
+      "stock": 83
+    },
+    {
+      "codigo": "P0870",
+      "nombre": "Proyector Pro 870",
+      "precio": 1355.0,
+      "stock": 90
+    },
+    {
+      "codigo": "P0871",
+      "nombre": "Pantalla Ultra 871",
+      "precio": 1356.5,
+      "stock": 97
+    },
+    {
+      "codigo": "P0872",
+      "nombre": "Bateria Plus 872",
+      "precio": 1358.0,
+      "stock": 104
+    },
+    {
+      "codigo": "P0873",
+      "nombre": "Cargador Max 873",
+      "precio": 1359.5,
+      "stock": 111
+    },
+    {
+      "codigo": "P0874",
+      "nombre": "Router Standard 874",
+      "precio": 1361.0,
+      "stock": 118
+    },
+    {
+      "codigo": "P0875",
+      "nombre": "Switch Basic 875",
+      "precio": 1362.5,
+      "stock": 125
+    },
+    {
+      "codigo": "P0876",
+      "nombre": "Modem Gaming 876",
+      "precio": 1364.0,
+      "stock": 132
+    },
+    {
+      "codigo": "P0877",
+      "nombre": "Adaptador Office 877",
+      "precio": 1365.5,
+      "stock": 139
+    },
+    {
+      "codigo": "P0878",
+      "nombre": "Extensor Business 878",
+      "precio": 1367.0,
+      "stock": 146
+    },
+    {
+      "codigo": "P0879",
+      "nombre": "Splitter Professional 879",
+      "precio": 1368.5,
+      "stock": 153
+    },
+    {
+      "codigo": "P0880",
+      "nombre": "Laptop Pro 880",
+      "precio": 1370.0,
+      "stock": 160
+    },
+    {
+      "codigo": "P0881",
+      "nombre": "Mouse Ultra 881",
+      "precio": 1371.5,
+      "stock": 167
+    },
+    {
+      "codigo": "P0882",
+      "nombre": "Teclado Plus 882",
+      "precio": 1373.0,
+      "stock": 174
+    },
+    {
+      "codigo": "P0883",
+      "nombre": "Monitor Max 883",
+      "precio": 1374.5,
+      "stock": 181
+    },
+    {
+      "codigo": "P0884",
+      "nombre": "Cable Standard 884",
+      "precio": 1376.0,
+      "stock": 188
+    },
+    {
+      "codigo": "P0885",
+      "nombre": "Hub Basic 885",
+      "precio": 1377.5,
+      "stock": 195
+    },
+    {
+      "codigo": "P0886",
+      "nombre": "Webcam Gaming 886",
+      "precio": 1379.0,
+      "stock": 202
+    },
+    {
+      "codigo": "P0887",
+      "nombre": "Auriculares Office 887",
+      "precio": 1380.5,
+      "stock": 209
+    },
+    {
+      "codigo": "P0888",
+      "nombre": "Impresora Business 888",
+      "precio": 1382.0,
+      "stock": 216
+    },
+    {
+      "codigo": "P0889",
+      "nombre": "Scanner Professional 889",
+      "precio": 1383.5,
+      "stock": 223
+    },
+    {
+      "codigo": "P0890",
+      "nombre": "Proyector Pro 890",
+      "precio": 1385.0,
+      "stock": 230
+    },
+    {
+      "codigo": "P0891",
+      "nombre": "Pantalla Ultra 891",
+      "precio": 1386.5,
+      "stock": 237
+    },
+    {
+      "codigo": "P0892",
+      "nombre": "Bateria Plus 892",
+      "precio": 1388.0,
+      "stock": 244
+    },
+    {
+      "codigo": "P0893",
+      "nombre": "Cargador Max 893",
+      "precio": 1389.5,
+      "stock": 251
+    },
+    {
+      "codigo": "P0894",
+      "nombre": "Router Standard 894",
+      "precio": 1391.0,
+      "stock": 258
+    },
+    {
+      "codigo": "P0895",
+      "nombre": "Switch Basic 895",
+      "precio": 1392.5,
+      "stock": 265
+    },
+    {
+      "codigo": "P0896",
+      "nombre": "Modem Gaming 896",
+      "precio": 1394.0,
+      "stock": 272
+    },
+    {
+      "codigo": "P0897",
+      "nombre": "Adaptador Office 897",
+      "precio": 1395.5,
+      "stock": 279
+    },
+    {
+      "codigo": "P0898",
+      "nombre": "Extensor Business 898",
+      "precio": 1397.0,
+      "stock": 286
+    },
+    {
+      "codigo": "P0899",
+      "nombre": "Splitter Professional 899",
+      "precio": 1398.5,
+      "stock": 293
+    },
+    {
+      "codigo": "P0900",
+      "nombre": "Laptop Pro 900",
+      "precio": 1400.0,
+      "stock": 300
+    },
+    {
+      "codigo": "P0901",
+      "nombre": "Mouse Ultra 901",
+      "precio": 1401.5,
+      "stock": 307
+    },
+    {
+      "codigo": "P0902",
+      "nombre": "Teclado Plus 902",
+      "precio": 1403.0,
+      "stock": 314
+    },
+    {
+      "codigo": "P0903",
+      "nombre": "Monitor Max 903",
+      "precio": 1404.5,
+      "stock": 321
+    },
+    {
+      "codigo": "P0904",
+      "nombre": "Cable Standard 904",
+      "precio": 1406.0,
+      "stock": 328
+    },
+    {
+      "codigo": "P0905",
+      "nombre": "Hub Basic 905",
+      "precio": 1407.5,
+      "stock": 335
+    },
+    {
+      "codigo": "P0906",
+      "nombre": "Webcam Gaming 906",
+      "precio": 1409.0,
+      "stock": 342
+    },
+    {
+      "codigo": "P0907",
+      "nombre": "Auriculares Office 907",
+      "precio": 1410.5,
+      "stock": 349
+    },
+    {
+      "codigo": "P0908",
+      "nombre": "Impresora Business 908",
+      "precio": 1412.0,
+      "stock": 356
+    },
+    {
+      "codigo": "P0909",
+      "nombre": "Scanner Professional 909",
+      "precio": 1413.5,
+      "stock": 363
+    },
+    {
+      "codigo": "P0910",
+      "nombre": "Proyector Pro 910",
+      "precio": 1415.0,
+      "stock": 370
+    },
+    {
+      "codigo": "P0911",
+      "nombre": "Pantalla Ultra 911",
+      "precio": 1416.5,
+      "stock": 377
+    },
+    {
+      "codigo": "P0912",
+      "nombre": "Bateria Plus 912",
+      "precio": 1418.0,
+      "stock": 384
+    },
+    {
+      "codigo": "P0913",
+      "nombre": "Cargador Max 913",
+      "precio": 1419.5,
+      "stock": 391
+    },
+    {
+      "codigo": "P0914",
+      "nombre": "Router Standard 914",
+      "precio": 1421.0,
+      "stock": 398
+    },
+    {
+      "codigo": "P0915",
+      "nombre": "Switch Basic 915",
+      "precio": 1422.5,
+      "stock": 405
+    },
+    {
+      "codigo": "P0916",
+      "nombre": "Modem Gaming 916",
+      "precio": 1424.0,
+      "stock": 412
+    },
+    {
+      "codigo": "P0917",
+      "nombre": "Adaptador Office 917",
+      "precio": 1425.5,
+      "stock": 419
+    },
+    {
+      "codigo": "P0918",
+      "nombre": "Extensor Business 918",
+      "precio": 1427.0,
+      "stock": 426
+    },
+    {
+      "codigo": "P0919",
+      "nombre": "Splitter Professional 919",
+      "precio": 1428.5,
+      "stock": 433
+    },
+    {
+      "codigo": "P0920",
+      "nombre": "Laptop Pro 920",
+      "precio": 1430.0,
+      "stock": 440
+    },
+    {
+      "codigo": "P0921",
+      "nombre": "Mouse Ultra 921",
+      "precio": 1431.5,
+      "stock": 447
+    },
+    {
+      "codigo": "P0922",
+      "nombre": "Teclado Plus 922",
+      "precio": 1433.0,
+      "stock": 454
+    },
+    {
+      "codigo": "P0923",
+      "nombre": "Monitor Max 923",
+      "precio": 1434.5,
+      "stock": 461
+    },
+    {
+      "codigo": "P0924",
+      "nombre": "Cable Standard 924",
+      "precio": 1436.0,
+      "stock": 468
+    },
+    {
+      "codigo": "P0925",
+      "nombre": "Hub Basic 925",
+      "precio": 1437.5,
+      "stock": 475
+    },
+    {
+      "codigo": "P0926",
+      "nombre": "Webcam Gaming 926",
+      "precio": 1439.0,
+      "stock": 482
+    },
+    {
+      "codigo": "P0927",
+      "nombre": "Auriculares Office 927",
+      "precio": 1440.5,
+      "stock": 489
+    },
+    {
+      "codigo": "P0928",
+      "nombre": "Impresora Business 928",
+      "precio": 1442.0,
+      "stock": 496
+    },
+    {
+      "codigo": "P0929",
+      "nombre": "Scanner Professional 929",
+      "precio": 1443.5,
+      "stock": 3
+    },
+    {
+      "codigo": "P0930",
+      "nombre": "Proyector Pro 930",
+      "precio": 1445.0,
+      "stock": 10
+    },
+    {
+      "codigo": "P0931",
+      "nombre": "Pantalla Ultra 931",
+      "precio": 1446.5,
+      "stock": 17
+    },
+    {
+      "codigo": "P0932",
+      "nombre": "Bateria Plus 932",
+      "precio": 1448.0,
+      "stock": 24
+    },
+    {
+      "codigo": "P0933",
+      "nombre": "Cargador Max 933",
+      "precio": 1449.5,
+      "stock": 31
+    },
+    {
+      "codigo": "P0934",
+      "nombre": "Router Standard 934",
+      "precio": 1451.0,
+      "stock": 38
+    },
+    {
+      "codigo": "P0935",
+      "nombre": "Switch Basic 935",
+      "precio": 1452.5,
+      "stock": 45
+    },
+    {
+      "codigo": "P0936",
+      "nombre": "Modem Gaming 936",
+      "precio": 1454.0,
+      "stock": 52
+    },
+    {
+      "codigo": "P0937",
+      "nombre": "Adaptador Office 937",
+      "precio": 1455.5,
+      "stock": 59
+    },
+    {
+      "codigo": "P0938",
+      "nombre": "Extensor Business 938",
+      "precio": 1457.0,
+      "stock": 66
+    },
+    {
+      "codigo": "P0939",
+      "nombre": "Splitter Professional 939",
+      "precio": 1458.5,
+      "stock": 73
+    },
+    {
+      "codigo": "P0940",
+      "nombre": "Laptop Pro 940",
+      "precio": 1460.0,
+      "stock": 80
+    },
+    {
+      "codigo": "P0941",
+      "nombre": "Mouse Ultra 941",
+      "precio": 1461.5,
+      "stock": 87
+    },
+    {
+      "codigo": "P0942",
+      "nombre": "Teclado Plus 942",
+      "precio": 1463.0,
+      "stock": 94
+    },
+    {
+      "codigo": "P0943",
+      "nombre": "Monitor Max 943",
+      "precio": 1464.5,
+      "stock": 101
+    },
+    {
+      "codigo": "P0944",
+      "nombre": "Cable Standard 944",
+      "precio": 1466.0,
+      "stock": 108
+    },
+    {
+      "codigo": "P0945",
+      "nombre": "Hub Basic 945",
+      "precio": 1467.5,
+      "stock": 115
+    },
+    {
+      "codigo": "P0946",
+      "nombre": "Webcam Gaming 946",
+      "precio": 1469.0,
+      "stock": 122
+    },
+    {
+      "codigo": "P0947",
+      "nombre": "Auriculares Office 947",
+      "precio": 1470.5,
+      "stock": 129
+    },
+    {
+      "codigo": "P0948",
+      "nombre": "Impresora Business 948",
+      "precio": 1472.0,
+      "stock": 136
+    },
+    {
+      "codigo": "P0949",
+      "nombre": "Scanner Professional 949",
+      "precio": 1473.5,
+      "stock": 143
+    },
+    {
+      "codigo": "P0950",
+      "nombre": "Proyector Pro 950",
+      "precio": 1475.0,
+      "stock": 150
+    },
+    {
+      "codigo": "P0951",
+      "nombre": "Pantalla Ultra 951",
+      "precio": 1476.5,
+      "stock": 157
+    },
+    {
+      "codigo": "P0952",
+      "nombre": "Bateria Plus 952",
+      "precio": 1478.0,
+      "stock": 164
+    },
+    {
+      "codigo": "P0953",
+      "nombre": "Cargador Max 953",
+      "precio": 1479.5,
+      "stock": 171
+    },
+    {
+      "codigo": "P0954",
+      "nombre": "Router Standard 954",
+      "precio": 1481.0,
+      "stock": 178
+    },
+    {
+      "codigo": "P0955",
+      "nombre": "Switch Basic 955",
+      "precio": 1482.5,
+      "stock": 185
+    },
+    {
+      "codigo": "P0956",
+      "nombre": "Modem Gaming 956",
+      "precio": 1484.0,
+      "stock": 192
+    },
+    {
+      "codigo": "P0957",
+      "nombre": "Adaptador Office 957",
+      "precio": 1485.5,
+      "stock": 199
+    },
+    {
+      "codigo": "P0958",
+      "nombre": "Extensor Business 958",
+      "precio": 1487.0,
+      "stock": 206
+    },
+    {
+      "codigo": "P0959",
+      "nombre": "Splitter Professional 959",
+      "precio": 1488.5,
+      "stock": 213
+    },
+    {
+      "codigo": "P0960",
+      "nombre": "Laptop Pro 960",
+      "precio": 1490.0,
+      "stock": 220
+    },
+    {
+      "codigo": "P0961",
+      "nombre": "Mouse Ultra 961",
+      "precio": 1491.5,
+      "stock": 227
+    },
+    {
+      "codigo": "P0962",
+      "nombre": "Teclado Plus 962",
+      "precio": 1493.0,
+      "stock": 234
+    },
+    {
+      "codigo": "P0963",
+      "nombre": "Monitor Max 963",
+      "precio": 1494.5,
+      "stock": 241
+    },
+    {
+      "codigo": "P0964",
+      "nombre": "Cable Standard 964",
+      "precio": 1496.0,
+      "stock": 248
+    },
+    {
+      "codigo": "P0965",
+      "nombre": "Hub Basic 965",
+      "precio": 1497.5,
+      "stock": 255
+    },
+    {
+      "codigo": "P0966",
+      "nombre": "Webcam Gaming 966",
+      "precio": 1499.0,
+      "stock": 262
+    },
+    {
+      "codigo": "P0967",
+      "nombre": "Auriculares Office 967",
+      "precio": 1500.5,
+      "stock": 269
+    },
+    {
+      "codigo": "P0968",
+      "nombre": "Impresora Business 968",
+      "precio": 1502.0,
+      "stock": 276
+    },
+    {
+      "codigo": "P0969",
+      "nombre": "Scanner Professional 969",
+      "precio": 1503.5,
+      "stock": 283
+    },
+    {
+      "codigo": "P0970",
+      "nombre": "Proyector Pro 970",
+      "precio": 1505.0,
+      "stock": 290
+    },
+    {
+      "codigo": "P0971",
+      "nombre": "Pantalla Ultra 971",
+      "precio": 1506.5,
+      "stock": 297
+    },
+    {
+      "codigo": "P0972",
+      "nombre": "Bateria Plus 972",
+      "precio": 1508.0,
+      "stock": 304
+    },
+    {
+      "codigo": "P0973",
+      "nombre": "Cargador Max 973",
+      "precio": 1509.5,
+      "stock": 311
+    },
+    {
+      "codigo": "P0974",
+      "nombre": "Router Standard 974",
+      "precio": 1511.0,
+      "stock": 318
+    },
+    {
+      "codigo": "P0975",
+      "nombre": "Switch Basic 975",
+      "precio": 1512.5,
+      "stock": 325
+    },
+    {
+      "codigo": "P0976",
+      "nombre": "Modem Gaming 976",
+      "precio": 1514.0,
+      "stock": 332
+    },
+    {
+      "codigo": "P0977",
+      "nombre": "Adaptador Office 977",
+      "precio": 1515.5,
+      "stock": 339
+    },
+    {
+      "codigo": "P0978",
+      "nombre": "Extensor Business 978",
+      "precio": 1517.0,
+      "stock": 346
+    },
+    {
+      "codigo": "P0979",
+      "nombre": "Splitter Professional 979",
+      "precio": 1518.5,
+      "stock": 353
+    },
+    {
+      "codigo": "P0980",
+      "nombre": "Laptop Pro 980",
+      "precio": 1520.0,
+      "stock": 360
+    },
+    {
+      "codigo": "P0981",
+      "nombre": "Mouse Ultra 981",
+      "precio": 1521.5,
+      "stock": 367
+    },
+    {
+      "codigo": "P0982",
+      "nombre": "Teclado Plus 982",
+      "precio": 1523.0,
+      "stock": 374
+    },
+    {
+      "codigo": "P0983",
+      "nombre": "Monitor Max 983",
+      "precio": 1524.5,
+      "stock": 381
+    },
+    {
+      "codigo": "P0984",
+      "nombre": "Cable Standard 984",
+      "precio": 1526.0,
+      "stock": 388
+    },
+    {
+      "codigo": "P0985",
+      "nombre": "Hub Basic 985",
+      "precio": 1527.5,
+      "stock": 395
+    },
+    {
+      "codigo": "P0986",
+      "nombre": "Webcam Gaming 986",
+      "precio": 1529.0,
+      "stock": 402
+    },
+    {
+      "codigo": "P0987",
+      "nombre": "Auriculares Office 987",
+      "precio": 1530.5,
+      "stock": 409
+    },
+    {
+      "codigo": "P0988",
+      "nombre": "Impresora Business 988",
+      "precio": 1532.0,
+      "stock": 416
+    },
+    {
+      "codigo": "P0989",
+      "nombre": "Scanner Professional 989",
+      "precio": 1533.5,
+      "stock": 423
+    },
+    {
+      "codigo": "P0990",
+      "nombre": "Proyector Pro 990",
+      "precio": 1535.0,
+      "stock": 430
+    },
+    {
+      "codigo": "P0991",
+      "nombre": "Pantalla Ultra 991",
+      "precio": 1536.5,
+      "stock": 437
+    },
+    {
+      "codigo": "P0992",
+      "nombre": "Bateria Plus 992",
+      "precio": 1538.0,
+      "stock": 444
+    },
+    {
+      "codigo": "P0993",
+      "nombre": "Cargador Max 993",
+      "precio": 1539.5,
+      "stock": 451
+    },
+    {
+      "codigo": "P0994",
+      "nombre": "Router Standard 994",
+      "precio": 1541.0,
+      "stock": 458
+    },
+    {
+      "codigo": "P0995",
+      "nombre": "Switch Basic 995",
+      "precio": 1542.5,
+      "stock": 465
+    },
+    {
+      "codigo": "P0996",
+      "nombre": "Modem Gaming 996",
+      "precio": 1544.0,
+      "stock": 472
+    },
+    {
+      "codigo": "P0997",
+      "nombre": "Adaptador Office 997",
+      "precio": 1545.5,
+      "stock": 479
+    },
+    {
+      "codigo": "P0998",
+      "nombre": "Extensor Business 998",
+      "precio": 1547.0,
+      "stock": 486
+    },
+    {
+      "codigo": "P0999",
+      "nombre": "Splitter Professional 999",
+      "precio": 1548.5,
+      "stock": 493
+    },
+    {
+      "codigo": "P1000",
+      "nombre": "Laptop Pro 1000",
+      "precio": 1550.0,
+      "stock": 0
+    }
+  ],
+  "usuarios": [
+    {
+      "usuario": "ELOPEZ",
+      "nombre": "Eliseo L\u00f3pez",
+      "rol": "Admin",
+      "activo": true
+    },
+    {
+      "usuario": "JRODRIGUEZ",
+      "nombre": "Juan Rodr\u00edguez",
+      "rol": "Vendedor",
+      "activo": true
+    },
+    {
+      "usuario": "MGARCIA",
+      "nombre": "Mar\u00eda Garc\u00eda",
+      "rol": "Vendedor",
+      "activo": true
+    },
+    {
+      "usuario": "CPEREZ",
+      "nombre": "Carlos P\u00e9rez",
+      "rol": "Gerente",
+      "activo": true
+    },
+    {
+      "usuario": "LMARTINEZ",
+      "nombre": "Laura Mart\u00ednez",
+      "rol": "Vendedor",
+      "activo": false
+    }
+  ],
+  "ventas": [
+    {
+      "id": "V001",
+      "fecha": "2024-11-15",
+      "usuario": "JRODRIGUEZ",
+      "total": 2500.0,
+      "items": 5
+    },
+    {
+      "id": "V002",
+      "fecha": "2024-11-14",
+      "usuario": "MGARCIA",
+      "total": 1850.0,
+      "items": 3
+    },
+    {
+      "id": "V003",
+      "fecha": "2024-11-13",
+      "usuario": "JRODRIGUEZ",
+      "total": 450.0,
+      "items": 2
+    }
+  ],
+  "movimientos": [
+    {
+      "fecha": "2024-11-19",
+      "producto": "P0001",
+      "tipo": "Entrada",
+      "cantidad": 10,
+      "stockAnterior": 5,
+      "stockNuevo": 15
+    },
+    {
+      "fecha": "2024-11-18",
+      "producto": "P0002",
+      "tipo": "Salida",
+      "cantidad": 5,
+      "stockAnterior": 125,
+      "stockNuevo": 120
+    },
+    {
+      "fecha": "2024-11-17",
+      "producto": "P0003",
+      "tipo": "Entrada",
+      "cantidad": 20,
+      "stockAnterior": 25,
+      "stockNuevo": 45
+    },
+    {
+      "fecha": "2024-11-16",
+      "producto": "P0004",
+      "tipo": "Salida",
+      "cantidad": 2,
+      "stockAnterior": 10,
+      "stockNuevo": 8
+    },
+    {
+      "fecha": "2024-11-15",
+      "producto": "P0005",
+      "tipo": "Entrada",
+      "cantidad": 100,
+      "stockAnterior": 100,
+      "stockNuevo": 200
+    }
+  ]
+}

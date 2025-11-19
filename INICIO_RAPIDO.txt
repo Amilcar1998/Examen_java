@@ -1,0 +1,316 @@
+forms: C:\Users\eliseo_lopezp\React\Examen3\src\main\java\org\programacion\gui\frmLogin.form: Cannot bind: field does not exist: org.programacion.gui.frmLogin.txtUser
+🚀 GUÍA RÁPIDA DE INICIO - SISTEMA DE PUNTO DE VENTA
+====================================================
+
+═════════════════════════════════════════════════════════════════
+1. ✅ COMPILACIÓN Y EJECUCIÓN
+═════════════════════════════════════════════════════════════════
+
+OPCIÓN A: Script PowerShell (RECOMENDADO)
+──────────────────────────────────────────
+1. Abrir PowerShell en la carpeta del proyecto
+2. Ejecutar comando:
+
+   .\iniciar_app.ps1
+
+3. Esperar a que compile y ejecute
+4. Se abre la pantalla principal automáticamente
+
+OPCIÓN B: Script Batch (Windows)
+─────────────────────────────────
+1. Ejecutar desde cmd o PowerShell:
+
+   iniciar_app.bat
+
+2. Se cozsmpilará y ejecutará automáticamente
+
+OPCIÓN C: Con Maven (Directo)
+──────────────────────────────
+1. Abrir PowerShell en la carpeta del proyecto
+2. Ejecutar comando:
+
+   mvn clean compile exec:java -Dexec.mainClass="org.programacion.Main"
+
+3. Esperar a que compile y ejecute
+4. Se abre la pantalla principal automáticamente
+
+OPCIÓN B: Con IDE (IntelliJ IDEA)
+──────────────────────────────────
+1. Abrir proyecto en IntelliJ
+2. Click derecho en Main.java
+3. Seleccionar "Run 'Main.main()'"
+4. O presionar Shift + F10
+
+OPCIÓN C: Con IDE (Eclipse)
+────────────────────────────
+1. Abrir proyecto en Eclipse
+2. Click derecho en Main.java
+3. Run As → Java Application
+4. O presionar Ctrl + F11
+
+═════════════════════════════════════════════════════════════════
+2. PRIMERA SESIÓN
+═════════════════════════════════════════════════════════════════
+
+PANTALLA DE LOGIN
+├─ Usuario: ELOPEZ (ya está escrito)
+├─ Contraseña: 1234 (ya está escrito)
+└─ Click [INGRESAR]
+
+BIENVENIDA
+├─ Ventana principal con 6 pestañas
+├─ Título: "Sistema Punto de Venta - Eliseo López"
+└─ Todos los datos de prueba cargados
+
+═════════════════════════════════════════════════════════════════
+3. PRUEBAS RÁPIDAS
+═════════════════════════════════════════════════════════════════
+
+PRUEBA 1: Hacer una venta (5 min)
+─────────────────────────────────
+1. Pestaña "Venta"
+2. Seleccionar "Laptop" en combo
+3. Cantidad: 1
+4. Click "Agregar al Carrito"
+5. Seleccionar "Mouse" en combo
+6. Cantidad: 2
+7. Click "Agregar al Carrito"
+8. (Opcional) Descuento: 10
+9. Click "COMPLETAR VENTA"
+10. Ver confirmación
+
+PRUEBA 2: Consultar Kardex (3 min)
+──────────────────────────────────
+1. Pestaña "Kardex"
+2. Ver todos los movimientos (entradas + salida de venta)
+3. Filtrar por producto
+4. Ver estadísticas de stock
+
+PRUEBA 3: Ver reportes (3 min)
+──────────────────────────────
+1. Pestaña "Reportes"
+2. Click "Resumen General"
+3. Ver estadísticas totales
+4. Click "Productos Más Vendidos"
+5. Ver ranking
+
+PRUEBA 4: Agregar producto (3 min)
+──────────────────────────────────
+1. Pestaña "Gestionar Productos"
+2. Código: P006
+3. Nombre: Monitor Curved
+4. Precio: 699.99
+5. Stock: 3
+6. Click "Agregar Producto"
+7. Ver en tabla
+8. Pestaña "Kardex" → Ver movimiento de entrada
+
+PRUEBA 5: Administración (3 min, solo ADMIN)
+─────────────────────────────────────────────
+1. Pestaña "Administración"
+2. Agregar usuario:
+   - Usuario: TEST_USER
+   - Contraseña: 1234
+   - Nombre: Usuario Prueba
+   - Rol: VENDEDOR
+3. Click "Agregar Usuario"
+4. Ver en tabla
+5. (Opcional) Cambiar contraseña
+6. (Opcional) Eliminar usuario
+
+═════════════════════════════════════════════════════════════════
+4. DATOS QUE SE GENERAN AUTOMÁTICAMENTE
+═════════════════════════════════════════════════════════════════
+
+Después de la primera ejecución:
+├─ Se crea carpeta: datos/
+├─ Archivos generados:
+│  ├─ datos/usuarios.dat (usuario ELOPEZ)
+│  ├─ datos/productos.dat (5 productos)
+│  ├─ datos/ventas.dat (ventas realizadas)
+│  └─ datos/kardex.dat (movimientos de inventario)
+└─ Persistencia de datos entre sesiones
+
+Ubicación exacta:
+C:\Users\eliseo_lopezp\React\Examen3\datos\
+
+═════════════════════════════════════════════════════════════════
+5. SOLUCIÓN DE PROBLEMAS
+═════════════════════════════════════════════════════════════════
+
+PROBLEMA: "Error de compilación"
+SOLUCIÓN:
+├─ Verificar que Maven está instalado: mvn -v
+├─ Limpiar proyecto: mvn clean
+├─ Reconstruir: mvn build
+└─ Si persiste, reinstalar Maven
+
+PROBLEMA: "Ventana de login no aparece"
+SOLUCIÓN:
+├─ Verificar que Main.java se ejecuta correctamente
+├─ Ver consola por mensajes de error
+├─ Revisar que VentanaLogin.java existe
+└─ Tratar de ejecutar desde IDE
+
+PROBLEMA: "No se pueden guardar datos"
+SOLUCIÓN:
+├─ Verificar permisos de escritura en carpeta
+├─ Buscar carpeta "datos" creada
+├─ Si no existe, crearla manualmente
+├─ Ejecutar como administrador
+
+PROBLEMA: "Datos anteriores no se cargan"
+SOLUCIÓN:
+├─ Verificar que archivos .dat existen en datos/
+├─ Si no existen, se crean con valores por defecto
+├─ Hacer una operación nueva y cerrar normalmente
+├─ Verificar próxima ejecución
+
+PROBLEMA: "Login no funciona"
+SOLUCIÓN:
+├─ Usuario correcto: ELOPEZ (con mayúsculas)
+├─ Contraseña correcta: 1234
+├─ Campos ya vienen pre-rellenados
+├─ Simplemente presionar ENTER o click botón
+
+════════════════════════════════════════════════════════════════
+6. ESTRUCTURA DEL PROYECTO
+════════════════════════════════════════════════════════════════
+
+Examen3/
+├── pom.xml                    (Configuración Maven)
+├── README.md                  (Este archivo)
+├── DOCUMENTACION.txt          (Documentación completa)
+├── ARQUITECTURA.txt           (Diagramas técnicos)
+├── EJEMPLOS_USO.txt          (Casos de uso)
+├── INICIO_RAPIDO.txt         (Este archivo)
+├── datos/                    (Carpeta de persistencia)
+│   ├── usuarios.dat
+│   ├── productos.dat
+│   ├── ventas.dat
+│   └── kardex.dat
+└── src/
+    └── main/
+        ├── java/org/programacion/
+        │   ├── Main.java
+        │   ├── modelo/
+        │   ├── almacenamiento/
+        │   └── gui/
+        └── resources/
+
+════════════════════════════════════════════════════════════════
+7. CONFIGURACIÓN DE MAVEN (pom.xml)
+════════════════════════════════════════════════════════════════
+
+Versión de Java: 24
+Compilador: Maven 3.x
+Dependencias: Ninguna (solo Java estándar)
+
+Plugins configurados:
+├─ maven-compiler-plugin (compila Java)
+├─ maven-exec-plugin (ejecuta aplicación)
+└─ maven-shade-plugin (empaqueta JAR si es necesario)
+
+═════════════════════════════════════════════════════════════════
+8. CARACTERÍSTICAS IMPLEMENTADAS
+═════════════════════════════════════════════════════════════════
+
+✅ Sistema punto de venta completo
+✅ Login con seguridad (usuario/contraseña)
+✅ Control de roles (ADMIN/VENDEDOR)
+✅ Módulo de ventas con carrito
+✅ Gestión de inventario
+✅ Kardex detallado (entradas, salidas, ajustes)
+✅ Control automático de stock
+✅ Historial de transacciones
+✅ Reportes y análisis
+✅ Administración de usuarios
+✅ Persistencia de datos en archivos
+✅ Almacenamiento sin base de datos
+✅ Interfaz gráfica JFRAME completa
+✅ Datos de prueba incluidos
+
+═════════════════════════════════════════════════════════════════
+9. PANTALLAS PRINCIPALES
+═════════════════════════════════════════════════════════════════
+
+PANTALLA 1: Login
+├─ Usuario: ELOPEZ
+├─ Contraseña: 1234
+└─ Botón: INGRESAR
+
+PANTALLA 2: Venta
+├─ Combo para seleccionar producto
+├─ Spinner para cantidad
+├─ Botón: Agregar al carrito
+├─ Tabla: carrito con items
+├─ Spinner: descuento %
+└─ Botón: COMPLETAR VENTA
+
+PANTALLA 3: Gestionar Productos
+├─ Formulario: Código, Nombre, Precio, Stock
+├─ Botones: Agregar, Actualizar, Eliminar
+├─ Tabla: lista de productos
+
+PANTALLA 4: Kardex
+├─ Combo: filtrar por producto
+├─ Tabla: movimientos de inventario
+├─ Labels: stock actual, valor total
+└─ Botones: Actualizar, Exportar
+
+PANTALLA 5: Historial
+├─ Tabla: lista de ventas
+├─ Tabla: detalles de venta seleccionada
+└─ Labels: estadísticas (total, cantidad)
+
+PANTALLA 6: Reportes
+├─ Botones: diferentes tipos de reporte
+└─ Área: texto con información formateada
+
+PANTALLA 7: Administración (Solo ADMIN)
+├─ Formulario: Usuario, Contraseña, Nombre, Rol
+├─ Botones: Agregar, Actualizar, Eliminar
+└─ Tabla: lista de usuarios
+
+═════════════════════════════════════════════════════════════════
+10. PRÓXIMOS PASOS DESPUÉS DE INSTALAR
+═════════════════════════════════════════════════════════════════
+
+1. FAMILIARIZARSE
+   ├─ Explorar todas las pestañas
+   ├─ Realizar varias transacciones
+   ├─ Ver cómo se actualiza el kardex
+   └─ Consultar reportes
+
+2. CREAR PRODUCTOS REALES
+   ├─ Eliminar/modificar productos de prueba
+   ├─ Agregar productos propios
+   └─ Establecer precios correctos
+
+3. CREAR USUARIOS
+   ├─ Agregar vendedores
+   ├─ Asignar roles
+   └─ Comunicar credenciales
+
+4. HACER BACKUP
+   ├─ Copiar carpeta datos/
+   ├─ Guardar en lugar seguro
+   └─ Hacer periódicamente
+
+5. USAR EN PRODUCCIÓN
+   ├─ Comenzar con productos
+   ├─ Registrar ventas diarias
+   ├─ Consultar reportes regularmente
+   └─ Hacer ajustes de stock según sea necesario
+
+═════════════════════════════════════════════════════════════════
+
+¡LISTO PARA USAR! 🎉
+
+Si tienes preguntas, revisa los archivos:
+- DOCUMENTACION.txt (completa)
+- ARQUITECTURA.txt (técnica)
+- EJEMPLOS_USO.txt (casos prácticos)
+
+═════════════════════════════════════════════════════════════════
+

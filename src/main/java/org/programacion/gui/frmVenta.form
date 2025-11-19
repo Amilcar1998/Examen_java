@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.programacion.gui.frmVenta">
+  <grid id="27dc6" row-count="10" column-count="2" layout-manager="GridLayoutManager">
+    <margin top="15" left="15" bottom="15" right="15"/>
+    <constraints>
+      <xy x="20" y="20" width="750" height="600"/>
+      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+    </constraints>
+    <properties>
+      <background color="-1"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="lblTitle" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" col-span="2" row-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0"/>
+        </constraints>
+        <properties>
+          <text value="PUNTO DE VENTA"/>
+          <horizontalAlignment value="0"/>
+          <font name="Arial" size="20" style="1"/>
+          <foreground color="-10066330"/>
+        </properties>
+      </component>
+      <component id="lblProducto" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0"/>
+        </constraints>
+        <properties>
+          <text value="Producto:"/>
+          <font name="Arial" size="11"/>
+        </properties>
+      </component>
+      <component id="cmbProducto" class="javax.swing.JComboBox" binding="cmbProducto">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="lblCantidad" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0"/>
+        </constraints>
+        <properties>
+          <text value="Cantidad:"/>
+          <font name="Arial" size="11"/>
+        </properties>
+      </component>
+      <component id="txtCantidad" class="javax.swing.JTextField" binding="txtCantidad">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1"/>
+        </constraints>
+        <properties>
+          <columns value="10"/>
+        </properties>
+      </component>
+      <component id="lblPrecio" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0"/>
+        </constraints>
+        <properties>
+          <text value="Precio Unitario:"/>
+          <font name="Arial" size="11"/>
+        </properties>
+      </component>
+      <component id="txtPrecio" class="javax.swing.JTextField" binding="txtPrecio">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1"/>
+        </constraints>
+        <properties>
+          <columns value="10"/>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="lblDescuento" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0"/>
+        </constraints>
+        <properties>
+          <text value="Descuento (%):"/>
+          <font name="Arial" size="11"/>
+        </properties>
+      </component>
+      <component id="txtDescuento" class="javax.swing.JTextField" binding="txtDescuento">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1"/>
+        </constraints>
+        <properties>
+          <columns value="10"/>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="lblSubtotal" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0"/>
+        </constraints>
+        <properties>
+          <text value="Subtotal:"/>
+          <font name="Arial" size="11" style="1"/>
+        </properties>
+      </component>
+      <component id="txtSubtotal" class="javax.swing.JTextField" binding="txtSubtotal">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1"/>
+        </constraints>
+        <properties>
+          <columns value="10"/>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="lblTotal" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0"/>
+        </constraints>
+        <properties>
+          <text value="Total a Pagar:"/>
+          <font name="Arial" size="12" style="1"/>
+          <foreground color="-65536"/>
+        </properties>
+      </component>
+      <component id="txtTotal" class="javax.swing.JTextField" binding="txtTotal">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1"/>
+        </constraints>
+        <properties>
+          <columns value="10"/>
+          <editable value="false"/>
+          <font name="Arial" size="12" style="1"/>
+        </properties>
+      </component>
+      <component id="lblItems" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="7" column="0" col-span="2" row-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0"/>
+        </constraints>
+        <properties>
+          <text value="Detalles de la Venta:"/>
+          <font name="Arial" size="11" style="1"/>
+        </properties>
+      </component>
+      <component id="tblItems" class="javax.swing.JTable" binding="tblItems">
+        <constraints>
+          <grid row="8" column="0" col-span="2" row-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3"/>
+        </constraints>
+        <properties/>
+      </component>
+      <grid id="27dc7" row-count="1" column-count="4" layout-manager="GridLayoutManager">
+        <margin top="10" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="9" column="0" col-span="2" row-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="btnAgregar" class="javax.swing.JButton" binding="btnAgregar">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1"/>
+            </constraints>
+            <properties>
+              <text value="Agregar Ítem"/>
+              <font name="Arial" size="11" style="1"/>
+            </properties>
+          </component>
+          <component id="btnGuardar" class="javax.swing.JButton" binding="btnGuardar">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1"/>
+            </constraints>
+            <properties>
+              <text value="Completar Venta"/>
+              <font name="Arial" size="11" style="1"/>
+            </properties>
+          </component>
+          <component id="btnLimpiar" class="javax.swing.JButton" binding="btnLimpiar">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1"/>
+            </constraints>
+            <properties>
+              <text value="Limpiar"/>
+              <font name="Arial" size="11" style="1"/>
+            </properties>
+          </component>
+          <component id="btnCancelar" class="javax.swing.JButton" binding="btnCancelar">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1"/>
+            </constraints>
+            <properties>
+              <text value="Cancelar"/>
+              <font name="Arial" size="11" style="1"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

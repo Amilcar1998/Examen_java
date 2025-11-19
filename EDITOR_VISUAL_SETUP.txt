@@ -1,0 +1,297 @@
+═════════════════════════════════════════════════════════════════════════════════
+           ✅ EDITOR VISUAL INTELLIJ IDEA ACTIVADO Y CONFIGURADO
+═════════════════════════════════════════════════════════════════════════════════
+
+ESTADO: ✓ COMPLETADO
+FECHA: 18 de noviembre de 2024
+
+═════════════════════════════════════════════════════════════════════════════════
+¿QUÉ SE HA HECHO?
+═════════════════════════════════════════════════════════════════════════════════
+
+Se han creado 3 archivos .form (UI Designer de IntelliJ) para que puedas diseñar
+interfaces visualmente sin escribir código XML ni layouts complejos.
+
+═════════════════════════════════════════════════════════════════════════════════
+ARCHIVOS .form CREADOS
+═════════════════════════════════════════════════════════════════════════════════
+
+1. PanelKardex.form
+   ├─ Ubicación: src/main/java/org/programacion/gui/PanelKardex.form
+   ├─ Componentes:
+   │  ├─ mainPanel (BorderLayout)
+   │  ├─ panelFiltro con ComboBox
+   │  ├─ panelTabla con JTable
+   │  └─ panelEstadisticas con Labels y Botones
+   └─ Compatible con: PanelKardex.java
+
+2. PanelVenta.form
+   ├─ Ubicación: src/main/java/org/programacion/gui/PanelVenta.form
+   ├─ Componentes:
+   │  ├─ mainPanel (BorderLayout)
+   │  ├─ panelProductos con ComboBox y Spinner
+   │  ├─ panelCarrito con JTable
+   │  └─ panelTotal con Labels y Botones
+   └─ Compatible con: PanelVenta.java
+
+3. PanelGestionProductos.form
+   ├─ Ubicación: src/main/java/org/programacion/gui/PanelGestionProductos.form
+   ├─ Componentes:
+   │  ├─ mainPanel (BorderLayout)
+   │  ├─ panelFormulario con TextFields
+   │  ├─ panelTabla con JTable
+   │  └─ Botones de acción
+   └─ Compatible con: PanelGestionProductos.java
+
+═════════════════════════════════════════════════════════════════════════════════
+CÓMO ACTIVAR Y USAR
+═════════════════════════════════════════════════════════════════════════════════
+
+PASO 1: VERIFICAR PLUGIN UI DESIGNER
+───────────────────────────────────────
+1. Abre IntelliJ IDEA
+2. File → Settings → Plugins
+3. Busca: "UI Designer"
+4. Verifica que tiene un checkmark (✓)
+5. Si no está, instálalo: Click Install → Restart IDE
+
+PASO 2: ABRIR EDITOR VISUAL
+────────────────────────────
+Para PanelKardex:
+1. Navega a: src/main/java/org/programacion/gui/
+2. Click derecho en: PanelKardex.java
+3. Selecciona: Open with
+4. Selecciona: Designer (o UI Designer)
+
+PASO 3: DISEÑAR VISUALMENTE
+────────────────────────────
+Una vez en el editor:
+1. Verás 2 pestañas: "Design" y "Source"
+2. Haz click en "Design"
+3. Ve la paleta de componentes (izquierda)
+4. Arrastra componentes al canvas central
+5. Modifica propiedades en panel derecho
+6. El código se genera automáticamente
+
+PASO 4: SINCRONIZACIÓN
+──────────────────────
+El cambio es automático:
+├─ Cambias en Designer → Se actualiza .form
+├─ IntelliJ genera código Java automáticamente
+├─ Puedes ver el código en pestaña "Source"
+└─ Al guardar (Ctrl+S), se sincroniza todo
+
+═════════════════════════════════════════════════════════════════════════════════
+INTERFAZ DEL EDITOR VISUAL
+═════════════════════════════════════════════════════════════════════════════════
+
+Cuando abres un archivo en Designer, ves:
+
+┌──────────────────────────────────────────────────────────┐
+│ IntelliJ IDEA - Editor Visual (Design / Source)          │
+├──────────────────────────────────────────────────────────┤
+│ ┌───────────┬──────────────────────┬──────────────────┐ │
+│ │           │                      │                  │ │
+│ │ PALETA    │ CANVAS VISUAL        │ PROPIEDADES      │ │
+│ │ Componentes │ (Tu diseño aquí)    │ (Edita valores) │ │
+│ │           │                      │                  │ │
+│ │ ┌─────┐   │ ┌────────────────┐   │ • text: ""       │ │
+│ │ │JBtn │   │ │ [Tu Panel]     │   │ • font: Arial    │ │
+│ │ │JLbl │   │ │ ┌──────────────┐ │ │ • color:        │ │
+│ │ │JTbl │   │ │ │ Componentes  │ │ │ • binding:      │ │
+│ │ │JComboBox │ └──────────────┘ │ │ • layout:       │ │
+│ │ │JSpinner  │                  │ │ • enabled:      │ │
+│ │ │JTextField│                  │ │ • events:       │ │
+│ │ │...       │                  │ │                  │ │
+│ └─────────────┴──────────────────┴──────────────────┘ │
+│ [Design] [Source] tabs at bottom                        │
+└──────────────────────────────────────────────────────────┘
+
+PALETA (Izquierda):
+├─ Containers: Panel, ScrollPane, etc
+├─ Buttons: JButton, JToggleButton, etc
+├─ Text: JLabel, JTextField, JTextArea, etc
+├─ Combobox: JComboBox, JComboBox
+├─ Table: JTable, JList, JTree
+├─ Layout: Selecciona layout del panel
+└─ ...más componentes
+
+CANVAS (Centro):
+├─ Vista visual de tu interfaz
+├─ Arrastra componentes aquí
+├─ Redimensiona haciendo drag
+├─ Preview del diseño
+
+PROPIEDADES (Derecha):
+├─ Text: Texto del componente
+├─ Font: Tipo y tamaño de letra
+├─ Color: Foreground/Background
+├─ Size: Ancho y alto
+├─ Layout Manager: BorderLayout, etc
+├─ Binding: Nombre de variable
+├─ Events: Listeners (onClick, etc)
+└─ ...más propiedades
+
+═════════════════════════════════════════════════════════════════════════════════
+EJEMPLOS DE USO
+═════════════════════════════════════════════════════════════════════════════════
+
+EJEMPLO 1: Agregar JButton al PanelKardex
+──────────────────────────────────────────
+1. Abre PanelKardex.java en Designer
+2. En PALETA: localiza "JButton" bajo "Buttons"
+3. Arrastra JButton al CANVAS
+4. En PROPIEDADES:
+   ├─ Text: "Nuevo Botón"
+   ├─ Binding: "btnNuevo"
+   ├─ Font: Arial, 12pt
+   └─ Background: Color azul (opcional)
+5. Guarda (Ctrl+S)
+6. El código se genera automáticamente:
+   private JButton btnNuevo;
+
+EJEMPLO 2: Cambiar Layout de un Panel
+─────────────────────────────────────
+1. Abre PanelVenta.java en Designer
+2. CANVAS: selecciona panelProductos
+3. PROPIEDADES: busca "Layout Manager"
+4. Selecciona: GridBagLayout
+5. Las propiedades GridBag se muestran
+6. Ajusta GridBagConstraints para cada componente
+
+EJEMPLO 3: Agregar Listener (ActionListener)
+────────────────────────────────────────────
+1. CANVAS: selecciona un botón
+2. PROPIEDADES: busca "Events"
+3. Localiza: actionPerformed
+4. Doble-click en actionPerformed
+5. IntelliJ abre el código Java
+6. Automáticamente aparece:
+
+   private void btnOK_actionPerformed(ActionEvent e) {
+       // Escribe tu código aquí
+   }
+
+7. Escribe la lógica
+
+═════════════════════════════════════════════════════════════════════════════════
+VENTAJAS DEL EDITOR VISUAL
+═════════════════════════════════════════════════════════════════════════════════
+
+✅ SIN CÓDIGO XML
+   └─ No necesitas escribir XML ni GridBagConstraints complejos
+   └─ Todo es visual
+
+✅ SINCRONIZACIÓN AUTOMÁTICA
+   └─ Cambias en Designer → Se refleja en código Java
+   └─ Cambias en código → Se refleja en Designer
+
+✅ PROTOTIPADO RÁPIDO
+   └─ Diseña interfaces complejas en minutos
+   └─ Sin escribir líneas de código
+
+✅ VALIDACIÓN AUTOMÁTICA
+   └─ IntelliJ valida componentes
+   └─ Detecta errores antes de compilar
+
+✅ PREVIEW
+   └─ Visualiza cómo se verá en tiempo de ejecución
+   └─ Útil para ajustar tamaños
+
+✅ PROPIEDADES GRÁFICAS
+   └─ Cambias colores, fuentes, tamaños sin código
+   └─ Todo visualmente
+
+✅ RESPONSIVE
+   └─ Los layouts se adaptan automáticamente
+   └─ Prueba redimensionando ventanas
+
+═════════════════════════════════════════════════════════════════════════════════
+COMANDOS ÚTILES EN EDITOR VISUAL
+═════════════════════════════════════════════════════════════════════════════════
+
+F1 .................... Ayuda
+Ctrl+S ................ Guardar
+Ctrl+Z ................ Deshacer
+Ctrl+Y ................ Rehacer
+Ctrl+X ................ Cortar componente
+Ctrl+C ................ Copiar componente
+Ctrl+V ................ Pegar componente
+Delete ................ Eliminar componente seleccionado
+Tab ................... Seleccionar siguiente componente
+Shift+Tab ............. Seleccionar componente anterior
+Ctrl+A ................ Seleccionar todos
+Ctrl+Click ............ Selección múltiple
+Arriba/Abajo/Izq/Der . Mover componente seleccionado
+
+═════════════════════════════════════════════════════════════════════════════════
+PROPIEDADES COMUNES
+═════════════════════════════════════════════════════════════════════════════════
+
+Para cualquier componente puedes cambiar:
+
+├─ Text: Texto visible
+├─ Font: Tipo de letra, tamaño, estilo (bold, italic)
+├─ Foreground: Color del texto
+├─ Background: Color de fondo
+├─ Enabled: Si está habilitado/deshabilitado
+├─ Visible: Si es visible/oculto
+├─ Opaque: Si tiene fondo opaco
+├─ Tooltip Text: Texto al pasar mouse
+├─ Size: Ancho x Alto (width, height)
+├─ Binding: Nombre de variable en código
+├─ Events: Listeners (actionPerformed, mouseClicked, etc)
+└─ Layout: Solo para panels
+
+═════════════════════════════════════════════════════════════════════════════════
+PRÓXIMOS PASOS
+═════════════════════════════════════════════════════════════════════════════════
+
+1. ✓ Abre IntelliJ IDEA
+2. ✓ Verifica que UI Designer plugin está habilitado
+3. ✓ Abre PanelKardex.java con Designer
+4. ✓ Diseña visualmente sin tocar código
+5. ✓ Haz lo mismo con otros paneles
+6. ✓ Compila y ejecuta el proyecto
+
+═════════════════════════════════════════════════════════════════════════════════
+ARCHIVOS DE REFERENCIA
+═════════════════════════════════════════════════════════════════════════════════
+
+✓ EDITOR_VISUAL.txt
+  └─ Guía completa y detallada del editor visual
+  └─ 350+ líneas con ejemplos y soluciones
+
+✓ PanelKardex.form
+  └─ Archivo de diseño visual listo para editar
+
+✓ PanelVenta.form
+  └─ Archivo de diseño visual listo para editar
+
+✓ PanelGestionProductos.form
+  └─ Archivo de diseño visual listo para editar
+
+═════════════════════════════════════════════════════════════════════════════════
+CONCLUSIÓN
+═════════════════════════════════════════════════════════════════════════════════
+
+✅ Editor Visual de IntelliJ IDEA ACTIVADO
+✅ 3 archivos .form creados
+✅ Listo para diseñar interfaces visualmente
+✅ Documentación completa incluida
+
+Ya NO necesitas escribir manualmente:
+❌ GridBagConstraints complejos
+❌ XMLs de layouts
+❌ Managers de layout
+
+SÍ puedes hacer todo visualmente:
+✅ Arrastra y suelta
+✅ Modifica propiedades
+✅ Agrega listeners
+✅ Sincronización automática con código
+
+═════════════════════════════════════════════════════════════════════════════════
+¡LISTO PARA DISEÑAR VISUALMENTE! 🎨
+═════════════════════════════════════════════════════════════════════════════════
+
