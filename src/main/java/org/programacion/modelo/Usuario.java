@@ -37,6 +37,14 @@ public class Usuario implements Serializable {
         this.contraseña = contraseña;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
     @Override
     public String toString() {
         return usuario + " (" + nombre + ") - " + rol;

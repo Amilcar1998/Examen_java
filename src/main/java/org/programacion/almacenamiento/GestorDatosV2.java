@@ -1,6 +1,7 @@
 package org.programacion.almacenamiento;
 
 import org.programacion.modelo.*;
+import org.programacion.utils.CargadorDatosPrueba;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,12 +22,64 @@ public class GestorDatosV2 {
         kardex = PersistenciaDatos.cargarKardex();
         usuarios = PersistenciaDatos.cargarUsuarios();
 
-        // Si es la primera ejecución, inicializar con datos de prueba
-        if (productos.isEmpty()) {
-            inicializarProductosPrueba();
+        System.out.println("=== INICIO DE CARGA DE DATOS ===");
+        System.out.println("Productos cargados desde .dat: " + productos.size());
+        System.out.println("Usuarios cargados desde .dat: " + usuarios.size());
+
+        // SIEMPRE intentar cargar y fusionar datos del JSON
+        cargarYFusionarDatosJSON();
+
+        System.out.println("Total final - Productos: " + productos.size() + ", Usuarios: " + usuarios.size());
+        System.out.println("=================================");
+    }
+
+    private void cargarYFusionarDatosJSON() {
+        // Cargar productos del JSON
+        List<Producto> productosJSON = CargadorDatosPrueba.cargarProductosModelo();
+        int productosAgregados = 0;
+
+        for (Producto productoJSON : productosJSON) {
+            // Solo agregar si no existe ya (comparar por código)
+            boolean existe = productos.stream()
+                .anyMatch(p -> p.getCodigo().equals(productoJSON.getCodigo()));
+
+            if (!existe) {
+                productos.add(productoJSON);
+                productosAgregados++;
+            }
         }
-        if (usuarios.isEmpty()) {
-            inicializarUsuariosPrueba();
+
+        if (productosAgregados > 0) {
+            System.out.println("✓ Agregados " + productosAgregados + " productos nuevos desde JSON");
+        } else {
+            System.out.println("✓ No se agregaron productos nuevos (todos ya existen)");
+        }
+
+        // Cargar usuarios del JSON
+        List<Usuario> usuariosJSON = CargadorDatosPrueba.cargarUsuariosModelo();
+        int usuariosAgregados = 0;
+
+        for (Usuario usuarioJSON : usuariosJSON) {
+            // Solo agregar si no existe ya (comparar por nombre de usuario)
+            boolean existe = usuarios.stream()
+                .anyMatch(u -> u.getUsuario().equals(usuarioJSON.getUsuario()));
+
+            if (!existe) {
+                usuarios.add(usuarioJSON);
+                usuariosAgregados++;
+            }
+        }
+
+        if (usuariosAgregados > 0) {
+            System.out.println("✓ Agregados " + usuariosAgregados + " usuarios nuevos desde JSON (password: 1234)");
+        } else {
+            System.out.println("✓ No se agregaron usuarios nuevos (todos ya existen)");
+        }
+
+        // Si agregamos datos nuevos, guardar
+        if (productosAgregados > 0 || usuariosAgregados > 0) {
+            guardarDatos();
+            System.out.println("✓ Datos guardados en .dat");
         }
     }
 
@@ -37,20 +90,6 @@ public class GestorDatosV2 {
         return instancia;
     }
 
-    private void inicializarProductosPrueba() {
-        productos.add(new Producto("P001", "Laptop", 899.99, 5));
-        productos.add(new Producto("P002", "Mouse", 25.50, 50));
-        productos.add(new Producto("P003", "Teclado", 79.99, 30));
-        productos.add(new Producto("P004", "Monitor", 299.99, 10));
-        productos.add(new Producto("P005", "Webcam", 59.99, 20));
-        guardarDatos();
-    }
-
-    private void inicializarUsuariosPrueba() {
-        usuarios.add(new Usuario("ELOPEZ", "1234", "Eliseo López", "ADMIN"));
-        usuarios.add(new Usuario("VENDEDOR1", "1234", "Vendedor Uno", "VENDEDOR"));
-        guardarDatos();
-    }
 
     // ===== MÉTODOS DE AUTENTICACIÓN =====
     public boolean autenticar(String usuario, String contraseña) {
@@ -176,6 +215,15 @@ public class GestorDatosV2 {
         return new ArrayList<>(usuarios);
     }
 
+    public List<String> obtenerRoles() {
+        List<String> roles = new ArrayList<>();
+        roles.add("Administrador");
+        roles.add("Vendedor");
+        roles.add("Almacenero");
+        roles.add("Gerente");
+        return roles;
+    }
+
     public void agregarUsuario(Usuario usuario) {
         if (!usuarios.stream().anyMatch(u -> u.getUsuario().equals(usuario.getUsuario()))) {
             usuarios.add(usuario);
@@ -188,7 +236,11 @@ public class GestorDatosV2 {
                 .filter(u -> u.getUsuario().equals(usuario.getUsuario()))
                 .findFirst();
         existente.ifPresent(u -> {
-            u.setContraseña(usuario.getContraseña());
+            if (usuario.getContraseña() != null && !usuario.getContraseña().isEmpty()) {
+                u.setContraseña(usuario.getContraseña());
+            }
+            u.setNombre(usuario.getNombre());
+            u.setRol(usuario.getRol());
             guardarDatos();
         });
     }

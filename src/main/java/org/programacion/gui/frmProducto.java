@@ -1,217 +1,337 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.programacion.gui;
 
-import javax.swing.*;
+import org.programacion.controlador.ControladorProducto;
+import org.programacion.modelo.Producto;
+import org.programacion.utils.CargadorDatosPrueba;
+import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import java.util.*;
-import org.programacion.utils.JsonManager;
 
-public class frmProducto extends JFrame {
-    private JPanel contentPane;
-    private JTextField txtBuscar;
-    private JTextField txtCodigo;
-    private JTextField txtNombre;
-    private JTextField txtPrecio;
-    private JTextField txtStock;
-    private JTable tblProductos;
-    private JButton btnGuardar;
-    private JButton btnActualizar;
-    private JButton btnEliminar;
-    private JButton btnCancelar;
+/**
+ *
+ * @author usuario
+ */
+public class frmProducto extends javax.swing.JInternalFrame {
+
+    private ControladorProducto controladorProducto;
     private DefaultTableModel modeloTabla;
-    private JsonManager manager;
 
+    /**
+     * Creates new form frmProducto
+     */
     public frmProducto() {
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setTitle("Gestión de Productos");
-        setSize(1000, 650);
-        setLocationRelativeTo(null);
-        
-        manager = JsonManager.getInstance();
-        initializeComponents();
-        setContentPane(contentPane);
+        initComponents();
+        controladorProducto = new ControladorProducto();
+        configurarTabla();
         cargarProductos();
-        configuraEventos();
     }
-    
-    private void initializeComponents() {
-        contentPane = new JPanel();
-        modeloTabla = new DefaultTableModel(new String[]{"Código", "Nombre", "Precio", "Stock"}, 0);
-        
-        // Panel principal
-        JPanel panelMain = new JPanel(new java.awt.BorderLayout());
-        
-        // Panel superior con título
-        JPanel panelTop = new JPanel(new java.awt.BorderLayout());
-        JLabel lblTitulo = new JLabel("Gestión de Productos");
-        panelTop.add(lblTitulo, java.awt.BorderLayout.WEST);
-        panelMain.add(panelTop, java.awt.BorderLayout.NORTH);
-        
-        // Panel central con forma y tabla
-        JPanel panelCenter = new JPanel(new java.awt.BorderLayout());
-        
-        // Panel izquierdo (Formulario)
-        JPanel panelForm = new JPanel();
-        panelForm.setLayout(new javax.swing.BoxLayout(panelForm, javax.swing.BoxLayout.Y_AXIS));
-        panelForm.setPreferredSize(new java.awt.Dimension(280, 0));
-        
-        panelForm.add(new JLabel("Código:"));
-        txtCodigo = new JTextField();
-        panelForm.add(txtCodigo);
-        
-        panelForm.add(new JLabel("Nombre:"));
-        txtNombre = new JTextField();
-        panelForm.add(txtNombre);
-        
-        panelForm.add(new JLabel("Precio:"));
-        txtPrecio = new JTextField();
-        panelForm.add(txtPrecio);
-        
-        panelForm.add(new JLabel("Stock:"));
-        txtStock = new JTextField();
-        panelForm.add(txtStock);
-        
-        panelForm.add(javax.swing.Box.createVerticalStrut(20));
-        
-        JPanel panelBotones = new JPanel(new java.awt.GridLayout(2, 2, 5, 5));
-        btnGuardar = new JButton("Guardar");
-        btnActualizar = new JButton("Actualizar");
-        btnEliminar = new JButton("Eliminar");
-        btnCancelar = new JButton("Cancelar");
-        
-        panelBotones.add(btnGuardar);
-        panelBotones.add(btnActualizar);
-        panelBotones.add(btnEliminar);
-        panelBotones.add(btnCancelar);
-        panelForm.add(panelBotones);
-        panelForm.add(javax.swing.Box.createVerticalGlue());
-        
-        panelCenter.add(panelForm, java.awt.BorderLayout.WEST);
-        
-        // Panel derecho (Tabla)
-        tblProductos = new JTable(modeloTabla);
-        tblProductos.setRowHeight(25);
-        JScrollPane scrollPane = new JScrollPane(tblProductos);
-        panelCenter.add(scrollPane, java.awt.BorderLayout.CENTER);
-        
+
+    private void configurarTabla() {
+        String[] columnas = {"Código", "Nombre", "Precio", "Stock"};
+        modeloTabla = new DefaultTableModel(columnas, 0) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            }
+        };
+        tblProductos.setModel(modeloTabla);
         tblProductos.getSelectionModel().addListSelectionListener(e -> {
-            if (!e.getValueIsAdjusting() && tblProductos.getSelectedRow() != -1) {
-                int row = tblProductos.getSelectedRow();
-                txtCodigo.setText(tblProductos.getValueAt(row, 0).toString());
-                txtNombre.setText(tblProductos.getValueAt(row, 1).toString());
-                txtPrecio.setText(tblProductos.getValueAt(row, 2).toString());
-                txtStock.setText(tblProductos.getValueAt(row, 3).toString());
+            if (!e.getValueIsAdjusting()) {
+                cargarProductoSeleccionado();
             }
         });
-        
-        panelMain.add(panelCenter, java.awt.BorderLayout.CENTER);
-        contentPane = panelMain;
     }
-    
+
     private void cargarProductos() {
         modeloTabla.setRowCount(0);
-        for (Map<String, Object> p : manager.getProductos()) {
-            modeloTabla.addRow(new Object[]{
-                p.get("codigo"),
-                p.get("nombre"),
-                p.get("precio"),
-                p.get("stock")
-            });
+        List<Producto> productos = controladorProducto.obtenerProductos();
+        for (Producto producto : productos) {
+            Object[] fila = {
+                producto.getCodigo(),
+                producto.getNombre(),
+                String.format("%.2f", producto.getPrecio()),
+                producto.getStock()
+            };
+            modeloTabla.addRow(fila);
         }
     }
-    
-    private void configuraEventos() {
-        btnGuardar.addActionListener(e -> guardarProducto());
-        btnActualizar.addActionListener(e -> actualizarProducto());
-        btnEliminar.addActionListener(e -> eliminarProducto());
-        btnCancelar.addActionListener(e -> limpiarFormulario());
-    }
-    
-    private void guardarProducto() {
-        if (validarCampos()) {
-            try {
-                String codigo = txtCodigo.getText().trim();
-                String nombre = txtNombre.getText().trim();
-                double precio = Double.parseDouble(txtPrecio.getText().trim());
-                int stock = Integer.parseInt(txtStock.getText().trim());
-                
-                if (manager.obtenerProducto(codigo) != null) {
-                    JOptionPane.showMessageDialog(this, "El código ya existe", "Error", JOptionPane.ERROR_MESSAGE);
-                    return;
-                }
-                
-                manager.agregarProducto(codigo, nombre, precio, stock);
-                cargarProductos();
-                limpiarFormulario();
-                JOptionPane.showMessageDialog(this, "Producto guardado", "Éxito", JOptionPane.INFORMATION_MESSAGE);
-            } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(this, "Precio y Stock deben ser números", "Error", JOptionPane.ERROR_MESSAGE);
-            }
+
+    private void cargarProductoSeleccionado() {
+        int filaSeleccionada = tblProductos.getSelectedRow();
+        if (filaSeleccionada != -1) {
+            txtCodigo.setText(modeloTabla.getValueAt(filaSeleccionada, 0).toString());
+            txtNombre.setText(modeloTabla.getValueAt(filaSeleccionada, 1).toString());
+            txtPrecio.setText(modeloTabla.getValueAt(filaSeleccionada, 2).toString());
+            txtStock.setText(modeloTabla.getValueAt(filaSeleccionada, 3).toString());
         }
     }
-    
-    private void actualizarProducto() {
-        if (validarCampos()) {
-            try {
-                String codigo = txtCodigo.getText().trim();
-                String nombre = txtNombre.getText().trim();
-                double precio = Double.parseDouble(txtPrecio.getText().trim());
-                int stock = Integer.parseInt(txtStock.getText().trim());
-                
-                if (manager.obtenerProducto(codigo) == null) {
-                    JOptionPane.showMessageDialog(this, "El producto no existe", "Error", JOptionPane.ERROR_MESSAGE);
-                    return;
-                }
-                
-                manager.actualizarProducto(codigo, nombre, precio, stock);
-                cargarProductos();
-                limpiarFormulario();
-                JOptionPane.showMessageDialog(this, "Producto actualizado", "Éxito", JOptionPane.INFORMATION_MESSAGE);
-            } catch (NumberFormatException ex) {
-                JOptionPane.showMessageDialog(this, "Precio y Stock deben ser números", "Error", JOptionPane.ERROR_MESSAGE);
-            }
-        }
-    }
-    
-    private void eliminarProducto() {
-        if (txtCodigo.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Selecciona un producto", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        
-        String codigo = txtCodigo.getText().trim();
-        if (manager.obtenerProducto(codigo) == null) {
-            JOptionPane.showMessageDialog(this, "El producto no existe", "Error", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        
-        int respuesta = JOptionPane.showConfirmDialog(this, 
-            "¿Estás seguro de que deseas eliminar este producto?", 
-            "Confirmación", JOptionPane.YES_NO_OPTION);
-        
-        if (respuesta == JOptionPane.YES_OPTION) {
-            manager.eliminarProducto(codigo);
-            cargarProductos();
-            limpiarFormulario();
-            JOptionPane.showMessageDialog(this, "Producto eliminado", "Éxito", JOptionPane.INFORMATION_MESSAGE);
-        }
-    }
-    
-    private void limpiarFormulario() {
+
+    private void limpiarCampos() {
         txtCodigo.setText("");
         txtNombre.setText("");
         txtPrecio.setText("");
         txtStock.setText("");
-        if (txtBuscar != null) txtBuscar.setText("");
+        tblProductos.clearSelection();
     }
-    
-    private boolean validarCampos() {
-        if (txtCodigo.getText().trim().isEmpty() || 
-            txtNombre.getText().trim().isEmpty() || 
-            txtPrecio.getText().trim().isEmpty() || 
-            txtStock.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Todos los campos son requeridos", "Error", JOptionPane.ERROR_MESSAGE);
-            return false;
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        txtCodigo = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        txtPrecio = new javax.swing.JTextField();
+        txtStock = new javax.swing.JTextField();
+        btnGuardar = new javax.swing.JButton();
+        btnModificar = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblProductos = new javax.swing.JTable();
+
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Gestión de Productos");
+
+        jLabel1.setText("Código:");
+        jLabel2.setText("Nombre:");
+        jLabel3.setText("Precio:");
+        jLabel4.setText("Stock:");
+
+        btnGuardar.setText("Guardar");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarActionPerformed(evt);
+            }
+        });
+
+        btnModificar.setText("Modificar");
+        btnModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarActionPerformed(evt);
+            }
+        });
+
+        btnEliminar.setText("Eliminar");
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarActionPerformed(evt);
+            }
+        });
+
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+
+        tblProductos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tblProductos);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtCodigo)
+                            .addComponent(txtNombre)
+                            .addComponent(txtPrecio)
+                            .addComponent(txtStock, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnModificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnEliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGuardar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnModificar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEliminar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(txtStock, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnLimpiar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+        try {
+            String codigo = txtCodigo.getText().trim();
+            String nombre = txtNombre.getText().trim();
+            String precioStr = txtPrecio.getText().trim();
+            String stockStr = txtStock.getText().trim();
+            
+            if (codigo.isEmpty() || nombre.isEmpty() || precioStr.isEmpty() || stockStr.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            
+            double precio = Double.parseDouble(precioStr);
+            int stock = Integer.parseInt(stockStr);
+            
+            boolean exito = controladorProducto.guardarProducto(codigo, nombre, precio, stock);
+            
+            if (exito) {
+                JOptionPane.showMessageDialog(this, "Producto guardado exitosamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                limpiarCampos();
+                cargarProductos();
+            } else {
+                JOptionPane.showMessageDialog(this, "Error al guardar el producto", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+            
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Precio y Stock deben ser números válidos", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Error al guardar el producto: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
-        return true;
-    }
+    }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
+        try {
+            String codigo = txtCodigo.getText().trim();
+            if (codigo.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Debe seleccionar un producto de la tabla", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            
+            String nombre = txtNombre.getText().trim();
+            String precioStr = txtPrecio.getText().trim();
+            String stockStr = txtStock.getText().trim();
+            
+            if (nombre.isEmpty() || precioStr.isEmpty() || stockStr.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            
+            double precio = Double.parseDouble(precioStr);
+            int stock = Integer.parseInt(stockStr);
+            
+            boolean exito = controladorProducto.actualizarProducto(codigo, nombre, precio, stock);
+            
+            if (exito) {
+                JOptionPane.showMessageDialog(this, "Producto modificado exitosamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                limpiarCampos();
+                cargarProductos();
+            } else {
+                JOptionPane.showMessageDialog(this, "Error al modificar el producto", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+            
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Precio y Stock deben ser números válidos", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Error al modificar el producto: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnModificarActionPerformed
+
+    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
+        try {
+            String codigo = txtCodigo.getText().trim();
+            if (codigo.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Debe seleccionar un producto de la tabla", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            
+            int confirmacion = JOptionPane.showConfirmDialog(this, 
+                "¿Está seguro de que desea eliminar este producto?", 
+                "Confirmar eliminación", 
+                JOptionPane.YES_NO_OPTION);
+                
+            if (confirmacion == JOptionPane.YES_OPTION) {
+                boolean exito = controladorProducto.eliminarProducto(codigo);
+                
+                if (exito) {
+                    JOptionPane.showMessageDialog(this, "Producto eliminado exitosamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                    limpiarCampos();
+                    cargarProductos();
+                } else {
+                    JOptionPane.showMessageDialog(this, "Error al eliminar el producto", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Error al eliminar el producto: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnEliminarActionPerformed
+
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
+        limpiarCampos();
+    }//GEN-LAST:event_btnLimpiarActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnLimpiar;
+    private javax.swing.JButton btnModificar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable tblProductos;
+    private javax.swing.JTextField txtCodigo;
+    private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtPrecio;
+    private javax.swing.JTextField txtStock;
+    // End of variables declaration//GEN-END:variables
 }

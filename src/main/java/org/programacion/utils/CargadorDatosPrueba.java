@@ -1,5 +1,8 @@
 package org.programacion.utils;
 
+import org.programacion.modelo.Producto;
+import org.programacion.modelo.Usuario;
+
 import javax.swing.table.DefaultTableModel;
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -8,6 +11,94 @@ import java.util.*;
 
 public class CargadorDatosPrueba {
     
+    // Método para cargar productos como objetos Producto
+    public static List<Producto> cargarProductosModelo() {
+        List<Producto> productos = new ArrayList<>();
+
+        try {
+            Map<String, Object> datos = parsearJSON();
+            List<Map<String, Object>> prodList = (List<Map<String, Object>>) datos.get("productos");
+
+            if (prodList != null) {
+                for (Map<String, Object> prod : prodList) {
+                    String codigo = (String) prod.get("codigo");
+                    String nombre = (String) prod.get("nombre");
+                    Double precio = getDouble(prod.get("precio"));
+                    Integer stock = getInteger(prod.get("stock"));
+
+                    if (codigo != null && nombre != null && precio != null && stock != null) {
+                        productos.add(new Producto(codigo, nombre, precio, stock));
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return productos;
+    }
+
+    // Método para cargar usuarios como objetos Usuario
+    public static List<Usuario> cargarUsuariosModelo() {
+        List<Usuario> usuarios = new ArrayList<>();
+
+        try {
+            Map<String, Object> datos = parsearJSON();
+            List<Map<String, Object>> userList = (List<Map<String, Object>>) datos.get("usuarios");
+
+            if (userList != null) {
+                for (Map<String, Object> user : userList) {
+                    String usuarioNombre = (String) user.get("usuario");
+                    String password = (String) user.get("password");
+                    // Si no hay password en el JSON, usar "1234" por defecto
+                    if (password == null || password.isEmpty()) {
+                        password = "1234";
+                    }
+                    String nombre = (String) user.get("nombre");
+                    String rol = (String) user.get("rol");
+
+                    if (usuarioNombre != null && nombre != null && rol != null) {
+                        usuarios.add(new Usuario(usuarioNombre, password, nombre, rol));
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return usuarios;
+    }
+
+    private static Double getDouble(Object value) {
+        if (value instanceof Double) {
+            return (Double) value;
+        } else if (value instanceof Integer) {
+            return ((Integer) value).doubleValue();
+        } else if (value instanceof String) {
+            try {
+                return Double.parseDouble((String) value);
+            } catch (Exception e) {
+                return null;
+            }
+        }
+        return null;
+    }
+
+    private static Integer getInteger(Object value) {
+        if (value instanceof Integer) {
+            return (Integer) value;
+        } else if (value instanceof Double) {
+            return ((Double) value).intValue();
+        } else if (value instanceof String) {
+            try {
+                return Integer.parseInt((String) value);
+            } catch (Exception e) {
+                return null;
+            }
+        }
+        return null;
+    }
+
     public static DefaultTableModel cargarProductos() {
         DefaultTableModel model = new DefaultTableModel(
             new String[]{"Código", "Nombre", "Precio", "Stock"}, 0

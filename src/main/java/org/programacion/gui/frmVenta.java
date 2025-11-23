@@ -1,231 +1,182 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package org.programacion.gui;
 
-import javax.swing.*;
+import org.programacion.controlador.ControladorVenta;
+import org.programacion.modelo.Venta;
+import org.programacion.modelo.ItemVenta;
+import org.programacion.modelo.Producto;
+import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import java.awt.*;
 
-public class frmVenta extends JFrame {
-    private JPanel contentPane;
-    private JComboBox cmbProducto;
-    private JTextField txtCantidad;
-    private JTextField txtPrecio;
-    private JTextField txtDescuento;
-    private JTextField txtSubtotal;
-    private JTextField txtTotal;
-    private JTable tblItems;
-    private JButton btnAgregar;
-    private JButton btnGuardar;
-    private JButton btnLimpiar;
-    private JButton btnCancelar;
+/**
+ *
+ * @author usuario
+ */
+public class frmVenta extends javax.swing.JInternalFrame {
 
+    private ControladorVenta controladorVenta;
+    private DefaultTableModel modeloTabla;
+
+    /**
+     * Creates new form frmVenta
+     */
     public frmVenta() {
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        setTitle("Punto de Venta");
-        setSize(1100, 700);
-        
-        if (contentPane == null) {
-            contentPane = buildFallbackPanel();
-        }
-        setContentPane(contentPane);
-        setLocationRelativeTo(null);
+        initComponents();
+        controladorVenta = new ControladorVenta();
+        configurarTabla();
+        cargarVentas();
     }
-    
-    private JPanel buildFallbackPanel() {
-        JPanel panel = new JPanel(new BorderLayout());
-        panel.setBackground(Color.WHITE);
-        
-        // Panel superior
-        JPanel panelSuperior = new JPanel(new BorderLayout());
-        panelSuperior.setBackground(new Color(200, 100, 50));
-        panelSuperior.setBorder(BorderFactory.createEmptyBorder(15, 20, 15, 20));
-        
-        JLabel lblTitulo = new JLabel("PUNTO DE VENTA");
-        lblTitulo.setFont(new Font("Arial", Font.BOLD, 24));
-        lblTitulo.setForeground(Color.WHITE);
-        panelSuperior.add(lblTitulo, BorderLayout.WEST);
-        
-        panel.add(panelSuperior, BorderLayout.NORTH);
-        
-        // Panel central
-        JPanel panelContenido = new JPanel(new BorderLayout(10, 10));
-        panelContenido.setBackground(Color.WHITE);
-        panelContenido.setBorder(BorderFactory.createEmptyBorder(15, 15, 15, 15));
-        
-        // Panel izquierdo: Selección
-        JPanel panelSeleccion = crearPanelSeleccion();
-        panelContenido.add(panelSeleccion, BorderLayout.WEST);
-        
-        // Panel derecho: Carrito
-        JPanel panelCarrito = crearPanelCarrito();
-        panelContenido.add(panelCarrito, BorderLayout.CENTER);
-        
-        panel.add(panelContenido, BorderLayout.CENTER);
-        
-        return panel;
-    }
-    
-    private JPanel crearPanelSeleccion() {
-        JPanel panel = new JPanel();
-        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
-        panel.setBackground(new Color(255, 250, 240));
-        panel.setBorder(BorderFactory.createCompoundBorder(
-            BorderFactory.createLineBorder(new Color(220, 180, 140), 1),
-            BorderFactory.createEmptyBorder(15, 15, 15, 15)
-        ));
-        panel.setPreferredSize(new Dimension(320, 0));
-        
-        JLabel lblSeleccion = new JLabel("Seleccionar Productos");
-        lblSeleccion.setFont(new Font("Arial", Font.BOLD, 14));
-        lblSeleccion.setForeground(new Color(200, 100, 50));
-        lblSeleccion.setAlignmentX(Component.LEFT_ALIGNMENT);
-        panel.add(lblSeleccion);
-        panel.add(Box.createVerticalStrut(15));
-        
-        // Producto
-        JLabel lblProducto = new JLabel("Producto:");
-        lblProducto.setFont(new Font("Arial", Font.BOLD, 11));
-        lblProducto.setAlignmentX(Component.LEFT_ALIGNMENT);
-        panel.add(lblProducto);
-        
-        cmbProducto = new JComboBox();
-        cmbProducto.setMaximumSize(new Dimension(Integer.MAX_VALUE, 30));
-        cmbProducto.setBackground(Color.WHITE);
-        panel.add(cmbProducto);
-        panel.add(Box.createVerticalStrut(12));
-        
-        // Cantidad
-        panel.add(crearCampo("Cantidad:", "txtCantidad"));
-        panel.add(Box.createVerticalStrut(10));
-        
-        // Precio
-        panel.add(crearCampo("Precio Unitario:", "txtPrecio"));
-        panel.add(Box.createVerticalStrut(10));
-        
-        // Descuento
-        panel.add(crearCampo("Descuento %:", "txtDescuento"));
-        panel.add(Box.createVerticalStrut(10));
-        
-        // Subtotal
-        panel.add(crearCampo("Subtotal:", "txtSubtotal"));
-        panel.add(Box.createVerticalStrut(10));
-        
-        // Total
-        panel.add(crearCampo("Total:", "txtTotal"));
-        panel.add(Box.createVerticalStrut(20));
-        
-        btnAgregar = crearBoton("➕ Agregar al Carrito", new Color(50, 150, 50));
-        btnAgregar.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
-        panel.add(btnAgregar);
-        panel.add(Box.createVerticalGlue());
-        
-        return panel;
-    }
-    
-    private JPanel crearPanelCarrito() {
-        JPanel panel = new JPanel(new BorderLayout(0, 10));
-        panel.setBackground(Color.WHITE);
-        
-        JLabel lblCarrito = new JLabel("🛒 Carrito de Compras");
-        lblCarrito.setFont(new Font("Arial", Font.BOLD, 14));
-        lblCarrito.setForeground(new Color(200, 100, 50));
-        panel.add(lblCarrito, BorderLayout.NORTH);
-        
-        // Tabla
-        tblItems = new JTable(new DefaultTableModel(
-            new String[]{"Producto", "Cantidad", "Precio", "Descuento", "Total"}, 0));
-        tblItems.setFont(new Font("Arial", Font.PLAIN, 11));
-        tblItems.setRowHeight(25);
-        tblItems.getTableHeader().setBackground(new Color(200, 100, 50));
-        tblItems.getTableHeader().setForeground(Color.WHITE);
-        tblItems.getTableHeader().setFont(new Font("Arial", Font.BOLD, 11));
-        tblItems.setSelectionBackground(new Color(255, 200, 150));
-        
-        JScrollPane scrollPane = new JScrollPane(tblItems);
-        scrollPane.setBorder(BorderFactory.createLineBorder(new Color(200, 200, 200)));
-        panel.add(scrollPane, BorderLayout.CENTER);
-        
-        // Panel de totales
-        JPanel panelTotales = new JPanel(new GridLayout(3, 2, 10, 10));
-        panelTotales.setBackground(new Color(245, 240, 235));
-        panelTotales.setBorder(BorderFactory.createCompoundBorder(
-            BorderFactory.createLineBorder(new Color(200, 150, 100)),
-            BorderFactory.createEmptyBorder(10, 10, 10, 10)
-        ));
-        
-        JLabel lblSubtotal = new JLabel("Subtotal:");
-        lblSubtotal.setFont(new Font("Arial", Font.BOLD, 11));
-        JLabel valSubtotal = new JLabel("$0.00");
-        valSubtotal.setFont(new Font("Arial", Font.PLAIN, 11));
-        panelTotales.add(lblSubtotal);
-        panelTotales.add(valSubtotal);
-        
-        JLabel lblImpuesto = new JLabel("Impuesto (10%):");
-        lblImpuesto.setFont(new Font("Arial", Font.BOLD, 11));
-        JLabel valImpuesto = new JLabel("$0.00");
-        valImpuesto.setFont(new Font("Arial", Font.PLAIN, 11));
-        panelTotales.add(lblImpuesto);
-        panelTotales.add(valImpuesto);
-        
-        JLabel lblTotal = new JLabel("TOTAL:");
-        lblTotal.setFont(new Font("Arial", Font.BOLD, 12));
-        lblTotal.setForeground(new Color(200, 100, 50));
-        JLabel valTotal = new JLabel("$0.00");
-        valTotal.setFont(new Font("Arial", Font.BOLD, 12));
-        valTotal.setForeground(new Color(200, 100, 50));
-        panelTotales.add(lblTotal);
-        panelTotales.add(valTotal);
-        
-        panel.add(panelTotales, BorderLayout.SOUTH);
-        
-        return panel;
-    }
-    
-    private JPanel crearCampo(String etiqueta, String id) {
-        JPanel panelCampo = new JPanel(new BorderLayout());
-        panelCampo.setBackground(new Color(255, 250, 240));
-        panelCampo.setMaximumSize(new Dimension(Integer.MAX_VALUE, 50));
-        
-        JLabel lbl = new JLabel(etiqueta);
-        lbl.setFont(new Font("Arial", Font.BOLD, 11));
-        
-        JTextField txt = new JTextField();
-        txt.setFont(new Font("Arial", Font.PLAIN, 11));
-        txt.setBackground(Color.WHITE);
-        txt.setBorder(BorderFactory.createLineBorder(new Color(200, 200, 200)));
-        
-        if (id.equals("txtCantidad")) txtCantidad = txt;
-        else if (id.equals("txtPrecio")) txtPrecio = txt;
-        else if (id.equals("txtDescuento")) txtDescuento = txt;
-        else if (id.equals("txtSubtotal")) txtSubtotal = txt;
-        else if (id.equals("txtTotal")) txtTotal = txt;
-        
-        panelCampo.add(lbl, BorderLayout.NORTH);
-        panelCampo.add(txt, BorderLayout.CENTER);
-        
-        return panelCampo;
-    }
-    
-    private JButton crearBoton(String texto, Color color) {
-        JButton btn = new JButton(texto);
-        btn.setFont(new Font("Arial", Font.BOLD, 11));
-        btn.setBackground(color);
-        btn.setForeground(Color.WHITE);
-        btn.setFocusPainted(false);
-        btn.setBorderPainted(false);
-        btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        
-        btn.addMouseListener(new java.awt.event.MouseAdapter() {
+
+    private void configurarTabla() {
+        String[] columnas = {"ID", "Fecha", "Cliente", "Total", "Estado"};
+        modeloTabla = new DefaultTableModel(columnas, 0) {
             @Override
-            public void mouseEntered(java.awt.event.MouseEvent e) {
-                btn.setBackground(color.brighter());
+            public boolean isCellEditable(int row, int column) {
+                return false;
             }
-            
-            @Override
-            public void mouseExited(java.awt.event.MouseEvent e) {
-                btn.setBackground(color);
+        };
+        tblVentas.setModel(modeloTabla);
+    }
+
+    private void cargarVentas() {
+        modeloTabla.setRowCount(0);
+        List<Venta> ventas = controladorVenta.obtenerVentas();
+        for (Venta venta : ventas) {
+            Object[] fila = {
+                venta.getId(),
+                venta.getFecha(),
+                "Cliente " + venta.getId(), // Placeholder hasta tener modelo Cliente
+                String.format("%.2f", venta.getTotal()),
+                "Completada"
+            };
+            modeloTabla.addRow(fila);
+        }
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tblVentas = new javax.swing.JTable();
+        btnNuevaVenta = new javax.swing.JButton();
+        btnVerDetalle = new javax.swing.JButton();
+        btnRefrescar = new javax.swing.JButton();
+
+        setClosable(true);
+        setIconifiable(true);
+        setMaximizable(true);
+        setResizable(true);
+        setTitle("Gestión de Ventas");
+
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel1.setText("GESTIÓN DE VENTAS");
+
+        tblVentas.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tblVentas);
+
+        btnNuevaVenta.setText("Nueva Venta");
+        btnNuevaVenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevaVentaActionPerformed(evt);
             }
         });
-        
-        return btn;
-    }
+
+        btnVerDetalle.setText("Ver Detalle");
+        btnVerDetalle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerDetalleActionPerformed(evt);
+            }
+        });
+
+        btnRefrescar.setText("Refrescar");
+        btnRefrescar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRefrescarActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnNuevaVenta)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnVerDetalle)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnRefrescar)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnNuevaVenta)
+                    .addComponent(btnVerDetalle)
+                    .addComponent(btnRefrescar))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 280, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void btnNuevaVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaVentaActionPerformed
+        JOptionPane.showMessageDialog(this, "Funcionalidad de Nueva Venta en desarrollo", "Info", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_btnNuevaVentaActionPerformed
+
+    private void btnVerDetalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDetalleActionPerformed
+        int filaSeleccionada = tblVentas.getSelectedRow();
+        if (filaSeleccionada != -1) {
+            JOptionPane.showMessageDialog(this, "Detalle de venta seleccionada", "Info", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(this, "Debe seleccionar una venta", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnVerDetalleActionPerformed
+
+    private void btnRefrescarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefrescarActionPerformed
+        cargarVentas();
+    }//GEN-LAST:event_btnRefrescarActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnNuevaVenta;
+    private javax.swing.JButton btnRefrescar;
+    private javax.swing.JButton btnVerDetalle;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable tblVentas;
+    // End of variables declaration//GEN-END:variables
 }
