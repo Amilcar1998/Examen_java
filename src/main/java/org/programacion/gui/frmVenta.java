@@ -6,12 +6,31 @@
 package org.programacion.gui;
 
 import org.programacion.controlador.ControladorVenta;
+import org.programacion.controlador.ControladorProducto;
 import org.programacion.modelo.Venta;
 import org.programacion.modelo.ItemVenta;
 import org.programacion.modelo.Producto;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JSpinner;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.JTable;
+import javax.swing.JScrollPane;
+import javax.swing.BorderFactory;
+import java.awt.BorderLayout;
+import java.awt.GridBagLayout;
+import java.awt.GridBagConstraints;
+import java.awt.Insets;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.time.format.DateTimeFormatter;
 
 /**
  *
@@ -20,6 +39,7 @@ import javax.swing.table.DefaultTableModel;
 public class frmVenta extends javax.swing.JInternalFrame {
 
     private ControladorVenta controladorVenta;
+    private ControladorProducto controladorProducto;
     private DefaultTableModel modeloTabla;
 
     /**
@@ -28,6 +48,7 @@ public class frmVenta extends javax.swing.JInternalFrame {
     public frmVenta() {
         initComponents();
         controladorVenta = new ControladorVenta();
+        controladorProducto = new ControladorProducto();
         configurarTabla();
         cargarVentas();
     }
@@ -46,12 +67,13 @@ public class frmVenta extends javax.swing.JInternalFrame {
     private void cargarVentas() {
         modeloTabla.setRowCount(0);
         List<Venta> ventas = controladorVenta.obtenerVentas();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
         for (Venta venta : ventas) {
             Object[] fila = {
                 venta.getId(),
-                venta.getFecha(),
+                venta.getFecha().format(formatter),
                 "Cliente " + venta.getId(), // Placeholder hasta tener modelo Cliente
-                String.format("%.2f", venta.getTotal()),
+                String.format("$%.2f", venta.getTotal()),
                 "Completada"
             };
             modeloTabla.addRow(fila);
@@ -154,15 +176,16 @@ public class frmVenta extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnNuevaVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaVentaActionPerformed
-        JOptionPane.showMessageDialog(this, "Funcionalidad de Nueva Venta en desarrollo", "Info", JOptionPane.INFORMATION_MESSAGE);
+        abrirDialogoNuevaVenta();
     }//GEN-LAST:event_btnNuevaVentaActionPerformed
 
     private void btnVerDetalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerDetalleActionPerformed
         int filaSeleccionada = tblVentas.getSelectedRow();
         if (filaSeleccionada != -1) {
-            JOptionPane.showMessageDialog(this, "Detalle de venta seleccionada", "Info", JOptionPane.INFORMATION_MESSAGE);
+            String ventaId = modeloTabla.getValueAt(filaSeleccionada, 0).toString();
+            mostrarDetalleVenta(ventaId);
         } else {
-            JOptionPane.showMessageDialog(this, "Debe seleccionar una venta", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Debe seleccionar una venta para ver el detalle", "Advertencia", JOptionPane.WARNING_MESSAGE);
         }
     }//GEN-LAST:event_btnVerDetalleActionPerformed
 
@@ -170,6 +193,281 @@ public class frmVenta extends javax.swing.JInternalFrame {
         cargarVentas();
     }//GEN-LAST:event_btnRefrescarActionPerformed
 
+
+    // Métodos adicionales para funcionalidad completa
+    
+    private void abrirDialogoNuevaVenta() {
+        JDialog dialogo = new JDialog((java.awt.Frame) null, "Nueva Venta", true);
+        dialogo.setSize(800, 600);
+        dialogo.setLocationRelativeTo(this);
+        dialogo.setLayout(new BorderLayout());
+        
+        // Panel principal
+        javax.swing.JPanel panelPrincipal = new javax.swing.JPanel(new BorderLayout());
+        
+        // Panel superior - Selección de productos
+        javax.swing.JPanel panelSuperior = new javax.swing.JPanel(new GridBagLayout());
+        panelSuperior.setBorder(BorderFactory.createTitledBorder("Agregar Productos"));
+        
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(5, 5, 5, 5);
+        
+        // ComboBox de productos
+        JLabel lblProducto = new JLabel("Producto:");
+        JComboBox<Producto> cmbProductos = new JComboBox<>();
+        List<Producto> productos = controladorProducto.obtenerProductos();
+        for (Producto producto : productos) {
+            cmbProductos.addItem(producto);
+        }
+        
+        // Spinner para cantidad
+        JLabel lblCantidad = new JLabel("Cantidad:");
+        JSpinner spnCantidad = new JSpinner(new SpinnerNumberModel(1, 1, 100, 1));
+        
+        // Botón agregar
+        JButton btnAgregar = new JButton("Agregar");
+        
+        // Agregar componentes al panel superior
+        gbc.gridx = 0; gbc.gridy = 0;
+        panelSuperior.add(lblProducto, gbc);
+        gbc.gridx = 1;
+        panelSuperior.add(cmbProductos, gbc);
+        gbc.gridx = 2;
+        panelSuperior.add(lblCantidad, gbc);
+        gbc.gridx = 3;
+        panelSuperior.add(spnCantidad, gbc);
+        gbc.gridx = 4;
+        panelSuperior.add(btnAgregar, gbc);
+        
+        // Tabla de items de venta
+        String[] columnasItems = {"Producto", "Cantidad", "Precio Unit.", "Subtotal"};
+        DefaultTableModel modeloItems = new DefaultTableModel(columnasItems, 0) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            }
+        };
+        JTable tblItems = new JTable(modeloItems);
+        JScrollPane scrollItems = new JScrollPane(tblItems);
+        scrollItems.setBorder(BorderFactory.createTitledBorder("Items de la Venta"));
+        
+        // Panel inferior - Totales y botones
+        javax.swing.JPanel panelInferior = new javax.swing.JPanel(new GridBagLayout());
+        panelInferior.setBorder(BorderFactory.createTitledBorder("Totales"));
+        
+        JLabel lblSubtotal = new JLabel("Subtotal: $0.00");
+        JLabel lblDescuento = new JLabel("Descuento:");
+        JTextField txtDescuento = new JTextField("0", 10);
+        JLabel lblTotal = new JLabel("TOTAL: $0.00");
+        lblTotal.setFont(lblTotal.getFont().deriveFont(16f));
+        
+        JButton btnGuardarVenta = new JButton("Guardar Venta");
+        JButton btnCancelar = new JButton("Cancelar");
+        
+        // Variables para la venta actual
+        Venta ventaActual = new Venta();
+        
+        // Evento agregar producto
+        btnAgregar.addActionListener(e -> {
+            Producto productoSeleccionado = (Producto) cmbProductos.getSelectedItem();
+            int cantidad = (Integer) spnCantidad.getValue();
+            
+            if (productoSeleccionado != null && cantidad > 0) {
+                if (productoSeleccionado.getStock() >= cantidad) {
+                    ItemVenta item = new ItemVenta(productoSeleccionado, cantidad);
+                    ventaActual.agregarItem(item);
+                    
+                    // Agregar a la tabla
+                    Object[] fila = {
+                        productoSeleccionado.getNombre(),
+                        cantidad,
+                        String.format("$%.2f", productoSeleccionado.getPrecio()),
+                        String.format("$%.2f", item.getSubtotal())
+                    };
+                    modeloItems.addRow(fila);
+                    
+                    // Actualizar totales
+                    actualizarTotales(ventaActual, lblSubtotal, txtDescuento, lblTotal);
+                    
+                    // Resetear cantidad
+                    spnCantidad.setValue(1);
+                } else {
+                    JOptionPane.showMessageDialog(dialogo, 
+                        "Stock insuficiente. Disponible: " + productoSeleccionado.getStock(), 
+                        "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
+        
+        // Evento cambio de descuento
+        txtDescuento.addActionListener(e -> {
+            actualizarTotales(ventaActual, lblSubtotal, txtDescuento, lblTotal);
+        });
+        
+        // Evento guardar venta
+        btnGuardarVenta.addActionListener(e -> {
+            if (!ventaActual.getItems().isEmpty()) {
+                try {
+                    double descuento = Double.parseDouble(txtDescuento.getText());
+                    ventaActual.setDescuento(descuento);
+                    
+                    if (controladorVenta.guardarVenta(ventaActual)) {
+                        // Actualizar stock de productos
+                        for (ItemVenta item : ventaActual.getItems()) {
+                            Producto producto = item.getProducto();
+                            producto.setStock(producto.getStock() - item.getCantidad());
+                            controladorProducto.actualizarProducto(producto);
+                        }
+                        
+                        JOptionPane.showMessageDialog(dialogo, "Venta guardada exitosamente", "Éxito", JOptionPane.INFORMATION_MESSAGE);
+                        cargarVentas(); // Refrescar tabla principal
+                        dialogo.dispose();
+                    } else {
+                        JOptionPane.showMessageDialog(dialogo, "Error al guardar la venta", "Error", JOptionPane.ERROR_MESSAGE);
+                    }
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(dialogo, "Descuento debe ser un número válido", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            } else {
+                JOptionPane.showMessageDialog(dialogo, "Debe agregar al menos un producto", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            }
+        });
+        
+        // Evento cancelar
+        btnCancelar.addActionListener(e -> dialogo.dispose());
+        
+        // Layout panel inferior
+        gbc = new GridBagConstraints();
+        gbc.insets = new Insets(5, 5, 5, 5);
+        gbc.gridx = 0; gbc.gridy = 0;
+        panelInferior.add(lblSubtotal, gbc);
+        gbc.gridx = 1;
+        panelInferior.add(lblDescuento, gbc);
+        gbc.gridx = 2;
+        panelInferior.add(txtDescuento, gbc);
+        gbc.gridx = 0; gbc.gridy = 1; gbc.gridwidth = 3;
+        panelInferior.add(lblTotal, gbc);
+        gbc.gridy = 2; gbc.gridwidth = 1;
+        panelInferior.add(btnGuardarVenta, gbc);
+        gbc.gridx = 1;
+        panelInferior.add(btnCancelar, gbc);
+        
+        // Agregar paneles al diálogo
+        panelPrincipal.add(panelSuperior, BorderLayout.NORTH);
+        panelPrincipal.add(scrollItems, BorderLayout.CENTER);
+        panelPrincipal.add(panelInferior, BorderLayout.SOUTH);
+        
+        dialogo.add(panelPrincipal);
+        dialogo.setVisible(true);
+    }
+    
+    private void actualizarTotales(Venta venta, JLabel lblSubtotal, JTextField txtDescuento, JLabel lblTotal) {
+        double subtotal = venta.getSubtotal();
+        lblSubtotal.setText("Subtotal: $" + String.format("%.2f", subtotal));
+        
+        try {
+            double descuento = Double.parseDouble(txtDescuento.getText());
+            venta.setDescuento(descuento);
+            lblTotal.setText("TOTAL: $" + String.format("%.2f", venta.getTotal()));
+        } catch (NumberFormatException e) {
+            lblTotal.setText("TOTAL: $" + String.format("%.2f", subtotal));
+        }
+    }
+    
+    private void mostrarDetalleVenta(String ventaId) {
+        List<Venta> ventas = controladorVenta.obtenerVentas();
+        Venta ventaSeleccionada = null;
+        
+        for (Venta venta : ventas) {
+            if (venta.getId().equals(ventaId)) {
+                ventaSeleccionada = venta;
+                break;
+            }
+        }
+        
+        if (ventaSeleccionada == null) {
+            JOptionPane.showMessageDialog(this, "No se encontró la venta seleccionada", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        // Crear diálogo de detalle
+        JDialog dialogo = new JDialog((java.awt.Frame) null, "Detalle de Venta", true);
+        dialogo.setSize(600, 500);
+        dialogo.setLocationRelativeTo(this);
+        dialogo.setLayout(new BorderLayout());
+        
+        // Panel información general
+        javax.swing.JPanel panelInfo = new javax.swing.JPanel(new GridBagLayout());
+        panelInfo.setBorder(BorderFactory.createTitledBorder("Información General"));
+        
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.insets = new Insets(5, 5, 5, 5);
+        
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        
+        gbc.gridx = 0; gbc.gridy = 0; gbc.anchor = GridBagConstraints.WEST;
+        panelInfo.add(new JLabel("ID Venta:"), gbc);
+        gbc.gridx = 1;
+        panelInfo.add(new JLabel(ventaSeleccionada.getId()), gbc);
+        
+        gbc.gridx = 0; gbc.gridy = 1;
+        panelInfo.add(new JLabel("Fecha:"), gbc);
+        gbc.gridx = 1;
+        panelInfo.add(new JLabel(ventaSeleccionada.getFecha().format(formatter)), gbc);
+        
+        gbc.gridx = 0; gbc.gridy = 2;
+        panelInfo.add(new JLabel("Subtotal:"), gbc);
+        gbc.gridx = 1;
+        panelInfo.add(new JLabel("$" + String.format("%.2f", ventaSeleccionada.getSubtotal())), gbc);
+        
+        gbc.gridx = 0; gbc.gridy = 3;
+        panelInfo.add(new JLabel("Descuento:"), gbc);
+        gbc.gridx = 1;
+        panelInfo.add(new JLabel("$" + String.format("%.2f", ventaSeleccionada.getDescuento())), gbc);
+        
+        gbc.gridx = 0; gbc.gridy = 4;
+        panelInfo.add(new JLabel("TOTAL:"), gbc);
+        gbc.gridx = 1;
+        JLabel lblTotalDetalle = new JLabel("$" + String.format("%.2f", ventaSeleccionada.getTotal()));
+        lblTotalDetalle.setFont(lblTotalDetalle.getFont().deriveFont(16f));
+        panelInfo.add(lblTotalDetalle, gbc);
+        
+        // Tabla de items
+        String[] columnas = {"Producto", "Cantidad", "Precio Unit.", "Subtotal"};
+        DefaultTableModel modelo = new DefaultTableModel(columnas, 0) {
+            @Override
+            public boolean isCellEditable(int row, int column) {
+                return false;
+            }
+        };
+        
+        for (ItemVenta item : ventaSeleccionada.getItems()) {
+            Object[] fila = {
+                item.getProducto().getNombre(),
+                item.getCantidad(),
+                "$" + String.format("%.2f", item.getProducto().getPrecio()),
+                "$" + String.format("%.2f", item.getSubtotal())
+            };
+            modelo.addRow(fila);
+        }
+        
+        JTable tblDetalle = new JTable(modelo);
+        JScrollPane scrollDetalle = new JScrollPane(tblDetalle);
+        scrollDetalle.setBorder(BorderFactory.createTitledBorder("Items de la Venta"));
+        
+        // Botón cerrar
+        JButton btnCerrar = new JButton("Cerrar");
+        btnCerrar.addActionListener(e -> dialogo.dispose());
+        
+        javax.swing.JPanel panelBoton = new javax.swing.JPanel();
+        panelBoton.add(btnCerrar);
+        
+        dialogo.add(panelInfo, BorderLayout.NORTH);
+        dialogo.add(scrollDetalle, BorderLayout.CENTER);
+        dialogo.add(panelBoton, BorderLayout.SOUTH);
+        
+        dialogo.setVisible(true);
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnNuevaVenta;

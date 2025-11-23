@@ -39,6 +39,18 @@ public class ControladorProducto {
         }
     }
     
+    public boolean actualizarProducto(Producto producto) {
+        if (producto == null) {
+            return false;
+        }
+        try {
+            gestorDatos.actualizarProducto(producto);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    
     public boolean eliminarProducto(String codigo) {
         if (codigo == null || codigo.isEmpty()) {
             return false;
