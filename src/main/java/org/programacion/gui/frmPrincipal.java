@@ -54,7 +54,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnGrafico.setBackground(new java.awt.Color(187, 153, 170));
         btnGrafico.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        btnGrafico.setForeground(new java.awt.Color(187, 102, 119));
         btnGrafico.setText("Gráfico");
         btnGrafico.setBorderPainted(false);
         btnGrafico.setFocusPainted(false);
@@ -74,7 +73,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnUsuario.setBackground(new java.awt.Color(187, 153, 170));
         btnUsuario.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        btnUsuario.setForeground(new java.awt.Color(187, 102, 119));
         btnUsuario.setText("Usuario");
         btnUsuario.setBorderPainted(false);
         btnUsuario.setFocusPainted(false);
@@ -94,7 +92,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnAlmacen.setBackground(new java.awt.Color(187, 153, 170));
         btnAlmacen.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        btnAlmacen.setForeground(new java.awt.Color(187, 102, 119));
         btnAlmacen.setText("Almacén");
         btnAlmacen.setBorderPainted(false);
         btnAlmacen.setFocusPainted(false);
@@ -114,7 +111,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnVenta.setBackground(new java.awt.Color(187, 153, 170));
         btnVenta.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        btnVenta.setForeground(new java.awt.Color(187, 102, 119));
         btnVenta.setText("Venta");
         btnVenta.setBorderPainted(false);
         btnVenta.setFocusPainted(false);
@@ -134,7 +130,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnMovimiento.setBackground(new java.awt.Color(187, 153, 170));
         btnMovimiento.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        btnMovimiento.setForeground(new java.awt.Color(187, 102, 119));
         btnMovimiento.setText("Movimiento");
         btnMovimiento.setBorderPainted(false);
         btnMovimiento.setFocusPainted(false);
@@ -154,7 +149,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnAcceso.setBackground(new java.awt.Color(187, 153, 170));
         btnAcceso.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        btnAcceso.setForeground(new java.awt.Color(187, 102, 119));
         btnAcceso.setText("Acceso");
         btnAcceso.setBorderPainted(false);
         btnAcceso.setFocusPainted(false);
@@ -174,7 +168,6 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         btnInfo.setBackground(new java.awt.Color(187, 153, 170));
         btnInfo.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        btnInfo.setForeground(new java.awt.Color(187, 102, 119));
         btnInfo.setText("Acerca de");
         btnInfo.setBorderPainted(false);
         btnInfo.setFocusPainted(false);

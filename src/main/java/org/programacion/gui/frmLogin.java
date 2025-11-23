@@ -51,18 +51,9 @@ public class frmLogin extends javax.swing.JFrame {
         setTitle("Login - Punto de Venta");
         setResizable(false);
 
-        lblImagen.setText("POS");
+        panelIzq.setBackground(new java.awt.Color(204, 204, 204));
 
-        javax.swing.GroupLayout panelIzqLayout = new javax.swing.GroupLayout(panelIzq);
-        panelIzq.setLayout(panelIzqLayout);
-        panelIzqLayout.setHorizontalGroup(
-            panelIzqLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblImagen)
-        );
-        panelIzqLayout.setVerticalGroup(
-            panelIzqLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblImagen)
-        );
+        lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/programacion/gui/img1.jpeg"))); // NOI18N
 
         lblTitulo.setText("BIENVENIDO");
 
@@ -91,57 +82,96 @@ public class frmLogin extends javax.swing.JFrame {
         panelDer.setLayout(panelDerLayout);
         panelDerLayout.setHorizontalGroup(
             panelDerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblTitulo)
-            .addComponent(lblSubtitulo)
-            .addComponent(jLabelSpacerTop)
-            .addComponent(lblUsuario)
-            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(lblContrasena)
-            .addComponent(txtContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jLabelSpacerMid)
-            .addComponent(btnLogin)
-            .addComponent(lblMensaje)
-            .addComponent(jLabelSpacerBottom)
+            .addGroup(panelDerLayout.createSequentialGroup()
+                .addGroup(panelDerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(panelDerLayout.createSequentialGroup()
+                        .addComponent(lblMensaje)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtContrasena))
+                    .addGroup(panelDerLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(lblUsuario))
+                    .addGroup(panelDerLayout.createSequentialGroup()
+                        .addComponent(jLabelSpacerTop)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(panelDerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTitulo)
+                            .addComponent(lblSubtitulo)))
+                    .addGroup(panelDerLayout.createSequentialGroup()
+                        .addComponent(jLabelSpacerMid)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(panelDerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 348, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblContrasena)))
+                    .addGroup(panelDerLayout.createSequentialGroup()
+                        .addComponent(jLabelSpacerBottom)
+                        .addGap(15, 15, 15)
+                        .addComponent(btnLogin)))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
         panelDerLayout.setVerticalGroup(
             panelDerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelDerLayout.createSequentialGroup()
+                .addGap(10, 10, 10)
                 .addComponent(lblTitulo)
-                .addGap(0, 0, 0)
-                .addComponent(lblSubtitulo)
-                .addGap(0, 0, 0)
-                .addComponent(jLabelSpacerTop)
-                .addGap(0, 0, 0)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelDerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelSpacerTop)
+                    .addComponent(lblSubtitulo))
+                .addGap(18, 18, 18)
                 .addComponent(lblUsuario)
-                .addGap(0, 0, 0)
-                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(lblContrasena)
-                .addGap(0, 0, 0)
-                .addComponent(txtContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(jLabelSpacerMid)
-                .addGap(0, 0, 0)
+                .addGap(9, 9, 9)
+                .addComponent(txtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(panelDerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelSpacerMid)
+                    .addComponent(lblContrasena))
+                .addGroup(panelDerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelDerLayout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(lblMensaje)
+                        .addGap(8, 8, 8)
+                        .addComponent(jLabelSpacerBottom))
+                    .addGroup(panelDerLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txtContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnLogin)
-                .addGap(0, 0, 0)
-                .addComponent(lblMensaje)
-                .addGap(0, 0, 0)
-                .addComponent(jLabelSpacerBottom))
+                .addContainerGap(263, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout panelIzqLayout = new javax.swing.GroupLayout(panelIzq);
+        panelIzq.setLayout(panelIzqLayout);
+        panelIzqLayout.setHorizontalGroup(
+            panelIzqLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelIzqLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(lblImagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelDer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(343, 343, 343))
+        );
+        panelIzqLayout.setVerticalGroup(
+            panelIzqLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelIzqLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelIzqLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblImagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panelDer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(panelIzq, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(panelDer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(panelIzq, javax.swing.GroupLayout.PREFERRED_SIZE, 783, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelIzq, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(panelDer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(panelIzq, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
