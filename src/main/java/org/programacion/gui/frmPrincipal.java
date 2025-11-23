@@ -229,7 +229,16 @@ public class frmPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnGraficoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGraficoActionPerformed
-        JOptionPane.showMessageDialog(this, "Funcionalidad de Gráfico en desarrollo", "Información", JOptionPane.INFORMATION_MESSAGE);
+        try {
+            System.out.println("Creando frmAnalitics...");
+            frmAnalitics analytics = new frmAnalitics();
+            System.out.println("frmAnalitics creado exitosamente");
+            abrirFormulario(analytics);
+        } catch (Exception e) {
+            System.err.println("Error al crear frmAnalitics: " + e.getMessage());
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Error al abrir Analytics: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_btnGraficoActionPerformed
 
     private void btnUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioActionPerformed
